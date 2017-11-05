@@ -1,0 +1,60 @@
+
+<!-- <?xml version="1.0" encoding="UTF-8" ?> -->
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="baseLayout" template="/common/pages/tiles/baseLayout.jsp">
+		<put-attribute name="title" value="Pacs" />
+		<put-attribute name="header" value="/common/pages/tiles/BaseHeader.jsp" />
+		<put-attribute name="menu" value="/common/pages/tiles/menu.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/Body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/BaseFooter.jsp" />
+	</definition>
+
+	<definition name="baseLayout1" template="/common/pages/tiles/baseLayout.jsp">
+		<put-attribute name="title" value="Pacs" />
+		<put-attribute name="header" value="" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body" value="/common/pages/tiles/Body.jsp" />
+		<put-attribute name="footer" value="" />
+	</definition>
+	
+	<definition name="baseLayoutadmin" template="/common/pages/tiles/BaseLayoutadmin.jsp">
+		<put-attribute name="title" value="Pacs" />
+		<put-attribute name="header" value="/common/pages/tiles/BaseHeaderadmin.jsp" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/common/pages/tiles/adminfooter.jsp" />
+	</definition>
+
+	<definition name="sessionExpire" extends="baseLayout">
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body" value="/user/pages/sessionExpire.jsp" />
+	</definition>
+
+
+
+	<definition name="homepage" extends="baseLayout">
+		<put-attribute name="body" value="/common/pages/homepage.jsp" />
+	</definition>
+	
+	<definition name="adminHomepage" extends="baseLayoutadmin">
+		<put-attribute name="body" value="/common/pages/adminhomepage.jsp" />
+	</definition>
+
+   <definition name="addEvent" extends="baseLayoutadmin">
+		<put-attribute name="body" value="/master/pages/addevent.jsp" />
+	</definition>
+	
+	<definition name="displayEvent" extends="baseLayoutadmin">
+		<put-attribute name="body" value="/master/pages/displayevent.jsp" />
+	</definition>
+
+
+
+
+</tiles-definitions>
