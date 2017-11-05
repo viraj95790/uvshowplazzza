@@ -1,8 +1,5 @@
  <%@ taglib uri="/struts-tags" prefix="s" %>
  
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" />
-    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 	
 	<script>
 	$(document).ready(function() {
@@ -17,7 +14,7 @@
 
 		});
 
-		$("#booking_date").datepicker({
+	/* 	$("#booking_date").datepicker({
 
 			dateFormat : 'dd/mm/yyyy',
 			//yearRange: yearrange,
@@ -25,7 +22,7 @@
 			changeMonth : true,
 			changeYear : true
 
-		});
+		}); */
 
 	});
 </script>
@@ -42,7 +39,7 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <s:form action="addeventMaster" theme="simple" role="form">
+                                    <s:form action="addeventMaster" theme="simple"  method="post" enctype="multipart/form-data">
                                         <div class="form-group col-md-6 col-sm-12">
                                             <label>Event Name<span style="color:red;">*</span></label>
                                             <!-- <input class="form-control" type="text" required> -->
@@ -75,9 +72,9 @@
                                             <div class='box box-info'>
                                                 <div class='box-body pad'>
 
-                                                    <textarea id="editor1" name="editor1" rows="5" cols="80">
+                                                    <s:textarea id="editor1" name="editor1" rows="5" cols="80">
                                                             This is my textarea to be replaced with CKEditor.
-                                                        </textarea>
+                                                        </s:textarea>
 
                                                 </div>
                                             </div>
@@ -89,9 +86,9 @@
                                             <div class='box box-info'>
                                                 <div class='box-body pad'>
 
-                                                    <textarea id="editor2" name="editor2" rows="5" cols="80">
+                                                    <s:textarea id="editor2" name="editor2" rows="5" cols="80">
                                                             This is my textarea to be replaced with CKEditor.
-                                                        </textarea>
+                                                        </s:textarea>
 
                                                 </div>
                                             </div>
@@ -101,7 +98,7 @@
                                             <div class="col-sm-6">
                                                 <label>Event Date<span style="color:red;">*</span></label>
                                                <!--  <input class="form-control" type="text" required> -->
-                                                <s:textfield name="eventdate" cssClass="form-control" theme="simple" title="Event Date"/>
+                                                <s:textfield name="eventdate" id="eventdate" cssClass="form-control" theme="simple" title="Event Date"/>
                                             </div>
                                             <div class="col-sm-6">
                                                 <label>Event Time<span style="color:red;">*</span></label>
@@ -119,7 +116,8 @@
                                         <div class="form-group col-md-6 col-sm-12 no-padding">
                                             <div class=" col-sm-6">
                                                 <label>Movie Image Banner<span style="color:red;">*</span></label>
-                                                <input class="input-file" id="my-file" type="file">
+                                               <!--  <input class="input-file" id="my-file" type="file"> -->
+                                                <s:file class="input-file" name="movieImage" id="movieImage" />
                                                 <label tabindex="0" for="my-file" class="input-file-trigger"><i class="fa fa-upload"></i>Select a file...</label>
                                                 <span>Image size (1000 x 350)</span>
                                             </div>
@@ -134,7 +132,7 @@
                                             <div class="form-group col-sm-6">
                                                 <label>Comission Fee</label>
                                                 <!-- <input class="form-control" type="text"> -->
-                                                <s:textfield name="commmission_fee" cssClass="form-control" theme="simple" title="Commission Fee"/>
+                                                <s:textfield name="commission_fee" cssClass="form-control" theme="simple" title="Commission Fee"/>
                                             </div>
                                             <div class="form-group col-sm-6">
                                                 <label>Class Type and Price<span style="color:red;">*</span></label>
@@ -194,7 +192,7 @@
                                             <div class='box box-info'>
                                                 <div class='box-body pad'>
 
-                                                    <textarea id="editor3" name="editor3" rows="5" cols="80">
+                                                    <textarea id="editor3" name="tnc" rows="5" cols="80">
                                                                 This is my textarea to be replaced with CKEditor.
                                                             </textarea>
 

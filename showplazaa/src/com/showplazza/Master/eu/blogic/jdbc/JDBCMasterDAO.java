@@ -23,7 +23,7 @@ public class JDBCMasterDAO extends JDBCBaseDAO implements MasterDAO  {
 		PreparedStatement preparedStatement = null;
 		int result = 0;
 		String sql = "insert into event(eventname, language, event_type, castcrew, eventdate, eventtime, bookingdate, commissionfee, clas_price, tnc, "
-				   + "country, state, address, zicode) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+				   + "country, state, address, zicode, crewdescription, description, movieimage1, movieimage2) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 		try {
 			preparedStatement = connection.prepareStatement(sql);
 			
@@ -41,6 +41,10 @@ public class JDBCMasterDAO extends JDBCBaseDAO implements MasterDAO  {
 			preparedStatement.setString(12, master.getState());
 			preparedStatement.setString(13, master.getAddress());
 			preparedStatement.setString(14, master.getZipcode());
+			preparedStatement.setString(15, master.getEditor1());
+			preparedStatement.setString(16, master.getEditor2());
+			preparedStatement.setString(17, master.getMovieImageFileName());
+			preparedStatement.setString(18, master.getMovieImageFileName());
 			
 			preparedStatement.executeUpdate();
 			
@@ -56,7 +60,7 @@ public class JDBCMasterDAO extends JDBCBaseDAO implements MasterDAO  {
 		PreparedStatement preparedStatement = null;
 		ArrayList<Master> list = new ArrayList<Master>();
 		String sql = "select id, eventname, language, event_type, castcrew, eventdate, eventtime, bookingdate, commissionfee, "
-				    + "clas_price, tnc, country, state, address, zicode from event";
+				    + "clas_price, tnc, country, state, address, zicode, crewdescription, description, movieimage1, movieimage2 from event";
 		
 		try {
 			preparedStatement = connection.prepareStatement(sql);

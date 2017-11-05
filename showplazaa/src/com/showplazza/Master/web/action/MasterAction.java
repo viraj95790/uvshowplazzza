@@ -1,5 +1,6 @@
 package com.showplazza.Master.web.action;
 
+import java.io.File;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -7,7 +8,9 @@ import java.util.ArrayList;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.swing.plaf.basic.BasicInternalFrameTitlePane.MoveAction;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.struts2.ServletActionContext;
 
 import com.opensymphony.xwork2.ActionContext;
@@ -74,6 +77,17 @@ public class MasterAction extends BaseAction implements ModelDriven<MasterForm>,
 			master.setAddress(masterForm.getAddress());
 			master.setZipcode(masterForm.getZipcode());
 			master.setTnc(masterForm.getTnc());
+			master.setMovieImageFileName(masterForm.getMovieImageFileName());
+			master.setEditor1(masterForm.getEditor1());
+			master.setEditor2(masterForm.getEditor2());
+			
+			
+			   String filePath = request.getRealPath("/livedata/moviedoc/");
+		       
+		       
+		System.out.println("Server path:" + filePath);
+		File fileToCreate = new File(filePath, masterForm.getMovieImageFileName());
+		FileUtils.copyFile(masterForm.getMovieImage(), fileToCreate);
 			
 			int result = masterDAO.insertevent(master);
 			
