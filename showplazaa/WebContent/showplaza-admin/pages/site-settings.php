@@ -133,7 +133,7 @@
         <!-- /#page-wrapper -->
     </div>
     <!-- /#wrapper -->
-
+</div>
    <?php include ('footer.php'); ?>
 
     <script type="text/javascript">

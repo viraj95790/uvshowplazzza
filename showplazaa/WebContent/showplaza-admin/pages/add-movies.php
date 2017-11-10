@@ -172,11 +172,23 @@
                                             </div>
                                             <div class="form-group col-sm-12">
                                                 <label>Release Date<span style="color:red;">*</span></label>
-                                                <input class="form-control" type="text" required>
+                                                <div class="input-group date datepicker" data-provide="datepicker">
+                                                    <input type="text" class="form-control" required>
+                                                    <div class="input-group-addon">
+                                                        <span class="glyphicon glyphicon-th"></span>
+                                                    </div>
+                                                </div>
+                                              <!--   <input class="form-control" type="text" required> -->
                                             </div>
                                             <div class="form-group col-sm-12">
                                                 <label>End Date<span style="color:red;">*</span></label>
-                                                <input class="form-control" type="text" required>
+                                                <div class="input-group date datepicker" data-provide="datepicker">
+                                                    <input type="text" class="form-control" required>
+                                                    <div class="input-group-addon">
+                                                        <span class="glyphicon glyphicon-th"></span>
+                                                    </div>
+                                                </div>
+                                               <!--  <input class="form-control" type="text" required> -->
                                             </div>
                                         </div>
                                         <div class="form-group  col-md-6 col-sm-12">
@@ -215,4 +227,5 @@
         </div>
         <!-- /#page-wrapper -->
     </div>
+</div>
 <?php include ('footer.php'); ?>

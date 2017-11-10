@@ -74,12 +74,12 @@
                                             </div>
                                             <!-- /.box -->
                                         </div>
-                                        <div class="form-group col-sm-6">
+                                        <div class="form-group col-md-6 col-sm-12">
                                             <label>Contacts</label>
                                             <!-- <textarea class="form-control" rows="5"></textarea> -->
                                             <div class='box box-info'>
                                                 <div class='box-body pad'>
-                                                    <textarea id="editor5" name="editor5" rows="5" cols="80">
+                                                    <textarea id="editor6" name="editor6" rows="5" cols="80">
                                                         +91-0000000000 
                                                     </textarea>
                                                 </div>
@@ -109,7 +109,7 @@
         <!-- /#page-wrapper -->
     </div>
     <!-- /#wrapper -->
-
+</div>
 <?php include ('footer.php'); ?>
 
     <script type="text/javascript">
@@ -120,7 +120,14 @@
             CKEDITOR.replace('editor2');
             CKEDITOR.replace('editor3');
             CKEDITOR.replace('editor4');
-            CKEDITOR.replace('editor5');
+            // CKEDITOR.replace('editor6');
+            $(".textarea").wysihtml5();
+        });
+        $(function() {
+            // Replace the <textarea id="editor1"> with a CKEditor
+            // instance, using default configuration.
+          
+            CKEDITOR.replace('editor6');
             $(".textarea").wysihtml5();
         });
     </script>

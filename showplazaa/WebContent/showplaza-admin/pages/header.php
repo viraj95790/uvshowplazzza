@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+ 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,8 +32,11 @@
     <link href="../dist/css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
     <!-- datatables css -->
     <link href="../vendor/datatables-plugins/datatables.bootstrap.css" rel="stylesheet">
+    <!-- datepicker css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css" rel="stylesheet">
     <!-- customized css -->
     <link href="../dist/css/custom.css" rel="stylesheet">
+    
 
 
 </head>
@@ -198,7 +201,6 @@
                 <!-- /.dropdown -->
             </ul>
             <!-- /.navbar-top-links -->
-           
 
             <?php include ('sidebar.php'); ?>
         </nav>

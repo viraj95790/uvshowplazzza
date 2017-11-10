@@ -67,7 +67,13 @@
                                         <div class="form-group col-md-6 col-sm-12 no-padding">
                                             <div class="col-sm-6">
                                                 <label>Event Date<span style="color:red;">*</span></label>
-                                                <input class="form-control" type="text" required>
+                                                <div class="input-group date datepicker" data-provide="datepicker">
+                                                    <input type="text" class="form-control" required>
+                                                    <div class="input-group-addon">
+                                                        <span class="glyphicon glyphicon-th"></span>
+                                                    </div>
+                                                </div>
+                                               <!--  <input class="form-control" type="text" required> -->
                                             </div>
                                             <div class="col-sm-6">
                                                 <label>Event Time<span style="color:red;">*</span></label>
@@ -77,7 +83,13 @@
                                         <div class="form-group col-md-6 col-sm-12">
 
                                             <label>Booking Open Date<span style="color:red;">*</span></label>
-                                            <input class="form-control" type="text" required>
+                                            <div class="input-group date datepicker" data-provide="datepicker">
+                                                <input type="text" class="form-control" required>
+                                                <div class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-th"></span>
+                                                </div>
+                                            </div>
+                                            <!-- <input class="form-control" type="text" required> -->
 
                                         </div>
                                         <div class="form-group col-md-6 col-sm-12 no-padding">
@@ -182,4 +194,5 @@
         </div>
         <!-- /#page-wrapper -->
     </div>
+</div>
     <?php include ('footer.php'); ?>

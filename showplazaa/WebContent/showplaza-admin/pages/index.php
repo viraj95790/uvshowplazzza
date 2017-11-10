@@ -119,5 +119,9 @@
         <!-- /.row -->
     </div>
     <!-- /#page-wrapper -->
-
+        <footer class="gradi-clor" id="bottom-div">
+            <p class="text-center">Copyright &copy; mymatny.com 2017. All Rights Reserved.</p>
+    </footer>
+</div>
+</div>
    <?php include ('footer.php'); ?>

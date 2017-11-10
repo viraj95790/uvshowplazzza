@@ -225,14 +225,15 @@
         .submit {
             padding: 10px 40px;
         }
-        
+        body{position: relative;}
         footer {
             /* border-top: 1.5px solid #dedede; */
             padding: 10px 0;
             color: #fff;
-            position: relative;
-            bottom: 0;
-            z-index: 99999;
+            position: absolute;
+            bottom:-30px;
+            width:100%;
+            z-index: 99999;margin-top: 30px;
         }
         /* sidebar customization */
         
@@ -418,7 +419,8 @@
         .toggle.ios .toggle-handle {
             border-radius: 20px;
         }
-        
+        /*datepicker css*/
+        .datepicker-days table thead tr:first-of-type {display: none;}
         @media (max-width: 768px) {
             #page-wrapper {
                 margin: 0 0 0 200px;

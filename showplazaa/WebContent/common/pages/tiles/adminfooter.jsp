@@ -23,7 +23,9 @@
     <script src="showplaza-admin/vendor/datatables/js/jquery.dataTables.min.js"></script>
     <script src="showplaza-admin/vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
     <script src="showplaza-admin/vendor/datatables-responsive/dataTables.responsive.js"></script>
-
+  <!-- datepicker js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.js"></script>
+    
     <script src="showplaza-admin/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(function() {
@@ -53,6 +55,15 @@
     <!-- Custom Theme JavaScript -->
     <script src="showplaza-admin/dist/js/sb-admin-2.js"></script>
     <script src="showplaza-admin/dist/js/custom.js"></script>
+ <script>
+        $(document).ready(function() {
+            $('.datepicker').datepicker({
+                format: 'dd/mm/yyyy',
+                startDate: '-3d',
+                autoclose: true
+            });
+        });
+    </script>
 
 </body>
 

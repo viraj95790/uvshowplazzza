@@ -67,7 +67,7 @@
                                         </div>
 
                                         <div class="form-group col-md-6 col-sm-12">
-                                            <label>Crew Description</label>
+                                            <label>Event Description</label>
                                             <!-- <textarea class="form-control" rows="5"></textarea> -->
                                             <div class='box box-info'>
                                                 <div class='box-body pad'>
@@ -81,7 +81,7 @@
                                             <!-- /.box -->
                                         </div>
                                         <div class="form-group col-md-6 col-sm-12">
-                                            <label>Description</label>
+                                            <label>Crew Description</label>
                                             <!-- <textarea class="form-control" rows="5"></textarea> -->
                                             <div class='box box-info'>
                                                 <div class='box-body pad'>
@@ -94,15 +94,20 @@
                                             </div>
                                             <!-- /.box -->
                                         </div>
+                                        <div class="row">
                                         <div class="form-group col-md-6 col-sm-12 no-padding">
                                             <div class="col-sm-6">
                                                 <label>Event Date<span style="color:red;">*</span></label>
+                                                <div class="input-group date datepicker" data-provide="datepicker">
+                                                   <s:textfield name="eventdate" id="eventdate" cssClass="form-control" theme="simple" title="Event Date"/>
+                                                    <div class="input-group-addon">
+                                                        <span class="glyphicon glyphicon-th"></span>
+                                                    </div>
+                                                </div>
                                                <!--  <input class="form-control" type="text" required> -->
-                                                <s:textfield name="eventdate" id="eventdate" cssClass="form-control" theme="simple" title="Event Date"/>
                                             </div>
                                             <div class="col-sm-6">
                                                 <label>Event Time<span style="color:red;">*</span></label>
-                                                <!-- <input class="form-control" type="text" required> -->
                                                 <s:textfield name="event_time" cssClass="form-control" theme="simple" title="Event Time"/>
                                             </div>
                                         </div>
@@ -110,8 +115,13 @@
 
                                             <label>Booking Open Date<span style="color:red;">*</span></label>
                                             <!-- <input class="form-control" type="text" required> -->
-                                            <s:textfield name="booking_date" cssClass="form-control" theme="simple" title="Booking Date"/>
-
+                                             <div class="input-group date datepicker" data-provide="datepicker">
+                                                <s:textfield name="booking_date" cssClass="form-control" theme="simple" title="Booking Date"/>
+                                                <div class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-th"></span>
+                                                </div>
+                                            </div>
+                                        </div>
                                         </div>
                                         <div class="form-group col-md-6 col-sm-12 no-padding">
                                             <div class=" col-sm-6">
@@ -119,13 +129,13 @@
                                                <!--  <input class="input-file" id="my-file" type="file"> -->
                                                 <s:file class="input-file" name="movieImage" id="movieImage" />
                                                 <label tabindex="0" for="my-file" class="input-file-trigger"><i class="fa fa-upload"></i>Select a file...</label>
-                                                <span>Image size (1000 x 350)</span>
+                                                <span>Image size (1348 x 369)</span>
                                             </div>
                                             <div class=" col-sm-6">
                                                 <label>Movie Image Banner<span style="color:red;">*</span></label>
                                                 <input class="input-file" id="my-file" type="file">
                                                 <label tabindex="0" for="my-file" class="input-file-trigger"><i class="fa fa-upload"></i>Select a file...</label>
-                                                <span>Image size (1000 x 350)</span>
+                                                <span>Image size (450 x 450)</span>
                                             </div>
                                             <div class="col-sm-12" style="height:40px;"></div>
 

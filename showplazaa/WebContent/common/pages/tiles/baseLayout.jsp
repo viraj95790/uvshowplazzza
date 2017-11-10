@@ -26,7 +26,7 @@
     <div id="wrap" class="">
         
        <tiles:insertAttribute name="header" />
-       <tiles:insertAttribute name="menu" />
+       <%-- <tiles:insertAttribute name="" /> --%>
        <tiles:insertAttribute name="body" />
        <tiles:insertAttribute name="footer" />
        

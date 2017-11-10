@@ -21,7 +21,10 @@
 
     <!-- Morris Charts CSS -->
     <link href="showplaza-admin/vendor/morrisjs/morris.css" rel="stylesheet">
-
+    
+<!-- datepicker css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css" rel="stylesheet">
+    
     <!-- Custom Fonts -->
     <link href="showplaza-admin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 

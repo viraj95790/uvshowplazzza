@@ -1,7 +1,4 @@
-    <footer class="gradi-clor">
-            <p class="text-center">Copyright &copy; mymatny.com 2017. All Rights Reserved.</p>
-    </footer>
-</div>
+
 <!-- /#wrapper -->
 
     <!-- jQuery -->
@@ -18,6 +15,8 @@
     <script src="../vendor/raphael/raphael.min.js"></script>
     <script src="../vendor/morrisjs/morris.min.js"></script>
     <script src="../data/morris-data.js"></script>
+    <!-- datepicker js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.js"></script>
 
      <!-- DataTables JavaScript -->
     <script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
@@ -49,10 +48,15 @@
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
     <script src="../dist/js/custom.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="../dist/js/sb-admin-2.js"></script>
-    <script src="../dist/js/custom.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.datepicker').datepicker({
+                format: 'mm/dd/yyyy',
+                startDate: '-3d',
+                autoclose: true
+            });
+        });
+    </script>
 
 </body>
 

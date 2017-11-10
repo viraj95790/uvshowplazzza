@@ -128,5 +128,5 @@
         <!-- /#page-wrapper -->
     </div>
     <!-- /#wrapper -->
-
+</div>
     <?php include ('footer.php'); ?>

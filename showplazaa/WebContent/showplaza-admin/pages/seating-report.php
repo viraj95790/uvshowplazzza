@@ -73,6 +73,5 @@
             <!-- /.row -->
         </div>
         <!-- /#page-wrapper -->
-
-
+</div>
     <?php include ('footer.php'); ?>
