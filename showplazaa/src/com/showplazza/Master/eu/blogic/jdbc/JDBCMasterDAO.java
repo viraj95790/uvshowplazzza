@@ -60,7 +60,7 @@ public class JDBCMasterDAO extends JDBCBaseDAO implements MasterDAO  {
 		PreparedStatement preparedStatement = null;
 		ArrayList<Master> list = new ArrayList<Master>();
 		String sql = "select id, eventname, language, event_type, castcrew, eventdate, eventtime, bookingdate, commissionfee, "
-				    + "clas_price, tnc, country, state, address, zicode, crewdescription, description, movieimage1, movieimage2 from event";
+				    + "clas_price, tnc, country, state, address, zicode, crewdescription, description, movieimage1 from event";
 		
 		try {
 			preparedStatement = connection.prepareStatement(sql);
@@ -74,15 +74,19 @@ public class JDBCMasterDAO extends JDBCBaseDAO implements MasterDAO  {
 				master.setEventtype(rs.getString(4));
 				master.setCastcrew(rs.getString(5));
 				master.setEventdate(rs.getString(6));
-				master.setEvent_time(rs.getString(6));
-				master.setBooking_date(rs.getString(7));
-				master.setCommission_fee(rs.getString(8));
-				master.setClas_price(rs.getString(9));
-				master.setTnc(rs.getString(10));
-				master.setCountry(rs.getString(11));
-				master.setState(rs.getString(12));
-				master.setAddress(rs.getString(13));
-				master.setZipcode(rs.getString(14));
+				master.setEvent_time(rs.getString(7));
+				master.setBooking_date(rs.getString(8));
+				master.setCommission_fee(rs.getString(9));
+				master.setClas_price(rs.getString(10));
+				master.setTnc(rs.getString(11));
+				master.setCountry(rs.getString(12));
+				master.setState(rs.getString(13));
+				master.setAddress(rs.getString(14));
+				master.setZipcode(rs.getString(15));
+				master.setEditor1(rs.getString(16));
+				master.setEditor2(rs.getString(17));
+				master.setMovieImageFileName(rs.getString(18));
+				
 				
 				list.add(master);
 				

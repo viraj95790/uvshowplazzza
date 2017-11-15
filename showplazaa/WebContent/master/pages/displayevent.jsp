@@ -16,7 +16,7 @@
                             <table width="100%" class="table table-striped table-hover table-responsive" id="dataTables-example">
                                 <thead>
                                     <tr>
-                                        <th>Sr. No.</th>
+                       
                                         <th>Image</th>
                                         <th>Event Name</th>
                                         <th>City</th>
@@ -25,15 +25,19 @@
                                         <th>Actions</th>
                                     </tr>
                                 </thead>
+                                
+                                <s:iterator value="eventList" >
                                 <tbody>
+                                
+                                
                                     <tr class="odd gradeX">
-                                        <td>1</td>
+                                       
                                         <td>
-                                            <img src="../dist/img/event30062017-930.jpg" alt="event-img">
+                                            <img style="width: 300px;height: 100px;" src="livedata/moviedoc/<s:property value="movieImageFileName" />">
                                         </td>
-                                        <td>Jodi</td>
+                                        <td><s:property value="eventname"/></td>
                                         <td>Chennai</td>
-                                        <td>02-Jul-2017</td>
+                                        <td><s:property value="eventdate"/></td>
                                         <td>
                                             <button class="btn btn-success">
                                                 <span class="fa fa-th-large"></span>Gallery
@@ -42,114 +46,11 @@
                                         <td><button class="btn btn-primary">View Report</button></td>
 
                                     </tr>
-                                    <tr class="even gradeC">
-                                        <td>2</td>
-                                        <td>
-                                            <img src="../dist/img/event30062017-930.jpg" alt="event-img">
-                                        </td>
-                                        <td>Social meetup</td>
-                                        <td>Proddatur</td>
-                                        <td>11-Aug-2017</td>
-                                        <td>
-                                            <button class="btn btn-success">
-                                                <span class="fa fa-th-large"></span>Gallery
-                                            </button>
-                                        </td>
-                                        <td><button class="btn btn-primary">View Report</button></td>
-
-                                    </tr>
-                                    <tr class="odd gradeA">
-                                        <td>3</td>
-                                        <td>
-                                            <img src="../dist/img/event30062017-930.jpg" alt="event-img">
-                                        </td>
-                                        <td>Singer celebration</td>
-                                        <td>Chennai</td>
-                                        <td>23-May-2017</td>
-                                        <td>
-                                            <button class="btn btn-success">
-                                                    <span class="fa fa-th-large"></span>Gallery
-                                                </button>
-                                        </td>
-                                        <td><button class="btn btn-primary">View Report</button></td>
-
-                                    </tr>
-                                    <tr class="even gradeA">
-                                        <td>4</td>
-                                        <td>
-                                            <img src="../dist/img/event30062017-930.jpg" alt="event-img">
-                                        </td>
-                                        <td>Singer celebration</td>
-                                        <td>Chennai</td>
-                                        <td>23-May-2017</td>
-                                        <td>
-                                            <button class="btn btn-success">
-                                                <span class="fa fa-th-large"></span>Gallery
-                                            </button>
-                                        </td>
-                                        <td><button class="btn btn-primary">View Report</button></td>
-                                    </tr>
-                                    <tr class="odd gradeA">
-                                        <td>5</td>
-                                        <td>
-                                            <img src="../dist/img/event30062017-930.jpg" alt="event-img">
-                                        </td>
-                                        <td>Singer celebration</td>
-                                        <td>Chennai</td>
-                                        <td>23-May-2017</td>
-                                        <td>
-                                            <button class="btn btn-success">
-                                                <span class="fa fa-th-large"></span>Gallery
-                                            </button>
-                                        </td>
-                                        <td><button class="btn btn-primary">View Report</button></td>
-                                    </tr>
-                                    <tr class="even gradeA">
-                                        <td>6</td>
-                                        <td>
-                                            <img src="../dist/img/event30062017-930.jpg" alt="event-img">
-                                        </td>
-                                        <td>Singer celebration</td>
-                                        <td>Chennai</td>
-                                        <td>23-May-2017</td>
-                                        <td>
-                                            <button class="btn btn-success">
-                                                <span class="fa fa-th-large"></span>Gallery
-                                            </button>
-                                        </td>
-                                        <td><button class="btn btn-primary">View Report</button></td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>7</td>
-                                        <td>
-                                            <img src="../dist/img/event30062017-930.jpg" alt="event-img">
-                                        </td>
-                                        <td>Singer celebration</td>
-                                        <td>Chennai</td>
-                                        <td>23-May-2017</td>
-                                        <td>
-                                            <button class="btn btn-success">
-                                                <span class="fa fa-th-large"></span>Gallery
-                                            </button>
-                                        </td>
-                                        <td><button class="btn btn-primary">View Report</button></td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>7</td>
-                                        <td>
-                                            <img src="../dist/img/event30062017-930.jpg" alt="event-img">
-                                        </td>
-                                        <td>Singer celebration</td>
-                                        <td>Chennai</td>
-                                        <td>23-May-2017</td>
-                                        <td>
-                                            <button class="btn btn-success">
-                                                <span class="fa fa-th-large"></span>Gallery
-                                            </button>
-                                        </td>
-                                        <td><button class="btn btn-primary">View Report</button></td>
-                                    </tr>
+                                    
                                 </tbody>
+                                
+                                </s:iterator>
+                                
                             </table>
                             <!-- /.table-responsive -->
                         </div>
