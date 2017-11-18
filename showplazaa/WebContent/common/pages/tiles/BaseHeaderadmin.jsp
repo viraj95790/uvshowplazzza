@@ -37,7 +37,21 @@
     <link href="showplaza-admin/vendor/datatables-plugins/datatables.bootstrap.css" rel="stylesheet">
     <!-- customized css -->
     <link href="showplaza-admin/dist/css/custom.css" rel="stylesheet">
+<!-- Css for Toggle button -->
+<style>
+    .btn-default.btn-on-1.active{background-color: #006FFC;color: white;}
+    .btn-default.btn-off-1.active{background-color: #DA4F49;color: white;}
+</style>
 
+<!-- Js for View tickeyt on Save btn  -->
+<script>
+    $(document).ready(function(){
+        $('#tick_show').click(function(){
+             $('#tic_sh').removeClass('hidden');
+       
+        });
+    });
+    </script>
 
 </head>
 
