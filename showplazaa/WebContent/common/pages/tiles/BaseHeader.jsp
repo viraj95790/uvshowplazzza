@@ -15,7 +15,7 @@
           <ul class="nav navbar-nav nunit-bold left-nav-menu">
             <li><a href="index.html">HOME</a></li>
             <li><a href="#">MOVIES</a></li>
-            <li><a href="#">EVENTS</a></li>
+            <li><a href="inputEvent">EVENTS</a></li>
             <li><a href="#">THEATRES</a></li>
             <li><a href="#">TRAILES & VIDEOS</a></li>
           </ul>

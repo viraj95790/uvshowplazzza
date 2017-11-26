@@ -1,5 +1,5 @@
     <footer class="gradi-clor">
-            <p class="text-center">Copyright &copy; mymatny.com 2017. All Rights Reserved.</p>
+            <p class="text-center">Copyright &copy; WE JASPERS ENTERTAINMENT LLP 2017. All Rights Reserved.</p>
     </footer>
 </div>
 <!-- /#wrapper -->

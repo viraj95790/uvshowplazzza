@@ -1,3 +1,4 @@
+
   <div class="container-fluid main-footer-bar gradi-clor">
       <div class="footer-bar">
         <ul class="list-inline pull-left no-margin">
@@ -75,7 +76,7 @@
       <hr class="hidden-xs">
       <div class="container-fluid footer-botm">
         <p class="pull-left">
-          Copyright 2017 © Bigtree Entertainment Pvt. Ltd. All Rights Reserved.
+          Copyright 2017 © WE JASPERS ENTERTAINMENT LLP. All Rights Reserved.
         </p>
         <ul class="list-inline pull-right">
           <li><a href=""><i class="bms-icnfacebook-logo"></i></a></li>

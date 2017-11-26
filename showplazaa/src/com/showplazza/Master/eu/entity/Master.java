@@ -16,7 +16,9 @@ public class Master {
 	
 	private String eventdate;
 	
-	private String event_time;
+	private String start_time;
+	
+	private String end_time;
 	
 	private String booking_date;
 	
@@ -30,13 +32,21 @@ public class Master {
 	
 	private String address;
 	
+	private String city;
+	
 	private String zipcode;
 	
 	private String tnc;
 	
-	private String editor1;
+	private String organizer;
 	
-	private String editor2;
+	private String event_tags;
+	
+	private String eventend_date;
+	
+	private String event_description;
+	
+	private String crew_description;
 	
 	private File movieImage;
 
@@ -44,6 +54,11 @@ public class Master {
 
 	private String movieImageFileName;
 	
+	private File movieImage2;
+
+	private String movieImageContentType2;
+
+	private String movieImageFileName2;
 	
 	
 	
@@ -53,21 +68,79 @@ public class Master {
 	
 
 	
+	
 
-	public String getEditor1() {
-		return editor1;
+	public String getCity() {
+		return city;
 	}
 
-	public void setEditor1(String editor1) {
-		this.editor1 = editor1;
+	public void setCity(String city) {
+		this.city = city;
 	}
 
-	public String getEditor2() {
-		return editor2;
+	public String getOrganizer() {
+		return organizer;
 	}
 
-	public void setEditor2(String editor2) {
-		this.editor2 = editor2;
+	public void setOrganizer(String organizer) {
+		this.organizer = organizer;
+	}
+
+	public String getEvent_tags() {
+		return event_tags;
+	}
+
+	public void setEvent_tags(String event_tags) {
+		this.event_tags = event_tags;
+	}
+
+	public String getEventend_date() {
+		return eventend_date;
+	}
+
+	public void setEventend_date(String eventend_date) {
+		this.eventend_date = eventend_date;
+	}
+
+	public File getMovieImage2() {
+		return movieImage2;
+	}
+
+	public void setMovieImage2(File movieImage2) {
+		this.movieImage2 = movieImage2;
+	}
+
+	public String getMovieImageContentType2() {
+		return movieImageContentType2;
+	}
+
+	public void setMovieImageContentType2(String movieImageContentType2) {
+		this.movieImageContentType2 = movieImageContentType2;
+	}
+
+	public String getMovieImageFileName2() {
+		return movieImageFileName2;
+	}
+
+	public void setMovieImageFileName2(String movieImageFileName2) {
+		this.movieImageFileName2 = movieImageFileName2;
+	}
+
+	
+	public String getEvent_description() {
+		return event_description;
+	}
+
+	public void setEvent_description(String event_description) {
+		this.event_description = event_description;
+	}
+
+	public String getCrew_description() {
+		return crew_description;
+	}
+
+	public void setCrew_description(String crew_description) {
+		this.crew_description = crew_description;
 	}
 
 	public File getMovieImage() {
@@ -150,12 +223,21 @@ public class Master {
 		this.eventdate = eventdate;
 	}
 
-	public String getEvent_time() {
-		return event_time;
+
+	public String getStart_time() {
+		return start_time;
 	}
 
-	public void setEvent_time(String event_time) {
-		this.event_time = event_time;
+	public void setStart_time(String start_time) {
+		this.start_time = start_time;
+	}
+
+	public String getEnd_time() {
+		return end_time;
+	}
+
+	public void setEnd_time(String end_time) {
+		this.end_time = end_time;
 	}
 
 	public String getBooking_date() {

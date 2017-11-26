@@ -53,6 +53,22 @@
 	<definition name="displayEvent" extends="baseLayoutadmin">
 		<put-attribute name="body" value="/master/pages/displayevent.jsp" />
 	</definition>
+	
+	<definition name="checkEvent" extends="baseLayout">
+		<put-attribute name="body" value="/event/pages/event.jsp" />
+	</definition>
+	
+	<definition name="eventdetail" extends="baseLayout">
+		<put-attribute name="body" value="/event/pages/eventdetails.jsp" />
+	</definition>
+	
+	<definition name="payment" extends="baseLayout">
+		<put-attribute name="body" value="/event/pages/payment.jsp" />
+	</definition>
+	
+	<definition name="generateTicket" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/generateticket.jsp" />
+	</definition>
 
 
 

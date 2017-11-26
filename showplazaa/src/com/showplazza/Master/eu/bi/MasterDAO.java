@@ -10,4 +10,8 @@ public interface MasterDAO {
 
 	ArrayList<Master> geteventlist();
 
+	ArrayList<Master> getstatelist();
+
+	int updateimagename(int eventid, String moviemagename);
+
 }

@@ -8,7 +8,8 @@
                         <div class="panel-heading">
                             <span class="glyphicon glyphicon-user"></span>Events List
                             <div class="pull-right">
-                                <a href="#"><span class="glyphicon glyphicon-plus "></span>Add New Event</a>
+                                <a href="inputMaster"><span class="glyphicon glyphicon-plus "></span>Add New Event</a>
+                               
                             </div>
                         </div>
                         <!-- /.panel-heading -->
@@ -22,7 +23,7 @@
                                         <th>City</th>
                                         <th>Date</th>
                                         <th>Gallery</th>
-                                        <th>Actions</th>
+                                        <th>Create Ticket</th>
                                     </tr>
                                 </thead>
                                 
@@ -33,7 +34,7 @@
                                     <tr class="odd gradeX">
                                        
                                         <td>
-                                            <img style="width: 300px;height: 100px;" src="livedata/moviedoc/<s:property value="movieImageFileName" />">
+                                            <img style="width: 150px;height: 50px;" src="livedata/moviedoc/<s:property value="movieImageFileName" />">
                                         </td>
                                         <td><s:property value="eventname"/></td>
                                         <td>Chennai</td>
@@ -43,7 +44,12 @@
                                                 <span class="fa fa-th-large"></span>Gallery
                                             </button>
                                         </td>
-                                        <td><button class="btn btn-primary">View Report</button></td>
+                                         <s:url action="addticketMaster" id="addticket">
+											<s:param name="selectedid" value="%{id}"></s:param>
+										</s:url>
+										<td><s:a href="%{addticket}" cssClass="btn btn-primary">Create Ticket</s:a></td>
+                                        
+                                        <%-- <td><a href="addticketMaster?eventid=<s:property value="id"/> "></a><button class="btn btn-primary">Create Ticket</button></td> --%>
 
                                     </tr>
                                     

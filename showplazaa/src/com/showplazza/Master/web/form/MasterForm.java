@@ -17,9 +17,13 @@ public class MasterForm {
 
 	private String castcrew;
 
-	private String eventdate;
+    private String start_time;
+	
+	private String end_time;
 
 	private String event_time;
+	
+	private String eventdate;
 
 	private String booking_date;
 
@@ -42,34 +46,137 @@ public class MasterForm {
 	private String movieImageContentType;
 
 	private String movieImageFileName;
-
-	private String editor1;
-
-	private String editor2;
 	
+	private File movieImage2;
+
+	private String movieImageContentType2;
+
+	private String movieImageFileName2;
+
+    private String event_description;
+	
+	private String crew_description;
+	
+    private String organizer;
+	
+	private String event_tags;
+	
+	private String eventend_date;
+	
+	private String city;
  
 	private ArrayList<Master> eventList;
+	
+	private ArrayList<Master> stateList;
+	
+	private ArrayList<Master> cityList;
 	
 
 	
   
 	
 	
+	
+	
+	
+	
+	
+	
 
-	public String getEditor1() {
-		return editor1;
+	public String getEventdate() {
+		return eventdate;
 	}
 
-	public void setEditor1(String editor1) {
-		this.editor1 = editor1;
+	public void setEventdate(String eventdate) {
+		this.eventdate = eventdate;
 	}
 
-	public String getEditor2() {
-		return editor1;
+	public ArrayList<Master> getStateList() {
+		return stateList;
 	}
 
-	public void setEditor2(String editor1) {
-		this.editor1 = editor1;
+	public void setStateList(ArrayList<Master> stateList) {
+		this.stateList = stateList;
+	}
+
+	public ArrayList<Master> getCityList() {
+		return cityList;
+	}
+
+	public void setCityList(ArrayList<Master> cityList) {
+		this.cityList = cityList;
+	}
+
+	public String getOrganizer() {
+		return organizer;
+	}
+
+	public void setOrganizer(String organizer) {
+		this.organizer = organizer;
+	}
+
+	public String getEvent_tags() {
+		return event_tags;
+	}
+
+	public void setEvent_tags(String event_tags) {
+		this.event_tags = event_tags;
+	}
+
+	public String getEventend_date() {
+		return eventend_date;
+	}
+
+	public void setEventend_date(String eventend_date) {
+		this.eventend_date = eventend_date;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public File getMovieImage2() {
+		return movieImage2;
+	}
+
+	public void setMovieImage2(File movieImage2) {
+		this.movieImage2 = movieImage2;
+	}
+
+	public String getMovieImageContentType2() {
+		return movieImageContentType2;
+	}
+
+	public void setMovieImageContentType2(String movieImageContentType2) {
+		this.movieImageContentType2 = movieImageContentType2;
+	}
+
+	public String getMovieImageFileName2() {
+		return movieImageFileName2;
+	}
+
+	public void setMovieImageFileName2(String movieImageFileName2) {
+		this.movieImageFileName2 = movieImageFileName2;
+	}
+
+	public String getEvent_description() {
+		return event_description;
+	}
+
+	public void setEvent_description(String event_description) {
+		this.event_description = event_description;
+	}
+
+	public String getCrew_description() {
+		return crew_description;
+	}
+
+	public void setCrew_description(String crew_description) {
+		this.crew_description = crew_description;
 	}
 
 	public File getMovieImage() {
@@ -152,12 +259,21 @@ public class MasterForm {
 		this.castcrew = castcrew;
 	}
 
-	public String getEventdate() {
-		return eventdate;
+
+	public String getStart_time() {
+		return start_time;
 	}
 
-	public void setEventdate(String eventdate) {
-		this.eventdate = eventdate;
+	public void setStart_time(String start_time) {
+		this.start_time = start_time;
+	}
+
+	public String getEnd_time() {
+		return end_time;
+	}
+
+	public void setEnd_time(String end_time) {
+		this.end_time = end_time;
 	}
 
 	public String getEvent_time() {
