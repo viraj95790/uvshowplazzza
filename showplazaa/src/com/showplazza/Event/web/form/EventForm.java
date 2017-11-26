@@ -38,17 +38,66 @@ public class EventForm {
 	private String tnc;
 
 	private File movieImage;
+	
+	private String selecteding;
+
+	public String getSelecteding() {
+		return selecteding;
+	}
+
+	public void setSelecteding(String selecteding) {
+		this.selecteding = selecteding;
+	}
+
+	public ArrayList<Master> getEventImgList() {
+		return eventImgList;
+	}
+
+	public void setEventImgList(ArrayList<Master> eventImgList) {
+		this.eventImgList = eventImgList;
+	}
 
 	private String movieImageContentType;
 
 	private String movieImageFileName;
 
 	private String editor1;
+	
+	ArrayList<Master>eventImgList;
+	
+	ArrayList<Master>eventTicketList;
+
+	public ArrayList<Master> getEventTicketList() {
+		return eventTicketList;
+	}
+
+	public void setEventTicketList(ArrayList<Master> eventTicketList) {
+		this.eventTicketList = eventTicketList;
+	}
+
+	public String getActivep() {
+		return activep;
+	}
+
+	public void setActivep(String activep) {
+		this.activep = activep;
+	}
+
+	public String getInactivep() {
+		return inactivep;
+	}
+
+	public void setInactivep(String inactivep) {
+		this.inactivep = inactivep;
+	}
 
 	private String editor2;
 	
  
 	private ArrayList<Master> eventList;
+	
+	private String activep;
+	private String inactivep;
 	
 
 	

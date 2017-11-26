@@ -8,6 +8,16 @@ public class Master {
 	
 	private String eventname;
 	
+	private String name;
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	private String language;
 	
 	private String eventtype;
@@ -56,12 +66,29 @@ public class Master {
 	
 	private File movieImage2;
 
+	public String getTicsdate() {
+		return ticsdate;
+	}
+
+	public void setTicsdate(String ticsdate) {
+		this.ticsdate = ticsdate;
+	}
+
+	public String getTicprice() {
+		return ticprice;
+	}
+
+	public void setTicprice(String ticprice) {
+		this.ticprice = ticprice;
+	}
+
 	private String movieImageContentType2;
 
 	private String movieImageFileName2;
 	
 	
-	
+	private String ticsdate;
+	private String ticprice;
 	
 	
 	

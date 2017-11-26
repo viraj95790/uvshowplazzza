@@ -89,7 +89,7 @@ public class MasterAction extends BaseAction implements ModelDriven<MasterForm>,
 			
 			master.setMovieImageFileName(masterForm.getMovieImageFileName());
 			
-			String moviemagename = master.getMovieImageFileName()+"_"+eventid;
+			String moviemagename = eventid + "_" +master.getMovieImageFileName();
 			
 			   String filePath = request.getRealPath("/livedata/moviedoc/");
 			  /* String filePath2 = request.getRealPath("/livedata/moviedoc/");*/
