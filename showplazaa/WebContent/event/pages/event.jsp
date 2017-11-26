@@ -6,10 +6,10 @@
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <img src="img/event-slider1.jpg" class="img-responsive">
+            <img src="livedata/promotional/<s:property value="activep"/>" class="img-responsive">
           </div>
           <div class="item">
-            <img src="img/event-slider1.jpg" class="img-responsive">
+            <img src="livedata/promotional/<s:property value="inactivep"/>" class="img-responsive">
           </div>
         </div>
 
@@ -81,10 +81,11 @@
               <li class="filter-button" data-filter="tract">TRAVEL &amp; ACTIVITIES</li>
             </ul>
             <div class="clearfix"></div>
+            <s:iterator value="eventImgList">
             <div class="gallery_product col-md-3 col-sm-3 col-xs-6 filter hdpe tract">
                 <div class="movie-img-text">
-                  <a href="booking.html">
-                    <div class="movie-posr-img" style="background-image: url(img/event-img1.jpg);"></div>
+                  <a href="eventdetailEvent?id=<s:property value="id"/>">
+                    <div class="movie-posr-img" style="background-image: url(livedata/moviedoc/<s:property value="name"/>);"></div>
                     <!-- <img src="img/event-img1.jpg" class="img-responsive"> -->
                       <div class="movie-title-belo">
                         <p class="lg" class="lg">Music Festival Forever</p>
@@ -93,214 +94,16 @@
                         <div class="clearfix"></div>
                       </div>
                       <div class="book-shw">
-                        <span><a href="eventdetailEvent"> By Tickets</span>
+                        <span><a href="?id=<s:property value="id"/>"> By Tickets</span>
                       </div>
                   </a>
                 </div>
             </div>
-
-            <div class="gallery_product col-md-3 col-sm-3 col-xs-6 filter sprinkle mus">
-                <div class="movie-img-text">
-                  <a href="booking.html">
-                    <div class="movie-posr-img" style="background-image: url(img/event-img1.jpg);"></div>
-                    <!-- <img src="img/event-img1.jpg" class="img-responsive"> -->
-                      <div class="movie-title-belo">
-                        <p class="lg">Music Festival Forever</p>
-                        <p class="sm">Pimpri-Chinchwad, Pune</p>
-                        <span class="pull-left red12">NOV 16 SAT ONWARDS</span><span class="pull-right grey12">RS. 499 Onwards</span>
-                        <div class="clearfix"></div>
-                      </div>
-                      <div class="book-shw">
-                        <span>By Tickets</span>
-                      </div>
-                  </a>
-                </div>
-            </div>
-
-            <div class="gallery_product col-md-3 col-sm-3 col-xs-6 filter hdpe exhb">
-                <div class="movie-img-text">
-                  <a href="booking.html">
-                    <div class="movie-posr-img" style="background-image: url(img/event-img1.jpg);"></div>
-                    <!-- <img src="img/event-img1.jpg" class="img-responsive"> -->
-                      <div class="movie-title-belo">
-                        <p class="lg">Music Festival Forever</p>
-                        <p class="sm">Pimpri-Chinchwad, Pune</p>
-                        <span class="pull-left red12">NOV 16 SAT ONWARDS</span><span class="pull-right grey12">RS. 499 Onwards</span>
-                        <div class="clearfix"></div>
-                      </div>
-                      <div class="book-shw">
-                        <span>By Tickets</span>
-                      </div>
-                  </a>
-                </div>
-            </div>
-
-            <div class="gallery_product col-md-3 col-sm-3 col-xs-6 filter hdpe mus">
-                <div class="movie-img-text">
-                  <a href="booking.html">
-                    <div class="movie-posr-img" style="background-image: url(img/event-img1.jpg);"></div>
-                    <!-- <img src="img/event-img1.jpg" class="img-responsive"> -->
-                      <div class="movie-title-belo">
-                        <p class="lg">Music Festival Forever</p>
-                        <p class="sm">Pimpri-Chinchwad, Pune</p>
-                        <span class="pull-left red12">NOV 16 SAT ONWARDS</span><span class="pull-right grey12">RS. 499 Onwards</span>
-                        <div class="clearfix"></div>
-                      </div>
-                      <div class="book-shw">
-                        <span>By Tickets</span>
-                      </div>
-                  </a>
-                </div>
-            </div>
-            
-            <div class="gallery_product col-md-3 col-sm-3 col-xs-6 filter spray exhb">
-                <div class="movie-img-text">
-                  <a href="booking.html">
-                    <div class="movie-posr-img" style="background-image: url(img/event-img1.jpg);"></div>
-                    <!-- <img src="img/event-img1.jpg" class="img-responsive"> -->
-                      <div class="movie-title-belo">
-                        <p class="lg">Music Festival Forever</p>
-                        <p class="sm">Pimpri-Chinchwad, Pune</p>
-                        <span class="pull-left red12">NOV 16 SAT ONWARDS</span><span class="pull-right grey12">RS. 499 Onwards</span>
-                        <div class="clearfix"></div>
-                      </div>
-                      <div class="book-shw">
-                        <span>By Tickets</span>
-                      </div>
-                  </a>
-                </div>
-            </div>
-
-
-            <div class="gallery_product col-md-3 col-sm-3 col-xs-6 filter spray mus">
-                <div class="movie-img-text">
-                  <a href="booking.html">
-                    <div class="movie-posr-img" style="background-image: url(img/event-img1.jpg);"></div>
-                    <!-- <img src="img/event-img1.jpg" class="img-responsive"> -->
-                      <div class="movie-title-belo">
-                        <p class="lg">Music Festival Forever</p>
-                        <p class="sm">Pimpri-Chinchwad, Pune</p>
-                        <span class="pull-left red12">NOV 16 SAT ONWARDS</span><span class="pull-right grey12">RS. 499 Onwards</span>
-                        <div class="clearfix"></div>
-                      </div>
-                      <div class="book-shw">
-                        <span>By Tickets</span>
-                      </div>
-                  </a>
-                </div>
-            </div>
+            </s:iterator>
 
 
 
-            <div class="gallery_product col-md-3 col-sm-3 col-xs-6 filter hdpe tract">
-                <div class="movie-img-text">
-                  <a href="booking.html">
-                    <div class="movie-posr-img" style="background-image: url(img/event-img1.jpg);"></div>
-                    <!-- <img src="img/event-img1.jpg" class="img-responsive"> -->
-                      <div class="movie-title-belo">
-                        <p class="lg">Music Festival Forever</p>
-                        <p class="sm">Pimpri-Chinchwad, Pune</p>
-                        <span class="pull-left red12">NOV 16 SAT ONWARDS</span><span class="pull-right grey12">RS. 499 Onwards</span>
-                        <div class="clearfix"></div>
-                      </div>
-                      <div class="book-shw">
-                        <span>By Tickets</a></span>
-                      </div>
-                  </a>
-                </div>
-            </div>
 
-
-            <div class="gallery_product col-md-3 col-sm-3 col-xs-6 filter hdpe tract">
-                <div class="movie-img-text">
-                  <a href="booking.html">
-                    <div class="movie-posr-img" style="background-image: url(img/event-img1.jpg);"></div>
-                    <!-- <img src="img/event-img1.jpg" class="img-responsive"> -->
-                      <div class="movie-title-belo">
-                        <p class="lg">Music Festival Forever</p>
-                        <p class="sm">Pimpri-Chinchwad, Pune</p>
-                        <span class="pull-left red12">NOV 16 SAT ONWARDS</span><span class="pull-right grey12">RS. 499 Onwards</span>
-                        <div class="clearfix"></div>
-                      </div>
-                      <div class="book-shw">
-                        <span>By Tickets</span>
-                      </div>
-                  </a>
-                </div>
-            </div>
-
-            <div class="gallery_product col-md-3 col-sm-3 col-xs-6 filter spray tract">
-                <div class="movie-img-text">
-                  <a href="booking.html">
-                    <div class="movie-posr-img" style="background-image: url(img/event-img1.jpg);"></div>
-                    <!-- <img src="img/event-img1.jpg" class="img-responsive"> -->
-                      <div class="movie-title-belo">
-                        <p class="lg">Music Festival Forever</p>
-                        <p class="sm">Pimpri-Chinchwad, Pune</p>
-                        <span class="pull-left red12">NOV 16 SAT ONWARDS</span><span class="pull-right grey12">RS. 499 Onwards</span>
-                        <div class="clearfix"></div>
-                      </div>
-                      <div class="book-shw">
-                        <span>By Tickets</span>
-                      </div>
-                  </a>
-                </div>
-            </div>
-
-            <div class="gallery_product col-md-3 col-sm-3 col-xs-6 filter sprinkle tract">
-                <div class="movie-img-text">
-                  <a href="booking.html">
-                    <div class="movie-posr-img" style="background-image: url(img/event-img1.jpg);"></div>
-                    <!-- <img src="img/event-img1.jpg" class="img-responsive"> -->
-                      <div class="movie-title-belo">
-                        <p class="lg">Music Festival Forever</p>
-                        <p class="sm">Pimpri-Chinchwad, Pune</p>
-                        <span class="pull-left red12">NOV 16 SAT ONWARDS</span><span class="pull-right grey12">RS. 499 Onwards</span>
-                        <div class="clearfix"></div>
-                      </div>
-                      <div class="book-shw">
-                        <span>By Tickets</span>
-                      </div>
-                  </a>
-                </div>
-            </div>
-
-            <div class="gallery_product col-md-3 col-sm-3 col-xs-6 filter spray">
-                <div class="movie-img-text">
-                  <a href="booking.html">
-                    <div class="movie-posr-img" style="background-image: url(img/event-img1.jpg);"></div>
-                    <!-- <img src="img/event-img1.jpg" class="img-responsive"> -->
-                      <div class="movie-title-belo">
-                        <p class="lg">Music Festival Forever</p>
-                        <p class="sm">Pimpri-Chinchwad, Pune</p>
-                        <span class="pull-left red12">NOV 16 SAT ONWARDS</span><span class="pull-right grey12">RS. 499 Onwards</span>
-                        <div class="clearfix"></div>
-                      </div>
-                      <div class="book-shw">
-                        <span>By Tickets</span>
-                      </div>
-                  </a>
-                </div>
-            </div>
-
-             <div class="gallery_product col-md-3 col-sm-3 col-xs-6 filter sprinkle">
-                <div class="movie-img-text">
-                  <a href="booking.html">
-                    <div class="movie-posr-img" style="background-image: url(img/event-img1.jpg);"></div>
-                    <!-- <img src="img/event-img1.jpg" class="img-responsive"> -->
-                      <div class="movie-title-belo">
-                        <p class="lg">Music Festival Forever</p>
-                        <p class="sm">Pimpri-Chinchwad, Pune</p>
-                        <span class="pull-left red12">NOV 16 SAT ONWARDS</span><span class="pull-right grey12">RS. 499 Onwards</span>
-                        <div class="clearfix"></div>
-                      </div>
-                      <div class="book-shw">
-                        <span>By Tickets</span>
-                      </div>
-                  </a>
-                </div>
-            </div>
-          </div>
           <div class="col-xs-12 text-center">
             <button class="more-btn">SEE MORE</button>
           </div>

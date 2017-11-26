@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Showplazza</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="css/jquery.bxslider.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+  <div id="back-blur">
+
+    <!-- HEADER SECTION -->
+    <nav class="navbar navbar-default gradi-clor main-header">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav nunit-bold left-nav-menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">MOVIES</a></li>
+            <li><a href="#">EVENTS</a></li>
+            <li><a href="#">THEATRES</a></li>
+            <li><a href="#">TRAILES & VIDEOS</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right nunit-bold">
+            <li><a href="#">OFFERS</a></li>
+            <li><a href="#">GIFTING</a></li>
+            <li><a href="#">SUPPORT</a></li>
+            <li><a href="#">24x7 CUSTOMER CARE</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="bms-icnpeople"></i></a>
+              <ul class="dropdown-menu acunt">
+              <div id="triangle-up"></div>
+                <li><a href="mywallet.html"><img src="img/acunt1.png"><span> My Wallet</span></a></li>
+                <li><a href="showplazza-profile.html"><i class="icon-agenda"></i><span> Booking History</span></a></li>
+                <li><a href="showplazza-profile.html"><i class="icon-credit-card"></i><span> QuickPay</span></a></li>
+                <li><a href="showplazza-profile.html"><i class="icon-play-button"></i><span> Experiences</span></a></li>
+                <li><a href="showplazza-profile.html"><i class="icon-settings"></i><span> Setttings</span></a></li>
+                <li><a href="showplazza-profile.html"><i class="icon-logout"></i><span> Sign Out</span></a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="brdr-non"><span class="brdr-dis" data-toggle="modal" data-target=".bs-example-modal-lg1">SIGN IN</span></a></li>
+            <li><a href="#" class="brdr-non"><i class="bms-icnnotification-bell"></i></a></li>
+          </ul>
+        </div>
+        <div class="search-hed container-fluid">
+          <div class="col-md-2 col-sm-2 col-xs-6  no-pad-tab">
+            <a href="index.html"><img src="img/logo.png" class="img-responsive logo"></a>
+          </div>
+          <div class="col-md-8 col-sm-8 col-xs-11 no-padding hidden-xs">
+            <form class="" role="search">
+              <div class="input-group add-on">
+                <input type="text" class="form-control nunit-bold" placeholder="Search for Movies, Events and Theatres" name="srch-term" id="srch-term">
+                <div class="input-group-btn selct-pic">
+                  <a class="btn btn-default btn-select">
+                      <input type="hidden" class="btn-select-input" id="" name="" value="" />
+                      <span class="btn-select-value">Select Menu</span>
+                      <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+                      <ul>
+                          <li class="selected"><i class="glyphicon glyphicon-list"></i> ALL</li>
+                          <li><i class="glyphicon glyphicon-film"></i> MOVIES</li>
+                          <li><i class="glyphicon glyphicon-facetime-video"></i> EVENTS</li>
+                      </ul>
+                  </a>
+                </div>
+                <div class="input-group-btn">
+                  <button class="btn serch-btn" type="submit"><i class="bms-icnsearch"></i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2 col-sm-2 col-xs-6 main-locatin-drp">
+            <div class="btn-group btn-block nav navbar-nav">
+              <button type="button" class="btn btn-block dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <i class="bms-icnsigns2"></i> <span class="locatin-drp">LOCATION</span> <span class="caret"></span>
+              </button>
+              <div class="dropdown-menu row">
+                <div class="co-xs-12 location-search">
+                  <input type="text" class="form-control" placeholder="Enter your city">
+                </div>
+                <div class="loc-srch-brdr"></div>
+                <p>Top Cities</p>
+                <div class="col-xs-4 location-name no-padding">
+                  <ul>
+                    <li><a href="#">Nagpur</a>
+                    <li><a href="#">Nagpur</a>
+                    <li><a href="#">Nagpur</a>
+                  </ul>
+                </div>
+                <div class="col-xs-4 location-name no-padding">
+                  <ul>
+                    <li><a href="#">Nagpur</a>
+                    <li><a href="#">Nagpur</a>
+                    <li><a href="#">Nagpur</a>
+                  </ul>
+                </div>
+                <div class="col-xs-4 location-name no-padding">
+                  <ul>
+                    <li><a href="#">Nagpur</a>
+                    <li><a href="#">Nagpur</a>
+                    <li><a href="#">Nagpur</a>
+                  </ul>
+                </div>
+                <p><a class="green" data-toggle="modal" data-target=".bs-example-modal-lg">All cities</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- END HEADER SECTION -->
+
+    <!-- SIGN IN POPUP -->
+    <div class="modal fade bs-example-modal-lg1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="">
+            <button type="button" class="close sign-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class=""> <!-- modal-body -->
+            <div class="row no-margin">
+              <div class="col-md-6 col-sm-6 sign-left-sec">
+                <div class="">
+                  <div class="sign-left-sec-img">
+                    <img src="img/signin-img.png" class="img-responsive">
+                  </div>
+                  <div class="sign-left-sec-text text-center">
+                    <h3>OFFERS ON EVERY BOOKING</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="sign-right-sec">
+                  <h3 class="text-center">Welcome Back, Sign In</h3>
+                  <p class="text-center">Instant Sign in with</p>
+                  <div class="col-sm-offset-1 col-sm-10 sign-two-btn">
+                    <div class="btn-group fisrt-btn">
+                      <a class="btn sign-fb-icn">
+                        <span class="bms-icnfacebook-letter-logo"></span>
+                      </a>
+                      <button type="button" class="btn sign-fb-text">FACEBOOK</button>
+                    </div>
+                    <div class="btn-group">
+                      <a class="btn sign-gl-icn">
+                        <span class="bms-icngoogle-plus-logo"></span>
+                      </a>
+                      <button type="button" class="btn sign-gl-text">GOOGLE</button>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12">
+                    <div class="on-line-crcl">
+                      <div class="circle">
+                      OR
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-offset-1 col-sm-10 main-sign-sub">
+                    <input type="text" class="form-control sign-input" placeholder="Email address">
+                    <input type="text" class="form-control sign-input" placeholder="Password">
+                    <button type="button" class="form-control sign-sub sign-input">SIGN IN</button>
+                    <p class="text-center"><a href="">Forgot Password</a></p>
+                  </div>
+
+                  <div class="col-xs-12 text-center sign-up-text">
+                    <p>Don’t have account yet? <span><a href="" data-toggle="modal" data-target=".bs-example-modal-lg2">Signup Now</a></span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+    <!-- END SIGN IN POPUP --> 
+    
+    <!-- SIGN NOW POPUP -->
+    <div class="modal fade bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="">
+            <button type="button" class="close sign-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class=""> <!-- modal-body -->
+            <div class="row no-margin">
+              <div class="col-md-6 col-sm-6 sign-left-sec">
+                <div class="">
+                  <div class="sign-left-sec-img-2nd">
+                    <img src="img/signin-img.png" class="img-responsive">
+                  </div>
+                  <div class="sign-left-sec-text-2nd text-center">
+                    <h3>OFFERS ON EVERY BOOKING</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="sign-right-sec">
+                  <h3 class="text-center">SiGN UP IN MOVIESNOW</h3>
+                  <p class="text-center">Instant Sign up with</p>
+                  <div class="col-sm-offset-1 col-sm-10 sign-two-btn">
+                    <div class="btn-group fisrt-btn">
+                      <a class="btn sign-fb-icn">
+                        <span class="bms-icnfacebook-letter-logo"></span>
+                      </a>
+                      <button type="button" class="btn sign-fb-text">FACEBOOK</button>
+                    </div>
+                    <div class="btn-group">
+                      <a class="btn sign-gl-icn">
+                        <span class="bms-icngoogle-plus-logo"></span>
+                      </a>
+                      <button type="button" class="btn sign-gl-text">GOOGLE</button>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12">
+                    <div class="on-line-crcl">
+                      <div class="circle">
+                      OR
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-offset-1 col-sm-10 main-sign-sub">
+                    <input type="text" class="form-control sign-input" placeholder="Email address">
+                    <input type="text" class="form-control sign-input" placeholder="Password">
+                    <input type="text" class="form-control sign-input" placeholder="Confirm Password">
+                    <button type="button" class="form-control sign-sub sign-input">SIGN IN</button>
+                  </div>
+
+                  <div class="col-xs-12 text-center sign-up-text">
+                    <p>Don’t have account yet? <span><a href="" data-toggle="modal" data-target=".bs-example-modal-lg1">SIGN UP</a></span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+    <!-- END SIGN NOW POPUP -->
+
+    <!-- ALL CITY POPUP -->
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content top-srch-model">    
+          <div class="">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>     
+            <div class="col-md-6 col-sm-6 no-padding">
+              <input type="text" class="form-control" placeholder="Enter your city">
+            </div>
+            <div class="clearfix"></div>
+            <div class="city-srch-brdr"></div>
+            <div class="srch-scrol">
+              <div class="top-srch">
+                <p>Top Cities</p>
+                 <div class="row main-top-srch">
+                  <div class="col-sm-2 col-xs-6 no-padding"><a href="">New Dehli</a></div>
+                  <div class="col-sm-2 col-xs-6 no-padding"><a href="">Pune</a></div>
+                  <div class="col-sm-2 col-xs-6 no-padding"><a href="">Hydrabad</a></div>
+                  <div class="col-sm-2 col-xs-6 no-padding"><a href="">Mumbai</a></div>
+                  <div class="col-sm-2 col-xs-6 no-padding"><a href="">Kolkata</a></div>
+                  <div class="col-sm-2 col-xs-6 no-padding"><a href="">Bangalore</a></div>
+                 </div> 
+              </div>
+              <div class="main-top-srch-cities">
+                <p>All Cities</p>
+                 <div class="row top-srch-cities">
+                  <div class="col-sm-2 col-xs-6 no-padding">
+                    <ul>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-2 col-xs-6 no-padding">
+                    <ul>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-2 col-xs-6 no-padding">
+                    <ul>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-2 col-xs-6 no-padding">
+                    <ul>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-2 col-xs-6 no-padding">
+                    <ul>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-2 col-xs-6 no-padding">
+                    <ul>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                    </ul>
+                  </div>
+                 </div> 
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- END ALL CITY POPUP -->
+
+    <!-- MAIN BODY -->
+    <div class="container-fluid banner" style="background-image: url(img/banner.jpg);">
+      <div class="container-fluid inner-banner">
+        <div class="inner-banner-left pull-left">
+          <h1>Jab Harry Met Sejal</h1>
+          <p>Hindi | UA : <span>2</span> hrs <span>24</span> mins</p>
+          <p>Friday, 4 Aug 2017</p>
+        </div>
+        <div class="inner-banner-right pull-right">
+          <p class="font-sz-16">Director :  Imtiaz Ali</p>
+          <p class="font-sz-16">Cast :  Shahrukh Khan, Anushka Sharma</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bs-example bs-example-tabs" data-example-id="togglable-tabs"> 
+      <div class="teble-tab clearfix">
+        <div class="col-sm-4">
+          <ul class="nav nav-tabs pull-left" id="myTabs" role="tablist"> 
+            <li role="presentation" class="active text-center">
+              <a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true"><span class="font-sz-15 family-ex">04</span> <br><span class="text-uppercase font-sz-15">FRI</span></a>
+            </li>
+            <li role="presentation" class=" text-center">
+              <a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false"><span class="font-sz-15 family-ex">05</span> <br><span class="text-uppercase font-sz-15">SAT</span></a>
+            </li>
+            <li role="presentation" class=" text-center">
+              <a href="#date3" role="tab" id="date3-tab" data-toggle="tab" aria-controls="date3" aria-expanded="false"><span class="font-sz-15 family-ex">06</span> <br><span class="text-uppercase font-sz-15">SUN</span></a>
+            </li>
+            <li role="presentation" class=" text-center">
+              <a href="#date4" role="tab" id="date4-tab" data-toggle="tab" aria-controls="date4" aria-expanded="false"><span class="font-sz-15 family-ex">07</span> <br><span class="text-uppercase font-sz-15">MON</span></a>
+            </li>
+            <li role="presentation" class=" text-center">
+              <a href="#date5" role="tab" id="date5-tab" data-toggle="tab" aria-controls="date5" aria-expanded="false"><span class="font-sz-15 family-ex">08</span> <br><span class="text-uppercase font-sz-15">TUE</span></a>
+            </li>
+            </ul>
+        </div> 
+        <div class="col-sm-2"></div>
+        <div class="col-sm-6">
+          <div class="">
+            <ul class="list-inline pull-right book-time-prise">
+            <li class="mul-brder">
+               <p>Hindi - 2D</p>
+            </li>
+            <li class="mul-brder">
+            <div class="">
+                <select id="ddlCars2" multiple="multiple">
+                <option value="Accord">Rs. 180-200</option>
+                <option value="Duster">Rs. 180-200</option>
+                </select>
+            </div>
+            </li>
+            <li class="mul-brder">
+            <div class="">
+                <select id="ddlCars3" multiple="multiple">
+                <option value="Accord">Afternoon </option>
+                <option value="Duster">Evening </option>
+                <option value="Esteem">Night </option>
+                </select>
+            </div>
+            </li>
+            </ul>
+            <div class="search book-srch">
+            <input type="text" class="form-control input-sm" maxlength="64" placeholder="Search" />
+             <button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-search"></span></button>
+            </div>
+          </div>
+        </div>     
+      </div>
+
+      <div class="container-fluid tab-content" id="myTabContent"> 
+        <div class="tab-pane fade active in" role="tabpanel" id="home" aria-labelledby="home-tab"> 
+          <table class="table table-bordered">
+              <tr>
+                <td class="font-sz-16 font-md-colr">INOX Poonam Mall<br> 
+                <ul class="list-inline">
+                  <li>
+                  <a href="#" class="m-ico"><span class="glyphicon glyphicon-phone"></span> M-Ticket</a>
+                  </li>
+                  <li>
+                  <a href="#" class="m-ico"><span class="glyphicon glyphicon-ice-lolly-tasted"></span> F&amp;B</a>
+                  </li>
+                 </ul> 
+                </td>
+                <td class="font-sz-15 pad-mv pad-mv"><a href="seat-book.html" class="green">09:00 AM</a>
+                 <div class="">
+                  <span class="tooltiptext">
+                    <div class="col-xs-4 no-padding">
+                      <ul>
+                        <li>Club</li>
+                        <li>Exclusive</li>
+                        <li>Silver</li>
+                      </ul>
+                    </div>
+                    <div class="col-xs-4 no-padding">
+                      <ul>
+                        <li>Rs. 140.00</li>
+                        <li>Rs. 170.00</li>
+                        <li>Rs. 100.00</li>
+                      </ul>
+                    </div>
+                    <div class="col-xs-4 no-padding">
+                      <ul>
+                        <li class="green">Available</li>
+                        <li class="green">Available</li>
+                        <li class="green">Available</li>
+                      </ul>
+                    </div>
+                  </span>
+                 </div> 
+                </td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">12:00 PM</a>
+                  <div class="">
+                  <span class="tooltiptext">
+                    <div class="col-xs-4 no-padding">
+                      <ul>
+                        <li>Club</li>
+                        <li>Exclusive</li>
+                        <li>Silver</li>
+                      </ul>
+                    </div>
+                    <div class="col-xs-4 no-padding">
+                      <ul>
+                        <li>Rs. 140.00</li>
+                        <li>Rs. 170.00</li>
+                        <li>Rs. 100.00</li>
+                      </ul>
+                    </div>
+                    <div class="col-xs-4 no-padding">
+                      <ul>
+                        <li class="green">Available</li>
+                        <li class="green">Available</li>
+                        <li class="green">Available</li>
+                      </ul>
+                    </div>
+                  </span>
+                 </div>
+                </td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+              </tr>
+              <tr>
+                <td class="font-sz-16 font-md-colr">INOX Jaswant Tuli Mall</td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">09:00 AM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">12:00 PM</a>
+                  <div class="">
+                  <span class="tooltiptext">
+                    <div class="col-xs-4 no-padding">
+                      <ul>
+                        <li>Club</li>
+                        <li>Exclusive</li>
+                        <li>Silver</li>
+                      </ul>
+                    </div>
+                    <div class="col-xs-4 no-padding">
+                      <ul>
+                        <li>Rs. 140.00</li>
+                        <li>Rs. 170.00</li>
+                        <li>Rs. 100.00</li>
+                      </ul>
+                    </div>
+                    <div class="col-xs-4 no-padding">
+                      <ul>
+                        <li class="green">Available</li>
+                        <li class="green">Available</li>
+                        <li class="green">Available</li>
+                      </ul>
+                    </div>
+                  </span>
+                 </div>
+                </td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a>
+                  <div class="">
+                  <span class="tooltiptext">
+                    <div class="col-xs-4 no-padding">
+                      <ul>
+                        <li>Club</li>
+                        <li>Exclusive</li>
+                        <li>Silver</li>
+                      </ul>
+                    </div>
+                    <div class="col-xs-4 no-padding">
+                      <ul>
+                        <li>Rs. 140.00</li>
+                        <li>Rs. 170.00</li>
+                        <li>Rs. 100.00</li>
+                      </ul>
+                    </div>
+                    <div class="col-xs-4 no-padding">
+                      <ul>
+                        <li class="green">Available</li>
+                        <li class="green">Available</li>
+                        <li class="green">Available</li>
+                      </ul>
+                    </div>
+                  </span>
+                 </div>
+                </td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+              </tr>
+              <tr>
+                <td class="font-sz-16 font-md-colr">PVR Empress</td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">09:00 AM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">12:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+              </tr>
+              <tr>
+                <td class="font-sz-16 font-md-colr">Cinemax Eternity</td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">09:00 AM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">12:00 PM</a>
+                  <div class="">
+                  <span class="tooltiptext">
+                    <div class="col-xs-4 no-padding">
+                      <ul>
+                        <li>Club</li>
+                        <li>Exclusive</li>
+                        <li>Silver</li>
+                      </ul>
+                    </div>
+                    <div class="col-xs-4 no-padding">
+                      <ul>
+                        <li>Rs. 140.00</li>
+                        <li>Rs. 170.00</li>
+                        <li>Rs. 100.00</li>
+                      </ul>
+                    </div>
+                    <div class="col-xs-4 no-padding">
+                      <ul>
+                        <li class="green">Available</li>
+                        <li class="green">Available</li>
+                        <li class="green">Available</li>
+                      </ul>
+                    </div>
+                  </span>
+                 </div>
+                </td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a>
+                  <div class="">
+                  <span class="tooltiptext">
+                    <div class="col-xs-4 no-padding">
+                      <ul>
+                        <li>Club</li>
+                        <li>Exclusive</li>
+                        <li>Silver</li>
+                      </ul>
+                    </div>
+                    <div class="col-xs-4 no-padding">
+                      <ul>
+                        <li>Rs. 140.00</li>
+                        <li>Rs. 170.00</li>
+                        <li>Rs. 100.00</li>
+                      </ul>
+                    </div>
+                    <div class="col-xs-4 no-padding">
+                      <ul>
+                        <li class="green">Available</li>
+                        <li class="green">Available</li>
+                        <li class="green">Available</li>
+                      </ul>
+                    </div>
+                  </span>
+                 </div>
+                </td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+              </tr>
+              <tr>
+                <td class="font-sz-16 font-md-colr">Carnival: Sangam</td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">09:00 AM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">12:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a>
+                  <div class="">
+                  <span class="tooltiptext">
+                    <div class="col-xs-4 no-padding">
+                      <ul>
+                        <li>Club</li>
+                        <li>Exclusive</li>
+                        <li>Silver</li>
+                      </ul>
+                    </div>
+                    <div class="col-xs-4 no-padding">
+                      <ul>
+                        <li>Rs. 140.00</li>
+                        <li>Rs. 170.00</li>
+                        <li>Rs. 100.00</li>
+                      </ul>
+                    </div>
+                    <div class="col-xs-4 no-padding">
+                      <ul>
+                        <li class="green">Available</li>
+                        <li class="green">Available</li>
+                        <li class="green">Available</li>
+                      </ul>
+                    </div>
+                  </span>
+                 </div>
+                </td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+              </tr>
+          </table>
+        </div>
+        <div class="tab-pane fade" role="tabpanel" id="profile" aria-labelledby="profile-tab"> 
+          <table class="table table-bordered">
+              <tr>
+                <td class="font-sz-18 font-md-colr">INOX Poonam Mall</td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">09:00 AM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">12:00 PM</a></td>
+              </tr>
+              <tr>
+                <td class="font-sz-18 font-md-colr">INOX Jaswant Tuli Mall</td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">09:00 AM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">12:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+              </tr>
+              <tr>
+                <td class="font-sz-18 font-md-colr">PVR Empress</td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">09:00 AM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">12:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+              </tr>
+              <tr>
+                <td class="font-sz-18 font-md-colr">Cinemax Eternity</td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">09:00 AM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">12:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+              </tr>
+              <tr>
+                <td class="font-sz-18 font-md-colr">Carnival: Sangam</td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">09:00 AM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">12:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+              </tr>
+          </table>
+        </div> 
+        <div class="tab-pane fade" role="tabpanel" id="date3" aria-labelledby="date3-tab"> 
+          <table class="table table-bordered">
+              <tr>
+                <td class="font-sz-18 font-md-colr">INOX Poonam Mall</td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">09:00 AM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">12:00 PM</a></td>
+              </tr>
+              <tr>
+                <td class="font-sz-18 font-md-colr">INOX Jaswant Tuli Mall</td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">09:00 AM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">12:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+              </tr>
+              <tr>
+                <td class="font-sz-18 font-md-colr">PVR Empress</td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">09:00 AM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">12:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+              </tr>
+              <tr>
+                <td class="font-sz-18 font-md-colr">Cinemax Eternity</td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">09:00 AM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">12:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+              </tr>
+              <tr>
+                <td class="font-sz-18 font-md-colr">Carnival: Sangam</td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">09:00 AM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">12:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+              </tr>
+          </table>
+        </div>
+        <div class="tab-pane fade" role="tabpanel" id="date4" aria-labelledby="date4-tab"> 
+          <table class="table table-bordered">
+              <tr>
+                <td class="font-sz-18 font-md-colr">INOX Poonam Mall</td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">09:00 AM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">12:00 PM</a></td>
+              </tr>
+              <tr>
+                <td class="font-sz-18 font-md-colr">INOX Jaswant Tuli Mall</td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">09:00 AM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">12:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+              </tr>
+              <tr>
+                <td class="font-sz-18 font-md-colr">PVR Empress</td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">09:00 AM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">12:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+              </tr>
+              <tr>
+                <td class="font-sz-18 font-md-colr">Cinemax Eternity</td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">09:00 AM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">12:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+              </tr>
+              <tr>
+                <td class="font-sz-18 font-md-colr">Carnival: Sangam</td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">09:00 AM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">12:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+              </tr>
+          </table>
+        </div>
+        <div class="tab-pane fade" role="tabpanel" id="date5" aria-labelledby="date5-tab"> 
+          <table class="table table-bordered">
+              <tr>
+                <td class="font-sz-18 font-md-colr">INOX Poonam Mall</td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">09:00 AM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">12:00 PM</a></td>
+              </tr>
+              <tr>
+                <td class="font-sz-18 font-md-colr">INOX Jaswant Tuli Mall</td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">09:00 AM</a></td>
+              </tr>
+              <tr>
+                <td class="font-sz-18 font-md-colr">PVR Empress</td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">09:00 AM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">12:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+              </tr>
+              <tr>
+                <td class="font-sz-18 font-md-colr">Cinemax Eternity</td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">09:00 AM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">12:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+              </tr>
+              <tr>
+                <td class="font-sz-18 font-md-colr">Carnival: Sangam</td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">09:00 AM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">12:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+                <td class="font-sz-15 pad-mv"><a href="seat-book.html" class="green">06:00 PM</a></td>
+              </tr>
+          </table>
+        </div>
+      </div> 
+    </div>
+    
+    <div class="container-fluid movies-filter-sec"> 
+      <div class="">
+        <div class="upcom-hed text-uppercase pull-left">
+          <h4>Other Movies</h4>
+        </div>
+        <ul class="list-inline pull-right">
+          <li class="filter-button active-colr" data-filter="all">All</li>
+          <li class="filter-button" data-filter="hdpe">HINDI</li>
+          <li class="filter-button" data-filter="sprinkle">ENGLISH</li>
+          <li class="filter-button" data-filter="spray">MARATHI</li>
+        </ul>
+        <div class="clearfix"></div>
+          <div class="gallery_product col-md-2 col-sm-2 col-xs-6 filter hdpe">
+              <div class="movie-img-text">
+                <a href="">
+                  <div class="movie-posr-img" style="background-image: url(img/filtr2.jpg);"></div>
+                  <!-- <img src="img/filtr1.jpg" class="img-responsive"> -->
+                    <div class="movie-title-belo">
+                      <p>Munna Michael</p>
+                      <span class="pull-left">Hindi | UA</span><span class="pull-right green">1250 Votes</span>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="book-shw">
+                      <span>Book Now</span>
+                    </div>
+                </a>
+              </div>
+          </div>
+
+          <div class="gallery_product col-md-2 col-sm-2 col-xs-6 filter sprinkle">
+              <div class="movie-img-text">
+                <a href="">
+                  <div class="movie-posr-img" style="background-image: url(img/filtr1.jpg);"></div>
+                  <!-- <img src="img/filtr1.jpg" class="img-responsive"> -->
+                    <div class="movie-title-belo">
+                      <p>Munna Michael</p>
+                      <span class="pull-left">Hindi | UA</span><span class="pull-right green">1250 Votes</span>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="book-shw">
+                      <span>Book Now</span>
+                    </div>
+                </a>
+              </div>
+          </div>
+
+          <div class="gallery_product col-md-2 col-sm-2 col-xs-6 filter hdpe">
+              <div class="movie-img-text">
+                <a href="">
+                  <div class="movie-posr-img" style="background-image: url(img/filtr3.jpg);"></div>
+                  <!-- <img src="img/filtr1.jpg" class="img-responsive"> -->
+                    <div class="movie-title-belo">
+                      <p>Munna Michael</p>
+                      <span class="pull-left">Hindi | UA</span><span class="pull-right green">1250 Votes</span>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="book-shw">
+                      <span>Book Now</span>
+                    </div>
+                </a>
+              </div>
+          </div>
+
+          <div class="gallery_product col-md-2 col-sm-2 col-xs-6 filter hdpe">
+              <div class="movie-img-text">
+                <a href="">
+                  <div class="movie-posr-img" style="background-image: url(img/filtr4.jpg);"></div>
+                  <!-- <img src="img/filtr1.jpg" class="img-responsive"> -->
+                    <div class="movie-title-belo">
+                      <p>Munna Michael</p>
+                      <span class="pull-left">Hindi | UA</span><span class="pull-right green">1250 Votes</span>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="book-shw">
+                      <span>Book Now</span>
+                    </div>
+                </a>
+              </div>
+          </div>
+          
+          <div class="gallery_product col-md-2 col-sm-2 col-xs-6 filter spray">
+              <div class="movie-img-text">
+                <a href="">
+                  <div class="movie-posr-img" style="background-image: url(img/filtr5.jpg);"></div>
+                  <!-- <img src="img/filtr1.jpg" class="img-responsive"> -->
+                    <div class="movie-title-belo">
+                      <p>Munna Michael</p>
+                      <span class="pull-left">Hindi | UA</span><span class="pull-right green">1250 Votes</span>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="book-shw">
+                      <span>Book Now</span>
+                    </div>
+                </a>
+              </div>
+          </div>
+
+
+          <div class="gallery_product col-md-2 col-sm-2 col-xs-6 filter spray">
+              <div class="movie-img-text">
+                <a href="">
+                  <div class="movie-posr-img" style="background-image: url(img/filtr6.jpg);"></div>
+                  <!-- <img src="img/filtr1.jpg" class="img-responsive"> -->
+                    <div class="movie-title-belo">
+                      <p>Munna Michael</p>
+                      <span class="pull-left">Hindi | UA</span><span class="pull-right green">1250 Votes</span>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="book-shw">
+                      <span>Book Now</span>
+                    </div>
+                </a>
+              </div>
+          </div>
+        </div>
+    </div> 
+
+
+    <div class="container-fluid main-upcom-movi">
+      <div class="upcom-hed text-uppercase">
+        <h4>Upcoming Movies</h4>
+      </div>
+      <ul class="bxslider">
+        <li><img src="img/upcom1.jpg"></li>
+        <li><img src="img/upcom2.jpg"></li>
+        <li><img src="img/upcom3.jpg"></li>
+        <li><img src="img/upcom4.jpg"></li>
+        <li><img src="img/upcom1.jpg"></li>
+        <li><img src="img/upcom2.jpg"></li>
+        <li><img src="img/upcom3.jpg"></li>
+        <li><img src="img/upcom4.jpg"></li>
+      </ul>
+    </div> 
+
+    
+    <div class="container-fluid book-ofer">
+      <div class="col-md-3 col-sm-3 col-xs-12 book-ofer-blog">
+        <div class="col-xs-4 offer-detail-icon">
+          <i class="bms-icnshield"></i>
+        </div>
+        <div class="col-xs-8 no-padding">
+          <p>Trusted Payment System</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-12 book-ofer-blog">
+        <div class="col-xs-4 offer-detail-icon">
+          <i class="bms-icntechnology"></i>
+        </div>
+        <div class="col-xs-8 no-padding">
+          <p>24x7 Customer Care Support</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-12 book-ofer-blog">
+        <div class="col-xs-4 offer-detail-icon">
+          <i class="bms-icnticket"></i>
+        </div>
+        <div class="col-xs-8 no-padding">
+          <p>100% Assurance of Tickets</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-12 book-ofer-blog">
+        <div class="col-xs-4 offer-detail-icon">
+          <i class="bms-icntag"></i>
+        </div>
+        <div class="col-xs-8 no-padding">
+          <p>Best Discount Offers For You</p>
+        </div>
+      </div>
+    </div>
+    <!-- END MAIN BODY -->
+
+    <!-- FOOTER -->
+    <div class="container-fluid main-footer-bar gradi-clor">
+      <div class="footer-bar">
+        <ul class="list-inline pull-left no-margin">
+          <li><a href="">About Us</a></li>
+          <li><a href="">Movies</a></li>
+          <li><a href="">Events</a></li>
+          <li><a href="">Theaters</a></li>
+          <li><a href="">Trailers and videos</a></li>
+          <li><a href="">Offers</a></li>
+          <li><a href="">Customer service</a></li>
+        </ul>
+        <ul class="list-inline pull-right no-margin seccond-blog-right">
+          <li><a href=""><i class="bms-icnandroid-logo"></i></a></li>
+          <li><a href=""><i class="bms-icnwindows-logo-silhouette"></i></a></li>
+          <li><a href=""><i class="bms-icnapple"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer container-fluid">
+      <div class="container-fluid footer-links">
+        <div class="col-md-5th-1 col-sm-6 col-xs-6 foot-pad">
+          <p class="text-uppercase">Movie Categories</p>
+          <ul>
+            <li><a href="">Hindi Comedy Movies</a></li>
+            <li><a href="">Hindi Action Movies</a></li>
+            <li><a href="">Englist Animated Movies</a></li>
+            <li><a href="">English Fantasy Movies</a></li>
+            <li><a href="">nglish Comedy Movies</a></li>
+            <li><a href="">Marathi Drama Movies</a></li>
+          </ul>
+        </div>
+        <div class="col-md-5th-1 col-sm-6 col-xs-6 foot-pad">
+          <p class="text-uppercase">Upcoming Events</p>
+          <ul>
+            <li><a href="">Upcoming Events in Mumbai</a></li>
+            <li><a href="">Upcoming Events in Dehli</a></li>
+            <li><a href="">Upcoming Events in Channei</a></li>
+            <li><a href="">Upcoming Events in Pune</a></li>
+            <li><a href="">Upcoming Events in Noida</a></li>
+            <li><a href="">Upcoming Events in Nagpur</a></li>
+          </ul>
+        </div>
+        <div class="col-md-5th-1 col-sm-6 col-xs-6 foot-pad">
+          <p class="text-uppercase">Movie ticket booking</p>
+          <ul>
+            <li><a href="">Delhi-NCR Movie Ticket Booking</a></li>
+            <li><a href="">Bengaluru Movie Ticket Booking</a></li>
+            <li><a href="">Chennai Movie Ticket Booking</a></li>
+            <li><a href="">Hyderabad Movie Ticket Booking</a></li>
+            <li><a href="">Mumbai Movie Ticket Booking</a></li>
+            <li><a href="">Pune Movie Ticket Booking</a></li>
+          </ul>
+        </div>
+        <div class="col-md-5th-1 col-sm-6 col-xs-6 foot-pad">
+          <p class="text-uppercase">Best events by language</p>
+          <ul>
+            <li><a href="">Event Coming Today</a></li>
+            <li><a href="">Event Coming Tomarrow </a></li>
+            <li><a href="">Event Coming This Weekend</a></li>
+            <li><a href="">Event In Next Weekend</a></li>
+          </ul>
+        </div>
+        <div class="col-md-5th-1 col-sm-6 col-xs-6 foot-pad">
+          <p class="text-uppercase">About</p>
+          <ul>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms and Conditions</a></li>
+            <li><a href="">Payment Terms</a></li>
+            <li><a href="">Cancellation Policy</a></li>
+            <li><a href="">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="container-fluid footer-botm">
+        <p class="pull-left">
+          Copyright 2017 © Bigtree Entertainment Pvt. Ltd. All Rights Reserved.
+        </p>
+        <ul class="list-inline pull-right">
+          <li><a href=""><i class="bms-icnfacebook-logo"></i></a></li>
+          <li><a href=""><i class="bms-icntwitter-logo-button"></i></a></li>
+          <li><a href=""><i class="bms-icngoogle-plus-logo-button"></i></a></li>
+          <li><a href=""><i class="bms-icnlinkedin-button"></i></a></li>
+          <li><a href=""><i class="bms-icnyoutube-logotype"></i></a></li>
+        </ul>
+      </div>
+      <!-- <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a> -->
+    </div>
+    <!-- END FOOTER -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.bxslider.min_optimized.js"></script>
+    <script src="js/bootstrap-multiselect.js"></script>
+    <script>
+      $(document).ready(function(){
+
+        $('.slider1').bxSlider({
+          slideWidth: 434,
+          minSlides: 2,
+          maxSlides: 3,
+          slideMargin: 10
+        });    
+
+        $('.bxslider').bxSlider({
+          minSlides: 3,
+          maxSlides: 4,
+          slideWidth: 325,
+          slideMargin: 10
+        });
+      /*Filter*/     
+        $(".filter-button").click(function(){
+            var value = $(this).attr('data-filter');            
+            if(value == "all")
+            {
+                //$('.filter').removeClass('hidden');
+                $('.filter').show('1000');
+            }
+            else
+            {
+                $(".filter").not('.'+value).hide('3000');
+                $('.filter').filter('.'+value).show('3000');                
+            }
+
+            if ($(".filter-button").removeClass("active-colr")) {
+            $(this).removeClass("active-colr");
+            }
+            $(this).addClass("active-colr");
+            }); 
+
+             /*Filter Time,Prise Booking page*/
+                $('#ddlCars1').multiselect({  
+                   nonSelectedText :'2D or 3D'
+                 });
+                $('#ddlCars2').multiselect({  
+                   nonSelectedText :'Filter Price Range'
+                 });
+                $('#ddlCars3').multiselect({  
+                   nonSelectedText :'Filter Show Timings'
+                 });
+
+        });
+
+      /*Tooltip*/
+      // $(function () {
+      //   $('[data-toggle="tooltip"]').tooltip()
+      // })
+
+      
+      $(document).on('click', '.btn-select', function (e) {
+    e.preventDefault();
+    var ul = $(this).find("ul");
+    if ($(this).hasClass("active")) {
+        if (ul.find("li").is(e.target)) {
+            var target = $(e.target);
+            target.addClass("selected").siblings().removeClass("selected");
+            var value = target.html();
+            $(this).find(".btn-select-input").val(value);
+            $(this).find(".btn-select-value").html(value);
+        }
+        ul.hide();
+        $(this).removeClass("active");
+        }
+        else {
+            $('.btn-select').not(this).each(function () {
+                $(this).removeClass("active").find("ul").hide();
+            });
+            ul.slideDown(300);
+            $(this).addClass("active");
+        }
+    });
+
+    </script>
+  </body>
+</html>

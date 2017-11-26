@@ -7,12 +7,12 @@
 			<s:form action="saveticketMaster" id="sticket" theme="simple">
 				<div class="row">
 					<div class="form-group col-md-12 col-sm-12">
-						<label>Ticket Name<span style="color: red;">*</span></label> <input
-							class="form-control" type="text">
+						<label>Ticket Name<span style="color: red;">*</span></label> 
+						<s:textfield name="ticketname" cssClass="form-control"></s:textfield>
 					</div>
 					<div class="form-group col-md-4 col-sm-12">
-						<label>Quantity<span style="color: red;">*</span></label> <input
-							class="form-control" type="text">
+						<label>Quantity<span style="color: red;">*</span></label> 
+						<s:textfield name="quantity" cssClass="form-control"></s:textfield>
 					</div>
 					<div class="form-group col-md-4 col-sm-12">
 						<label>Min Qty<span style="color: red;">*</span></label> <input
@@ -127,7 +127,8 @@
 						<input class="form-control" type="text">
 					</div>
 					<div class="form-group col-md-12 col-sm-12">
-						<button type="submit" class="btn btn-primary btn-block">SAVE</button>
+						<input type="submit" value="SAVE"  class="btn btn-primary btn-block">
+						<!-- <button type="button" class="btn btn-primary btn-block">SAVE</button> -->
 					</div>
 				</div>
 			</s:form>

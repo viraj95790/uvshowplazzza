@@ -3,6 +3,7 @@ package com.showplazza.Event.web.action;
 
 
 
+import java.awt.Event;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -17,6 +18,7 @@ import org.apache.struts2.ServletActionContext;
 import com.showplazza.Event.eu.bi.EventDAO;
 import com.showplazza.Event.eu.blogic.jdbc.JDBCEventDAO;
 import com.showplazza.Event.web.form.EventForm;
+import com.showplazza.Master.eu.entity.Master;
 import com.showplazza.Register.web.form.RegisterForm;
 import com.showplazza.common.utils.DateTimeUtils;
 import com.showplazza.Register.eu.bi.RegisterDAO;
@@ -61,7 +63,54 @@ public class EventAction extends BaseAction implements ModelDriven<EventForm>, P
 		return "success";
     }
     
+    
+    @Override
+    public String input() throws Exception {
+    	Connection connection = null;
+    	try {
+    		connection = Connection_provider.getconnection();
+    		EventDAO eventDAO = new JDBCEventDAO(connection);
+    		
+    		//String activep = get from db for 1
+    		//String inactivep = get from db for 0
+    		
+    		eventForm.setActivep("p1.jpg");
+    		eventForm.setInactivep("p2.jpg");
+    		
+    		
+    		ArrayList<Master>eventImgList = eventDAO.getEventImgList();
+    		
+    		eventForm.setEventImgList(eventImgList);
+    		
+    	}catch(Exception e){
+    		
+    	}
+    	return super.input();
+    }
+    
     public String eventdetail(){
+    	
+    	String id = request.getParameter("id");
+    	
+    	Connection connection = null;
+		try {
+			connection = Connection_provider.getconnection();
+			EventDAO eventDAO = new JDBCEventDAO(connection);
+			
+			
+	    	//String selecteding = get selected image from db event table and check image name in database
+	    	
+	    	eventForm.setSelecteding("8_Paper20.jpg");
+	    	
+	    	ArrayList<Master>eventTicketList = eventDAO.getEventTicketList(id);
+	    	eventForm.setEventTicketList(eventTicketList);
+			
+		}catch(Exception e){
+			
+		}
+    
+    	
+    	
     	
 		return "eventdetail";
     	

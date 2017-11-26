@@ -3,7 +3,7 @@
 
 <!-- MAIN BODY -->
     <section class="event-banner">
-      <div class="container-fluid banner" style="background-image: url(img/event-slider1.jpg);">
+      <div class="container-fluid banner" style="background-image: url(livedata/moviedoc/<s:property value="selecteding"/>);">
         
       </div>
     </section>
@@ -43,6 +43,8 @@
                             <div class="gallery_product col-xs-12 ">
                             <h4>Railway Station: Jaipur</h4>
                             <p class="sm">Hasanpura Road, Gopalbari, Jaipur, Rajasthan 302016, India</p>
+                            
+                            <s:iterator value="eventTicketList">
                             <div class="ticket-section clearfix">
                                 <div class="col-xs-4 no-padding">
                                     <p>Sat 18 Nov, <span class="green">06:00 AM</span></p>
@@ -51,76 +53,9 @@
                                     <div class="ticket-div">
                                         <div class="ticketCat" id="cat0" onclick="showqty(0)">
                                             <span class="pull-left">Registration Fees</span>
-                                            <span class="pull-right">Rs. 34999</span>
+                                            <span class="pull-right">Rs. <s:property value="ticprice"/></span>
                                         </div>
-                                        <div class="ticketQty" id="qty0">
-                                            <select class="form-control" id="qty" name="qty">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>	
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <%--  <div class="ticket-div">
-                                        <div class="ticketCat" id="cat1" onclick="showqty(1)">
-                                            <span class="pull-left">Registration Fees</span>
-                                            <span class="pull-right">Rs. 34999</span>
-                                        </div>
-                                        <div class="ticketQty" id="qty1">
-                                            <ul class="no-padding clearfix">
-                                                <li>1</li>
-                                                <li>2</li>
-                                                <li>3</li>
-                                                <li>4</li>
-                                                <li>5</li>
-                                                <li>6</li>
-                                                <li>7</li>
-                                                <li>8</li>
-                                                <li>9</li>
-                                                <li>10</li>
-                                            </ul>
-                                        </div>
-                                    </div> --%>
-                                </div>
-                            </div>
-                            <div class="ticket-section clearfix">
-                                <div class="col-xs-4 no-padding">
-                                    <p>Sat 18 Nov, <span class="green">06:00 AM</span></p>
-                                </div>
-                                <div class="col-xs-8 no-padding">
-                                    <div class="ticket-div">
-                                        <div class="ticketCat" id="cat2" onclick="showqty(2)">
-                                            <span class="pull-left">Registration Fees</span>
-                                            <span class="pull-right">Rs. 34999</span>
-                                        </div>
-                                        <div class="ticketQty" id="qty2">
-                                            <ul class="no-padding clearfix">
-                                                <li>1</li>
-                                                <li>2</li>
-                                                <li>3</li>
-                                                <li>4</li>
-                                                <li>5</li>
-                                                <li>6</li>
-                                                <li>7</li>
-                                                <li>8</li>
-                                                <li>9</li>
-                                                <li>10</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="ticket-div">
-                                        <div class="ticketCat" id="cat3" onclick="showqty(3)">
-                                            <span class="pull-left">Registration Fees</span>
-                                            <span class="pull-right">Rs. 34999</span>
-                                        </div>
-                                        <div class="ticketQty" id="qty3">
+                                         <div class="ticketQty" id="qty0" style="display: block;">
                                             <ul class="no-padding clearfix">
                                                 <li>1</li>
                                                 <li>2</li>
@@ -137,55 +72,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="ticket-section clearfix">
-                                <div class="col-xs-4 no-padding">
-                                    <p>Sat 18 Nov, <span class="green">06:00 AM</span></p>
-                                </div>
-                                <div class="col-xs-8 no-padding">
-                                    <div class="ticket-div">
-                                        <div class="ticketCat" id="cat4" onclick="showqty(4)">
-                                            <span class="pull-left">Registration Fees</span>
-                                            <span class="pull-right">Rs. 34999</span>
-                                        </div>
-                                        <div class="ticketQty" id="qty4">
-                                            <ul class="no-padding clearfix">
-                                                <li>1</li>
-                                                <li>2</li>
-                                                <li>3</li>
-                                                <li>4</li>
-                                                <li>5</li>
-                                                <li>6</li>
-                                                <li>7</li>
-                                                <li>8</li>
-                                                <li>9</li>
-                                                <li>10</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="ticket-div">
-                                        <div class="ticketCat" id="cat5" onclick="showqty(5)">
-                                            <span class="pull-left">Registration Fees</span>
-                                            <span class="pull-right">Rs. 34999</span>
-                                        </div>
-                                        <div class="ticketQty" id="qty5">
-                                            <ul class="no-padding clearfix">
-                                                <li>1</li>
-                                                <li>2</li>
-                                                <li>3</li>
-                                                <li>4</li>
-                                                <li>5</li>
-                                                <li>6</li>
-                                                <li>7</li>
-                                                <li>8</li>
-                                                <li>9</li>
-                                                <li>10</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    
-                                    <a href="paymentEvent?customerid=4&eventid=1">PAYMENT</a>
-                                </div>
+                            </s:iterator>
+                            
                             </div>
+                             <a href="paymentEvent?customerid=4&eventid=1">PAYMENT</a>
                             </div>
                         </div>
                         <div class="tab-pane fade in" role="tabpanel" id="venue"> 

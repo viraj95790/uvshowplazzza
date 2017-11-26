@@ -139,6 +139,7 @@ body{font-family: 'nunitobold';font-size: 14px;}
 .font-md-colr{color: #413f3f;}
 .font-fet-colr{color: #666565;}
 .sml-fnt{font-size: 12px;color: grey;opacity: 5.2;}
+.row{margin:0!important;}
 .gradi-clor{background: rgba(233,44,88,1);
 background: -moz-linear-gradient(left, rgba(233,44,88,1) 15%, rgba(233,47,91,1) 15%, rgba(227,46,95,1) 19%, rgba(113,19,172,1) 96%, rgba(113,19,172,1) 100%);
 background: -webkit-gradient(left top, right top, color-stop(15%, rgba(233,44,88,1)), color-stop(15%, rgba(233,47,91,1)), color-stop(19%, rgba(227,46,95,1)), color-stop(96%, rgba(113,19,172,1)), color-stop(100%, rgba(113,19,172,1)));

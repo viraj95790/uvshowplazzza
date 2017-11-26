@@ -73,6 +73,17 @@ public class MasterForm {
 	
 
 	
+	
+    private String ticketname;
+	
+	private String quantity;
+	
+	private String clas_type;
+	
+	private String ticket_des;
+	
+	private String message;
+	
   
 	
 	
@@ -82,6 +93,46 @@ public class MasterForm {
 	
 	
 	
+
+	public String getTicketname() {
+		return ticketname;
+	}
+
+	public void setTicketname(String ticketname) {
+		this.ticketname = ticketname;
+	}
+
+	public String getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(String quantity) {
+		this.quantity = quantity;
+	}
+
+	public String getClas_type() {
+		return clas_type;
+	}
+
+	public void setClas_type(String clas_type) {
+		this.clas_type = clas_type;
+	}
+
+	public String getTicket_des() {
+		return ticket_des;
+	}
+
+	public void setTicket_des(String ticket_des) {
+		this.ticket_des = ticket_des;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
 
 	public String getEventdate() {
 		return eventdate;

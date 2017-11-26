@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Showplazza</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="css/jquery.bxslider.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+  <div id="back-blur">
+
+    <!-- HEADER SECTION -->
+    <nav class="navbar navbar-default gradi-clor main-header">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav nunit-bold left-nav-menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">MOVIES</a></li>
+            <li><a href="#">EVENTS</a></li>
+            <li><a href="#">THEATRES</a></li>
+            <li><a href="#">TRAILES & VIDEOS</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right nunit-bold">
+            <li><a href="#">OFFERS</a></li>
+            <li><a href="#">GIFTING</a></li>
+            <li><a href="#">SUPPORT</a></li>
+            <li><a href="#">24x7 CUSTOMER CARE</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="bms-icnpeople"></i></a>
+              <ul class="dropdown-menu acunt">
+              <div id="triangle-up"></div>
+                <li><a href="mywallet.html"><img src="img/acunt1.png"><span> My Wallet</span></a></li>
+                <li><a href="showplazza-profile.html"><i class="icon-agenda"></i><span> Booking History</span></a></li>
+                <li><a href="showplazza-profile.html"><i class="icon-credit-card"></i><span> QuickPay</span></a></li>
+                <li><a href="showplazza-profile.html"><i class="icon-play-button"></i><span> Experiences</span></a></li>
+                <li><a href="showplazza-profile.html"><i class="icon-settings"></i><span> Setttings</span></a></li>
+                <li><a href="showplazza-profile.html"><i class="icon-logout"></i><span> Sign Out</span></a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="brdr-non"><span class="brdr-dis" data-toggle="modal" data-target=".bs-example-modal-lg1">SIGN IN</span></a></li>
+            <li><a href="#" class="brdr-non"><i class="bms-icnnotification-bell"></i></a></li>
+          </ul>
+        </div>
+        <div class="search-hed container-fluid">
+          <div class="col-md-2 col-sm-2 col-xs-6  no-pad-tab">
+            <a href="index.html"><img src="img/logo.png" class="img-responsive logo"></a>
+          </div>
+          <div class="col-md-8 col-sm-8 col-xs-11 no-padding hidden-xs">
+            <form class="" role="search">
+              <div class="input-group add-on">
+                <input type="text" class="form-control nunit-bold" placeholder="Search for Movies, Events and Theatres" name="srch-term" id="srch-term">
+                <div class="input-group-btn selct-pic">
+                  <a class="btn btn-default btn-select">
+                      <input type="hidden" class="btn-select-input" id="" name="" value="" />
+                      <span class="btn-select-value">Select an Item</span>
+                      <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+                      <ul>
+                          <li class="selected"><i class="glyphicon glyphicon-list"></i> ALL</li>
+                          <li><i class="glyphicon glyphicon-film"></i> MOVIES</li>
+                          <li><i class="glyphicon glyphicon-facetime-video"></i> EVENTS</li>
+                      </ul>
+                  </a>
+                </div>
+                <div class="input-group-btn">
+                  <button class="btn serch-btn" type="submit"><i class="bms-icnsearch"></i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2 col-sm-2 col-xs-6 main-locatin-drp">
+            <div class="btn-group btn-block nav navbar-nav">
+              <button type="button" class="btn btn-block dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <i class="bms-icnsigns2"></i> <span class="locatin-drp">LOCATION</span> <span class="caret"></span>
+              </button>
+              <div class="dropdown-menu row">
+                <div class="co-xs-12 location-search">
+                  <input type="text" class="form-control" placeholder="Enter your city">
+                </div>
+                <div class="loc-srch-brdr"></div>
+                <p>Top Cities</p>
+                <div class="col-xs-4 location-name no-padding">
+                  <ul>
+                    <li><a href="#">Nagpur</a>
+                    <li><a href="#">Nagpur</a>
+                    <li><a href="#">Nagpur</a>
+                  </ul>
+                </div>
+                <div class="col-xs-4 location-name no-padding">
+                  <ul>
+                    <li><a href="#">Nagpur</a>
+                    <li><a href="#">Nagpur</a>
+                    <li><a href="#">Nagpur</a>
+                  </ul>
+                </div>
+                <div class="col-xs-4 location-name no-padding">
+                  <ul>
+                    <li><a href="#">Nagpur</a>
+                    <li><a href="#">Nagpur</a>
+                    <li><a href="#">Nagpur</a>
+                  </ul>
+                </div>
+                <p><a class="grey12" data-toggle="modal" data-target=".bs-example-modal-lg">All cities</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- END HEADER SECTION -->
+
+    <!-- SIGN IN POPUP -->
+    <div class="modal fade bs-example-modal-lg1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="">
+            <button type="button" class="close sign-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class=""> <!-- modal-body -->
+            <div class="row no-margin">
+              <div class="col-md-6 col-sm-6 sign-left-sec">
+                <div class="">
+                  <div class="sign-left-sec-img">
+                    <img src="img/signin-img.png" class="img-responsive">
+                  </div>
+                  <div class="sign-left-sec-text text-center">
+                    <h3>OFFERS ON EVERY BOOKING</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="sign-right-sec">
+                  <h3 class="text-center">Welcome Back, Sign In</h3>
+                  <p class="text-center">Instant Sign in with</p>
+                  <div class="col-sm-offset-1 col-sm-10 sign-two-btn">
+                    <div class="btn-group fisrt-btn">
+                      <a class="btn sign-fb-icn">
+                        <span class="bms-icnfacebook-letter-logo"></span>
+                      </a>
+                      <button type="button" class="btn sign-fb-text">FACEBOOK</button>
+                    </div>
+                    <div class="btn-group">
+                      <a class="btn sign-gl-icn">
+                        <span class="bms-icngoogle-plus-logo"></span>
+                      </a>
+                      <button type="button" class="btn sign-gl-text">GOOGLE</button>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12">
+                    <div class="on-line-crcl">
+                      <div class="circle">
+                      OR
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-offset-1 col-sm-10 main-sign-sub">
+                    <input type="text" class="form-control sign-input" placeholder="Email address">
+                    <input type="text" class="form-control sign-input" placeholder="Password">
+                    <button type="button" class="form-control sign-sub sign-input">SIGN IN</button>
+                    <p class="text-center"><a href="">Forgot Password</a></p>
+                  </div>
+
+                  <div class="col-xs-12 text-center sign-up-text">
+                    <p>Don’t have account yet? <span><a href="" data-toggle="modal" data-target=".bs-example-modal-lg2">Signup Now</a></span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+    <!-- END SIGN IN POPUP -->
+
+    <!-- SIGN NOW POPUP -->
+    <div class="modal fade bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="">
+            <button type="button" class="close sign-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class=""> <!-- modal-body -->
+            <div class="row no-margin">
+              <div class="col-md-6 col-sm-6 sign-left-sec">
+                <div class="">
+                  <div class="sign-left-sec-img-2nd">
+                    <img src="img/signin-img.png" class="img-responsive">
+                  </div>
+                  <div class="sign-left-sec-text-2nd text-center">
+                    <h3>OFFERS ON EVERY BOOKING</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="sign-right-sec">
+                  <h3 class="text-center">SiGN UP IN MOVIESNOW</h3>
+                  <p class="text-center">Instant Sign up with</p>
+                  <div class="col-sm-offset-1 col-sm-10 sign-two-btn">
+                    <div class="btn-group fisrt-btn">
+                      <a class="btn sign-fb-icn">
+                        <span class="bms-icnfacebook-letter-logo"></span>
+                      </a>
+                      <button type="button" class="btn sign-fb-text">FACEBOOK</button>
+                    </div>
+                    <div class="btn-group">
+                      <a class="btn sign-gl-icn">
+                        <span class="bms-icngoogle-plus-logo"></span>
+                      </a>
+                      <button type="button" class="btn sign-gl-text">GOOGLE</button>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12">
+                    <div class="on-line-crcl">
+                      <div class="circle">
+                      OR
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-offset-1 col-sm-10 main-sign-sub">
+                    <input type="text" class="form-control sign-input" placeholder="Email address">
+                    <input type="text" class="form-control sign-input" placeholder="Password">
+                    <input type="text" class="form-control sign-input" placeholder="Confirm Password">
+                    <button type="button" class="form-control sign-sub sign-input">SIGN IN</button>
+                  </div>
+
+                  <div class="col-xs-12 text-center sign-up-text">
+                    <p>Don’t have account yet? <span><a href="" data-toggle="modal" data-target=".bs-example-modal-lg1">SIGN UP</a></span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+    <!-- END SIGN NOW POPUP -->
+
+    <!-- ALL CITY POPUP -->
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content top-srch-model">    
+          <div class="">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>     
+            <div class="col-md-6 col-sm-6 no-padding">
+              <input type="text" class="form-control" placeholder="Enter your city">
+            </div>
+            <div class="clearfix"></div>
+            <div class="city-srch-brdr"></div>
+            <div class="srch-scrol">
+              <div class="top-srch">
+                <p>Top Cities</p>
+                 <div class="row main-top-srch">
+                  <div class="col-sm-2 col-xs-6 no-padding"><a href="">New Dehli</a></div>
+                  <div class="col-sm-2 col-xs-6 no-padding"><a href="">Pune</a></div>
+                  <div class="col-sm-2 col-xs-6 no-padding"><a href="">Hydrabad</a></div>
+                  <div class="col-sm-2 col-xs-6 no-padding"><a href="">Mumbai</a></div>
+                  <div class="col-sm-2 col-xs-6 no-padding"><a href="">Kolkata</a></div>
+                  <div class="col-sm-2 col-xs-6 no-padding"><a href="">Bangalore</a></div>
+                 </div> 
+              </div>
+              <div class="main-top-srch-cities">
+                <p>All Cities</p>
+                 <div class="row top-srch-cities">
+                  <div class="col-sm-2 col-xs-6 no-padding">
+                    <ul>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-2 col-xs-6 no-padding">
+                    <ul>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-2 col-xs-6 no-padding">
+                    <ul>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-2 col-xs-6 no-padding">
+                    <ul>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-2 col-xs-6 no-padding">
+                    <ul>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-2 col-xs-6 no-padding">
+                    <ul>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                      <li><a href="">Abhor</a></li>
+                    </ul>
+                  </div>
+                 </div> 
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- END ALL CITY POPUP -->
+    <!-- MAIN BODY -->
+    <section class="event-banner">
+      <div class="container-fluid banner" style="background-image: url(img/event-slider1.jpg);">
+        
+      </div>
+    </section>
+
+    <div class="eventdetails">
+        <div class="row">
+        <div class="col-sm-8 no-padding cst-padding">
+            <div class="container-fluid">
+                <ul class="no-padding event-detail">
+                    <li>
+                        <div class="ev-date">
+                            <p class="font-sz-16">NOV 6 - 20</p>
+                            <p class="font-sz-16">2017</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ev-name">
+                            <h3>EVC Mumbai 2017</h3>
+                            <p>English | Music | Bollywood</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="container-fluid movies-filter-sec"> 
+                    <div class="event-tab">
+                        <ul class="list-inline pull-left" role="tablist">
+                            <li role="presentation"><a href="#tickets" role="tab" data-toggle="tab" aria-controls="tickets" aria-expanded="true">By Tickets</a></li>
+                            <li role="presentation"><a href="#venue" role="tab" data-toggle="tab" aria-controls="venue" aria-expanded="false">Venue Details</a></li>
+                            <li role="presentation"><a href="#terms" role="tab" data-toggle="tab" aria-controls="terms" aria-expanded="false">T &amp; C</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="clearfix"></div>
+                    <div class="tab-content clearfix">
+                        <div class="tab-pane fade active in" role="tabpanel" id="tickets"> 
+                            <div class="gallery_product col-xs-12 ">
+                            <h4>Railway Station: Jaipur</h4>
+                            <p class="sm">Hasanpura Road, Gopalbari, Jaipur, Rajasthan 302016, India</p>
+                            <div class="ticket-section clearfix">
+                                <div class="col-xs-4 no-padding">
+                                    <p>Sat 18 Nov, <span class="green">06:00 AM</span></p>
+                                </div>
+                                <div class="col-xs-8 no-padding">
+                                    <div class="ticket-div">
+                                        <div class="ticketCat" id="cat0" onclick="showqty(0)">
+                                            <span class="pull-left">Registration Fees</span>
+                                            <span class="pull-right">Rs. 34999</span>
+                                        </div>
+                                        <div class="ticketQty" id="qty0">
+                                            <ul class="no-padding clearfix">
+                                                <li>1</li>
+                                                <li>2</li>
+                                                <li>3</li>
+                                                <li>4</li>
+                                                <li>5</li>
+                                                <li>6</li>
+                                                <li>7</li>
+                                                <li>8</li>
+                                                <li>9</li>
+                                                <li>10</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                     <div class="ticket-div">
+                                        <div class="ticketCat" id="cat1" onclick="showqty(1)">
+                                            <span class="pull-left">Registration Fees</span>
+                                            <span class="pull-right">Rs. 34999</span>
+                                        </div>
+                                        <div class="ticketQty" id="qty1">
+                                            <ul class="no-padding clearfix">
+                                                <li>1</li>
+                                                <li>2</li>
+                                                <li>3</li>
+                                                <li>4</li>
+                                                <li>5</li>
+                                                <li>6</li>
+                                                <li>7</li>
+                                                <li>8</li>
+                                                <li>9</li>
+                                                <li>10</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ticket-section clearfix">
+                                <div class="col-xs-4 no-padding">
+                                    <p>Sat 18 Nov, <span class="green">06:00 AM</span></p>
+                                </div>
+                                <div class="col-xs-8 no-padding">
+                                    <div class="ticket-div">
+                                        <div class="ticketCat" id="cat2" onclick="showqty(2)">
+                                            <span class="pull-left">Registration Fees</span>
+                                            <span class="pull-right">Rs. 34999</span>
+                                        </div>
+                                        <div class="ticketQty" id="qty2">
+                                            <ul class="no-padding clearfix">
+                                                <li>1</li>
+                                                <li>2</li>
+                                                <li>3</li>
+                                                <li>4</li>
+                                                <li>5</li>
+                                                <li>6</li>
+                                                <li>7</li>
+                                                <li>8</li>
+                                                <li>9</li>
+                                                <li>10</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="ticket-div">
+                                        <div class="ticketCat" id="cat3" onclick="showqty(3)">
+                                            <span class="pull-left">Registration Fees</span>
+                                            <span class="pull-right">Rs. 34999</span>
+                                        </div>
+                                        <div class="ticketQty" id="qty3">
+                                            <ul class="no-padding clearfix">
+                                                <li>1</li>
+                                                <li>2</li>
+                                                <li>3</li>
+                                                <li>4</li>
+                                                <li>5</li>
+                                                <li>6</li>
+                                                <li>7</li>
+                                                <li>8</li>
+                                                <li>9</li>
+                                                <li>10</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ticket-section clearfix">
+                                <div class="col-xs-4 no-padding">
+                                    <p>Sat 18 Nov, <span class="green">06:00 AM</span></p>
+                                </div>
+                                <div class="col-xs-8 no-padding">
+                                    <div class="ticket-div">
+                                        <div class="ticketCat" id="cat4" onclick="showqty(4)">
+                                            <span class="pull-left">Registration Fees</span>
+                                            <span class="pull-right">Rs. 34999</span>
+                                        </div>
+                                        <div class="ticketQty" id="qty4">
+                                            <ul class="no-padding clearfix">
+                                                <li>1</li>
+                                                <li>2</li>
+                                                <li>3</li>
+                                                <li>4</li>
+                                                <li>5</li>
+                                                <li>6</li>
+                                                <li>7</li>
+                                                <li>8</li>
+                                                <li>9</li>
+                                                <li>10</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="ticket-div">
+                                        <div class="ticketCat" id="cat5" onclick="showqty(5)">
+                                            <span class="pull-left">Registration Fees</span>
+                                            <span class="pull-right">Rs. 34999</span>
+                                        </div>
+                                        <div class="ticketQty" id="qty5">
+                                            <ul class="no-padding clearfix">
+                                                <li>1</li>
+                                                <li>2</li>
+                                                <li>3</li>
+                                                <li>4</li>
+                                                <li>5</li>
+                                                <li>6</li>
+                                                <li>7</li>
+                                                <li>8</li>
+                                                <li>9</li>
+                                                <li>10</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade in" role="tabpanel" id="venue"> 
+                        <div class="gallery_product col-xs-12 ">
+                        <div class="row">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.3155875550833!2d73.37905551476914!3d18.604869887359943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be81ca2c2bb9959%3A0xbc7010067a2295ff!2sEnchanted+Valley+Carnival!5e0!3m2!1sen!2sin!4v1510056633783" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="tab-pane fade in" role="tabpanel" id="terms"> 
+                        <div class="gallery_product col-xs-12 ">
+                        <ul class="no-padding termsConditions">
+                            <li>Age limit: 16+</li>
+                            <li>Internet handling fee per ticket may be levied. Please check your total amount before payment.</li>
+                            <li>Tickets once booked cannot be exchanged or refunded.</li>
+                            <li>We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.</li>
+                        </ul>
+                        </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 no-padding">
+            <div class="about-event">
+                <p class="lg"><b>About</b></p>
+                <p>Comio EVC Mumbai 2017 is Indias largest two-day multi-genre concert introduced by the promoters of Enchanted Valley Carnival - a unique festival property introduced to the Indian audiences in 2013. EVC is bringing together some of the most popular, electrifying and massive performers from across the world to come perform on one platform.</p>
+
+                <p>EVCs Tribe is a buzzing community of like-minded people, constantly looking to do something new and get together to enjoy the music and the vibe over the two days of the concert.</p>
+                <ul class="list-inline">
+                    <li><a href="" target="_blank"><i class="bms-icnfacebook-logo"></i></a></li>
+                    <li><a href="" target="_blank"><i class="bms-icntwitter-logo-button"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <div class="container-fluid book-ofer bg-grayShade clearfix">
+      <div class="col-md-3 col-sm-3 col-xs-12 book-ofer-blog">
+        <div class="col-xs-4 offer-detail-icon">
+          <i class="bms-icnshield"></i>
+        </div>
+        <div class="col-xs-8 no-padding">
+          <p>Trusted Payment System</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-12 book-ofer-blog">
+        <div class="col-xs-4 offer-detail-icon">
+          <i class="bms-icntechnology"></i>
+        </div>
+        <div class="col-xs-8 no-padding">
+          <p>24x7 Customer Care Support</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-12 book-ofer-blog">
+        <div class="col-xs-4 offer-detail-icon">
+          <i class="bms-icnticket"></i>
+        </div>
+        <div class="col-xs-8 no-padding">
+          <p>100% Assurance of Tickets</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-12 book-ofer-blog">
+        <div class="col-xs-4 offer-detail-icon">
+          <i class="bms-icntag"></i>
+        </div>
+        <div class="col-xs-8 no-padding">
+          <p>Best Discount Offers For You</p>
+        </div>
+      </div>
+    </div>
+    <!-- END MAIN BODY -->
+     <!-- FOOTER -->
+    <div class="container-fluid main-footer-bar gradi-clor">
+      <div class="footer-bar">
+        <ul class="list-inline pull-left no-margin">
+          <li><a href="">About Us</a></li>
+          <li><a href="">Movies</a></li>
+          <li><a href="">Events</a></li>
+          <li><a href="">Theaters</a></li>
+          <li><a href="">Trailers and videos</a></li>
+          <li><a href="">Offers</a></li>
+          <li><a href="">Customer service</a></li>
+        </ul>
+        <ul class="list-inline pull-right no-margin hidden-xs seccond-blog-right">
+          <li><a href=""><i class="bms-icnandroid-logo"></i></a></li>
+          <li><a href=""><i class="bms-icnwindows-logo-silhouette"></i></a></li>
+          <li><a href=""><i class="bms-icnapple"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer container-fluid">
+      <div class="container-fluid footer-links hidden-xs">
+        <div class="col-md-5th-1 col-sm-6 col-xs-6 foot-pad">
+          <p class="text-uppercase">Movie Categories</p>
+          <ul>
+            <li><a href="">Hindi Comedy Movies</a></li>
+            <li><a href="">Hindi Action Movies</a></li>
+            <li><a href="">Englist Animated Movies</a></li>
+            <li><a href="">English Fantasy Movies</a></li>
+            <li><a href="">nglish Comedy Movies</a></li>
+            <li><a href="">Marathi Drama Movies</a></li>
+          </ul>
+        </div>
+        <div class="col-md-5th-1 col-sm-6 col-xs-6 foot-pad">
+          <p class="text-uppercase">Upcoming Events</p>
+          <ul>
+            <li><a href="">Upcoming Events in Mumbai</a></li>
+            <li><a href="">Upcoming Events in Dehli</a></li>
+            <li><a href="">Upcoming Events in Channei</a></li>
+            <li><a href="">Upcoming Events in Pune</a></li>
+            <li><a href="">Upcoming Events in Noida</a></li>
+            <li><a href="">Upcoming Events in Nagpur</a></li>
+          </ul>
+        </div>
+        <div class="col-md-5th-1 col-sm-6 col-xs-6 foot-pad">
+          <p class="text-uppercase">Movie ticket booking</p>
+          <ul>
+            <li><a href="">Delhi-NCR Movie Ticket Booking</a></li>
+            <li><a href="">Bengaluru Movie Ticket Booking</a></li>
+            <li><a href="">Chennai Movie Ticket Booking</a></li>
+            <li><a href="">Hyderabad Movie Ticket Booking</a></li>
+            <li><a href="">Mumbai Movie Ticket Booking</a></li>
+            <li><a href="">Pune Movie Ticket Booking</a></li>
+          </ul>
+        </div>
+        <div class="col-md-5th-1 col-sm-6 col-xs-6 foot-pad">
+          <p class="text-uppercase">Best events by language</p>
+          <ul>
+            <li><a href="">Event Coming Today</a></li>
+            <li><a href="">Event Coming Tomarrow </a></li>
+            <li><a href="">Event Coming This Weekend</a></li>
+            <li><a href="">Event In Next Weekend</a></li>
+          </ul>
+        </div>
+        <div class="col-md-5th-1 col-sm-6 col-xs-6 foot-pad">
+          <p class="text-uppercase">About</p>
+          <ul>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms and Conditions</a></li>
+            <li><a href="">Payment Terms</a></li>
+            <li><a href="">Cancellation Policy</a></li>
+            <li><a href="">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="hidden-xs">
+      <div class="container-fluid footer-botm">
+        <p class="pull-left">
+          Copyright 2017 © Bigtree Entertainment Pvt. Ltd. All Rights Reserved.
+        </p>
+        <ul class="list-inline pull-right">
+          <li><a href=""><i class="bms-icnfacebook-logo"></i></a></li>
+          <li><a href=""><i class="bms-icntwitter-logo-button"></i></a></li>
+          <li><a href=""><i class="bms-icngoogle-plus-logo-button"></i></a></li>
+          <li><a href=""><i class="bms-icnlinkedin-button"></i></a></li>
+          <li><a href=""><i class="bms-icnyoutube-logotype"></i></a></li>
+        </ul>
+      </div>
+      <!-- <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a> -->
+    </div>
+     <!-- END FOOTER -->
+
+    <!-- Welcom Back Popup (.wel-bck-popup.modal CSS)-->
+    <div class="modal wel-bck-popup">
+     <div class="modal-dialog main-wel-bck" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+           <img src="img/wel-bck.png" class="img-responsive">
+           <div class="wel-bck-text">
+             <h1>Welcome back, Dharmaraj</h1>
+             <p>Your tickets are waiting to be booked!</p>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Welcom Back Popup-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.bxslider.min_optimized.js"></script>
+    <script src="js/bootstrap-multiselect.js"></script>
+    <script>
+      $(document).ready(function(){
+
+        $('.slider1').bxSlider({
+          slideWidth: 434,
+          minSlides: 2,
+          maxSlides: 3,
+          slideMargin: 10
+        });    
+
+        $('.bxslider').bxSlider({
+          minSlides: 3,
+          maxSlides: 4,
+          slideWidth: 325,
+          slideMargin: 10
+        });
+      /*Filter*/     
+        $(".filter-button").click(function(){
+            var value = $(this).attr('data-filter');            
+            if(value == "all")
+            {
+                //$('.filter').removeClass('hidden');
+                $('.filter').show('1000');
+            }
+            else
+            {
+                $(".filter").not('.'+value).hide('3000');
+                $('.filter').filter('.'+value).show('3000');                
+            }
+
+            if ($(".filter-button").removeClass("active-colr")) {
+            $(this).removeClass("active-colr");
+            }
+            $(this).addClass("active-colr");
+            });        
+         /*Filter end*/     
+         
+          
+        /*Back To top*/
+        //  $(window).scroll(function () {
+        //     if ($(this).scrollTop() > 50) {
+        //         $('#back-to-top').fadeIn();
+        //     } else {
+        //         $('#back-to-top').fadeOut();
+        //     }
+        // });
+        // scroll body to 0px on click
+        // $('#back-to-top').click(function () {
+        //     $('#back-to-top').tooltip('hide');
+        //     $('body,html').animate({
+        //         scrollTop: 0
+        //     }, 800);
+        //     return false;
+        // });
+        
+        // $('#back-to-top').tooltip('show');
+$(".btn-select").each(function (e) {
+        var value = $(this).find("ul li.selected").html();
+        if (value != undefined) {
+            $(this).find(".btn-select-input").val(value);
+            $(this).find(".btn-select-value").html(value);
+        }
+    });
+});
+
+$(document).on('click', '.btn-select', function (e) {
+    e.preventDefault();
+    var ul = $(this).find("ul");
+    if ($(this).hasClass("active")) {
+        if (ul.find("li").is(e.target)) {
+            var target = $(e.target);
+            target.addClass("selected").siblings().removeClass("selected");
+            var value = target.html();
+            $(this).find(".btn-select-input").val(value);
+            $(this).find(".btn-select-value").html(value);
+        }
+        ul.hide();
+        $(this).removeClass("active");
+    }
+    else {
+        $('.btn-select').not(this).each(function () {
+            $(this).removeClass("active").find("ul").hide();
+        });
+        ul.slideDown(300);
+        $(this).addClass("active");
+    }
+});
+
+$(document).on('click', function (e) {
+    var target = $(e.target).closest(".btn-select");
+    if (!target.length) {
+        $(".btn-select").removeClass("active").find("ul").hide();
+    }
+        });
+
+    // registration fees btn effect
+  var open =0;
+  function showqty(id){
+    if(open == 0){
+      $('#qty'+id).addClass("showTickQty"); 
+      open = 1;
+    }
+    else{
+      $('#qty'+id).removeClass("showTickQty");
+      }
+      open = 0;
+    }      
+
+    </script>
+    </div>
+  </body>
+</html>
