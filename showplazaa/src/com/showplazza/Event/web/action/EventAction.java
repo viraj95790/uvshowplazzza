@@ -98,12 +98,17 @@ public class EventAction extends BaseAction implements ModelDriven<EventForm>, P
 			EventDAO eventDAO = new JDBCEventDAO(connection);
 			
 			
-	    	//String selecteding = get selected image from db event table and check image name in database
+	    	String selectedimg = eventDAO.getimage(id);
 	    	
-	    	eventForm.setSelecteding("8_Paper20.jpg");
+	    	eventForm.setSelecteding(selectedimg);
 	    	
 	    	ArrayList<Master>eventTicketList = eventDAO.getEventTicketList(id);
 	    	eventForm.setEventTicketList(eventTicketList);
+	    	
+	    	Master master = eventTicketList.get(eventTicketList.size()-1);
+	    	eventForm.setAddress(master.getAddress());
+	    	eventForm.setEventname(master.getEventname());
+	    	eventForm.setEvent_tags(master.getEvent_tags());
 			
 		}catch(Exception e){
 			

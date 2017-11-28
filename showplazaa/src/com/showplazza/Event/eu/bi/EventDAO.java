@@ -10,4 +10,6 @@ public interface EventDAO {
 
 	ArrayList<Master> getEventTicketList(String id);
 
+	String getimage(String id);
+
 }

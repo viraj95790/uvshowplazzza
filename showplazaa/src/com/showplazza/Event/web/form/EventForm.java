@@ -40,6 +40,34 @@ public class EventForm {
 	private File movieImage;
 	
 	private String selecteding;
+	
+	private String event_tags;
+	
+	private String qty;
+	
+	
+	
+	
+	
+	
+	
+	
+
+	public String getQty() {
+		return qty;
+	}
+
+	public void setQty(String qty) {
+		this.qty = qty;
+	}
+
+	public String getEvent_tags() {
+		return event_tags;
+	}
+
+	public void setEvent_tags(String event_tags) {
+		this.event_tags = event_tags;
+	}
 
 	public String getSelecteding() {
 		return selecteding;

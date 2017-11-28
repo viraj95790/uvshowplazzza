@@ -27,3 +27,18 @@ function getcityRequest(){
 			}
 		}
  }
+
+
+
+function showqty(cat0){
+	 
+    var qty = document.getElementById('cat0').value;
+    
+    var unitprice = document.getElementById('ticprice').value;
+    
+    var totalprice = parseFloat(unitprice) * qty ;
+    
+    document.getElementById('ticprice').value = parseFloat(totalprice);
+	
+ }
+ 

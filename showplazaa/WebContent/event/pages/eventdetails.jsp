@@ -1,5 +1,6 @@
 <%@ taglib uri="/struts-tags" prefix="s" %>
 
+<script type="text/javascript" src="master/js/master.js"></script>
 
 <!-- MAIN BODY -->
     <section class="event-banner">
@@ -21,8 +22,8 @@
                     </li>
                     <li>
                         <div class="ev-name">
-                            <h3>EVC Mumbai 2017</h3>
-                            <p>English | Music | Bollywood</p>
+                            <h3><s:property value="eventname"/></h3>
+                            <p><s:property value="event_tags"/></p>
                         </div>
                     </li>
                 </ul>
@@ -41,21 +42,22 @@
                     <div class="tab-content clearfix">
                         <div class="tab-pane fade active in" role="tabpanel" id="tickets"> 
                             <div class="gallery_product col-xs-12 ">
-                            <h4>Railway Station: Jaipur</h4>
-                            <p class="sm">Hasanpura Road, Gopalbari, Jaipur, Rajasthan 302016, India</p>
+                            <h4>Railway Station: Nagpur</h4>
+                            <p class="sm"><s:property value="address" /></p>
                             
                             <s:iterator value="eventTicketList">
                             <div class="ticket-section clearfix">
                                 <div class="col-xs-4 no-padding">
-                                    <p>Sat 18 Nov, <span class="green">06:00 AM</span></p>
+                                    <p><s:property value="ticsdate"/> <span class="green"><s:property value="start_time"/></span> <span class="black"><s:property value="ticketname"/></span></p>
                                 </div>
+                               
                                 <div class="col-xs-4 no-padding">
                                     <div class="ticket-div">
                                         <div class="ticketCat" id="cat0" onclick="showqty(0)">
                                             <span class="pull-left">Registration Fees</span>
                                             <span class="pull-right">Rs. <s:property value="ticprice"/></span>
                                         </div>
-                                         <div class="ticketQty" id="qty0" style="display: block;">
+                                         <div class="ticketQty" id="qty0"  style="display: block;">
                                             <ul class="no-padding clearfix">
                                                 <li>1</li>
                                                 <li>2</li>
@@ -75,7 +77,7 @@
                             </s:iterator>
                             
                             </div>
-                             <a href="paymentEvent?customerid=4&eventid=1">PAYMENT</a>
+                             <a href="paymentEvent?customerid=4&eventid=<s:property value="id"/>">PAYMENT</a>
                             </div>
                         </div>
                         <div class="tab-pane fade in" role="tabpanel" id="venue"> 
