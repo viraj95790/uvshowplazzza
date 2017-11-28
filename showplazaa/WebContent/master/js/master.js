@@ -42,3 +42,15 @@ function showqty(cat0){
 	
  }
  
+
+function calcprice(qty,id){
+	 var unitprice = document.getElementById('hdnunitprice'+id).value;
+	 var totalprice = parseFloat(unitprice) * qty ;
+	 document.getElementById('tickpricrid'+id).innerHTML = totalprice;
+}
+
+function showcrticktcktpopup(id){
+	
+	document.getElementById('hdneventid').value = id;
+	$('#myModal').modal( "show" );
+}

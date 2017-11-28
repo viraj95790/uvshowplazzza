@@ -55,12 +55,13 @@
                                     <div class="ticket-div">
                                         <div class="ticketCat" id="cat0" onclick="showqty(0)">
                                             <span class="pull-left">Registration Fees</span>
-                                            <span class="pull-right">Rs. <s:property value="ticprice"/></span>
+                                            <input type="hidden" id="hdnunitprice<s:property value="id"/>" value="<s:property value="ticprice"/>">
+                                            <span class="pull-right">Rs. <span id="tickpricrid<s:property value="id"/>"><s:property value="ticprice"/></span></span>
                                         </div>
                                          <div class="ticketQty" id="qty0"  style="display: block;">
                                             <ul class="no-padding clearfix">
-                                                <li>1</li>
-                                                <li>2</li>
+                                                <li onclick="calcprice(1,<s:property value="id"/>)">1</li>
+                                                <li onclick="calcprice(2,<s:property value="id"/>)">2</li>
                                                 <li>3</li>
                                                 <li>4</li>
                                                 <li>5</li>
