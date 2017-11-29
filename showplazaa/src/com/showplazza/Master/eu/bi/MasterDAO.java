@@ -14,4 +14,6 @@ public interface MasterDAO {
 
 	int updateimagename(int eventid, String moviemagename);
 
+	int saveticketinfo(String selectedid, Master master);
+
 }

@@ -42,7 +42,7 @@ public class JDBCEventDAO extends JDBCBaseDAO implements EventDAO  {
 	public ArrayList<Master> getEventTicketList(String id) {
 		PreparedStatement preparedStatement = null;
 		ArrayList<Master>list = new ArrayList<Master>();
-		String sql = "SELECT id,start_date,clas_price, ticketname FROM create_ticket where eventid = "+id+" ";
+		String sql = "SELECT id,start_date,clas_price, ticketname, clas_type FROM create_ticket where eventid = "+id+" ";
 		
 		try{
 			
@@ -54,6 +54,7 @@ public class JDBCEventDAO extends JDBCBaseDAO implements EventDAO  {
 				master.setTicsdate(rs.getString(2));
 				master.setTicprice(rs.getString(3));
 				master.setTicketname(rs.getString(4));
+				master.setClas_type(rs.getString(5));
 				
 				Master master2 = gettimenaddres(id);
 				master.setStart_time(master2.getStart_time());

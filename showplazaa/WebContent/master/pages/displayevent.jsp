@@ -73,46 +73,34 @@
     <!-- /#wrapper -->
     
     <!-- Add ticket Modal -->
- <s:form action="">
- <s:hidden name="hdneventid" id="hdneventid"/>
+ 
+ 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
 	aria-labelledby="myModalLabel">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
-			<form role="form">
+			<s:form action="saveticketMaster" id="ticid" theme="simple">
+				<s:hidden name="hdneventid" id="hdneventid"></s:hidden>
 				<div class="row">
 					<div class="form-group col-md-12 col-sm-12">
-						<label>Ticket Name<span style="color: red;">*</span></label> <input
-							class="form-control" type="text">
+						<label>Ticket Name<span style="color: red;">*</span></label> 
+						<s:textfield name="ticketname" cssClass="form-control" type="text"></s:textfield>
 					</div>
 					<div class="form-group col-md-4 col-sm-12">
-						<label>Quantity<span style="color: red;">*</span></label> <input
-							class="form-control" type="text">
+						<label>Quantity<span style="color: red;">*</span></label> 
+						<s:textfield name="quantity" cssClass="form-control" type="text"></s:textfield>
 					</div>
-					<div class="form-group col-md-4 col-sm-12">
+					<%-- <div class="form-group col-md-4 col-sm-12">
 						<label>Min Qty<span style="color: red;">*</span></label> <input
 							class="form-control" type="text">
 					</div>
 					<div class="form-group col-md-4 col-sm-12">
 						<label>Max Qty<span style="color: red;">*</span></label> <input
 							class="form-control" type="text">
-					</div>
-					<div class="form-group col-sm-6">
-						<label>Class Type<span style="color: red;">*</span></label> <select
-							class="form-control">
-							<option selected disabled hidden>--Select No. of
-								Classes--</option>
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-							<option>5</option>
-							<option>6</option>
-							<option>7</option>
-							<option>8</option>
-							<option>9</option>
-							<option>10</option>
-						</select>
+					</div> --%>
+					<div class="form-group col-md-6 col-sm-12">
+						<label>class Type<span style="color: red;">*</span></label> 
+						<s:textfield name="clas_type" cssClass="form-control" type="text"></s:textfield>
 					</div>
 					<div class="form-group col-md-6 col-sm-12">
 						<div class="row">
@@ -134,7 +122,7 @@
 							</select>
 						</div>
 						<div class="col-sm-9 no-padding">
-							<input class="form-control col-sm-9" type="text">
+							<s:textfield name="clas_price" cssClass="form-control" type="text"></s:textfield>
 						</div>
 					</div>
 					<div class="form-group col-sm-12 no-padding">
@@ -142,7 +130,7 @@
 							<label>Sale Start Date<span style="color: red;">*</span></label>
 							<div class="input-group date datepicker"
 								data-provide="datepicker">
-								<input type="text" class="form-control">
+								<s:textfield name="start_date" cssClass="form-control" type="text"></s:textfield>
 								<div class="input-group-addon">
 									<span class="glyphicon glyphicon-th"></span>
 								</div>
@@ -152,7 +140,7 @@
 							<label>Sale End Date<span style="color: red;">*</span></label>
 							<div class="input-group date datepicker"
 								data-provide="datepicker">
-								<input type="text" class="form-control">
+								<s:textfield name="end_date" cssClass="form-control" type="text"></s:textfield>
 								<div class="input-group-addon">
 									<span class="glyphicon glyphicon-th"></span>
 								</div>
@@ -195,21 +183,21 @@
 					</div>
 					<div class="form-group col-md-12 col-sm-12">
 						<label>Ticket Description<span style="color: red;">*</span></label>
-						<input class="form-control" type="text">
+						<s:textfield name="ticket_des" cssClass="form-control" type="text"></s:textfield>
 					</div>
 					<div class="form-group col-md-12 col-sm-12">
 						<label>Message to Attende<span style="color: red;">*</span></label>
-						<input class="form-control" type="text">
+						<s:textfield name="message" cssClass="form-control" type="text"></s:textfield>
 					</div>
 					<div class="form-group col-md-12 col-sm-12">
-						<button type="button" class="btn btn-primary btn-block"
-							id="tick_show">SAVE</button>
-					</div>
+						<input type="submit" value="SAVE"
+						      class="btn btn-success submit">
+					</div> 
 				</div>
-			</form>
+			</s:form>
 		</div>
 	</div>
 </div>
-  </s:form> 
+   
 
     

@@ -152,9 +152,23 @@ public class MasterAction extends BaseAction implements ModelDriven<MasterForm>,
 	
 	public String saveticket(){
 		Connection connection = null;
-		String selectedid = request.getParameter("selectedid");
+		String selectedid = masterForm.getHdneventid();
 		try {
 			connection = Connection_provider.getconnection();
+			MasterDAO masterDAO = new JDBCMasterDAO(connection);
+			
+			Master master = new Master();
+			master.setTicketname(masterForm.getTicketname());
+			master.setQuantity(masterForm.getQuantity());
+			master.setClas_type(masterForm.getClas_type());
+			master.setClas_price(masterForm.getClas_price());
+			master.setStart_date(masterForm.getStart_date());
+			master.setEnd_date(masterForm.getEnd_date());
+			master.setMessage(masterForm.getMessage());
+			master.setTicket_des(masterForm.getTicket_des());
+			
+			int result = masterDAO.saveticketinfo(selectedid, master);
+			
 			
 		} catch (Exception e) {
 			// TODO: handle exception

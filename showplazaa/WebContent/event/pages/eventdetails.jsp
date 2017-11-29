@@ -33,8 +33,8 @@
                     <div class="event-tab">
                         <ul class="list-inline pull-left" role="tablist">
                             <li role="presentation"><a href="#tickets" role="tab" data-toggle="tab" aria-controls="tickets" aria-expanded="true">By Tickets</a></li>
-                            <li role="presentation"><a href="#venue" role="tab" data-toggle="tab" aria-controls="venue" aria-expanded="false">Venue Details</a></li>
-                            <li role="presentation"><a href="#terms" role="tab" data-toggle="tab" aria-controls="terms" aria-expanded="false">T &amp; C</a></li>
+                            <li role="presentation"><a href="#venue" role="tab2" data-toggle="tab" aria-controls="venue" aria-expanded="false">Venue Details</a></li>
+                            <li role="presentation"><a href="#terms" role="tab3" data-toggle="tab" aria-controls="terms" aria-expanded="false">T &amp; C</a></li>
                         </ul>
                     </div>
                     
@@ -54,7 +54,7 @@
                                 <div class="col-xs-4 no-padding">
                                     <div class="ticket-div">
                                         <div class="ticketCat" id="cat0" onclick="showqty(0)">
-                                            <span class="pull-left">Registration Fees</span>
+                                            <span class="pull-left"><s:property value="clas_type"/></span>
                                             <input type="hidden" id="hdnunitprice<s:property value="id"/>" value="<s:property value="ticprice"/>">
                                             <span class="pull-right">Rs. <span id="tickpricrid<s:property value="id"/>"><s:property value="ticprice"/></span></span>
                                         </div>
@@ -62,14 +62,14 @@
                                             <ul class="no-padding clearfix">
                                                 <li onclick="calcprice(1,<s:property value="id"/>)">1</li>
                                                 <li onclick="calcprice(2,<s:property value="id"/>)">2</li>
-                                                <li>3</li>
-                                                <li>4</li>
-                                                <li>5</li>
-                                                <li>6</li>
-                                                <li>7</li>
-                                                <li>8</li>
-                                                <li>9</li>
-                                                <li>10</li>
+                                                <li onclick="calcprice(3,<s:property value="id"/>)">3</li>
+                                                <li onclick="calcprice(4,<s:property value="id"/>)">4</li>
+                                                <li onclick="calcprice(5,<s:property value="id"/>)">5</li>
+                                                <li onclick="calcprice(6,<s:property value="id"/>)">6</li>
+                                                <li onclick="calcprice(7,<s:property value="id"/>)">7</li>
+                                                <li onclick="calcprice(8,<s:property value="id"/>)">8</li>
+                                                <li onclick="calcprice(9,<s:property value="id"/>)">9</li>
+                                                <li onclick="calcprice(10,<s:property value="id"/>)">10</li>
                                             </ul>
                                         </div>
                                     </div>

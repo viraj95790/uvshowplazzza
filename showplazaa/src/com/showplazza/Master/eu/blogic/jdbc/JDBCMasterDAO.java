@@ -158,4 +158,33 @@ public class JDBCMasterDAO extends JDBCBaseDAO implements MasterDAO  {
 		return update;
 	}
 
+
+	public int saveticketinfo(String selectedid, Master master) {
+		// TODO Auto-generated method stub
+		PreparedStatement preparedStatement = null;
+		int reslut = 0;
+		String sql = "insert into create_ticket(eventid, ticketname, quanatity, clas_type, clas_price, start_date, end_date, ticket_des, message) "
+				   + "values(?,?,?,?,?,?,?,?,?) ";
+		try {
+			preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setString(1, selectedid);
+			preparedStatement.setString(2, master.getTicketname());
+			preparedStatement.setString(3, master.getQuantity());
+			preparedStatement.setString(4, master.getClas_type());
+			preparedStatement.setString(5, master.getClas_price());
+			preparedStatement.setString(6, master.getStart_date());
+			preparedStatement.setString(7, master.getEnd_date());
+			preparedStatement.setString(8, master.getTicket_des());
+			preparedStatement.setString(9, master.getMessage());
+			
+			preparedStatement.executeUpdate();
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+		return reslut;
+	}
+
 }

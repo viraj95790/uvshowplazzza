@@ -38,6 +38,7 @@
 			<result name="success" type="tiles">displayEvent</result>
 			<result name="addevent" type="redirect">Master</result>
 			<result name="addticket" type="tiles">generateTicket</result>
+			<result name="saveticket" type="redirect">Master</result>
 			
 		</action>
 		
