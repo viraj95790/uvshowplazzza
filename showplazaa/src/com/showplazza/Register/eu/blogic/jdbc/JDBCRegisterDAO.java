@@ -247,4 +247,44 @@ public class JDBCRegisterDAO extends JDBCBaseDAO implements RegisterDAO {
 		return cstatus;
 	}
 
+	public boolean checkEmailIdExist(String email) {
+		PreparedStatement preparedStatement = null;
+		boolean result = false;
+		
+		String sql = "select * from registration where email='"+email+"' ";
+			
+			
+		
+		try{
+			preparedStatement = connection.prepareStatement(sql);
+			ResultSet rs = preparedStatement.executeQuery();
+			if(rs.next()){
+				result = true;
+			}
+			
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		return result;
+	}
+
+	public int saveGmailInfo(String email, String name) {
+		PreparedStatement preparedStatement = null;
+		int result = 0;
+		String sql = "insert into registration (name,email,usertype) values(?,?,?) ";
+		
+		try{
+			preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setString(1, name);
+			preparedStatement.setString(2, email);
+			preparedStatement.setString(3, "2");
+			
+			result = preparedStatement.executeUpdate();
+			
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		return result;
+	}
+
 }

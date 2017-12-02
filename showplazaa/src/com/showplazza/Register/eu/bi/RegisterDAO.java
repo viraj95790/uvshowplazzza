@@ -22,4 +22,8 @@ public interface RegisterDAO {
 
 	int updateclientstatus(String selectedid, String status);
 
+	boolean checkEmailIdExist(String email);
+
+	int saveGmailInfo(String email, String name);
+
 }

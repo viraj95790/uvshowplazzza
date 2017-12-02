@@ -42,6 +42,10 @@
 		<put-attribute name="body" value="/common/pages/homepage.jsp" />
 	</definition>
 	
+	<definition name="loginsuccess" extends="baseLayout">
+		<put-attribute name="body" value="/common/pages/homepagesuccess.jsp" />
+	</definition>
+	
 	<definition name="adminHomepage" extends="baseLayoutadmin">
 		<put-attribute name="body" value="/common/pages/adminhomepage.jsp" />
 	</definition>

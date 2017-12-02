@@ -47,10 +47,19 @@ function calcprice(qty,id){
 	 var unitprice = document.getElementById('hdnunitprice'+id).value;
 	 var totalprice = parseFloat(unitprice) * qty ;
 	 document.getElementById('tickpricrid'+id).innerHTML = totalprice;
+	 
+	 document.getElementById('quantity').value = qty;
+	 document.getElementById('ticketprice').value = totalprice;
 }
 
 function showcrticktcktpopup(id){
 	
 	document.getElementById('hdneventid').value = id;
 	$('#myModal').modal( "show" );
+}
+
+
+function showradiovalue(id){
+	
+	 document.getElementById('hdnradio').value =  document.getElementById(id).value;
 }
