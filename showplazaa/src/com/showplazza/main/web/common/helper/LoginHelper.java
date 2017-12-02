@@ -17,7 +17,7 @@ public class LoginHelper {
 	private static final String LOGGED_IN = "LOGGED_IN";
 
 	/** Key to save user information in session */
-	private static final String LOGIN_INFO = "LOGIN_INFO";
+	private static final String LOGIN_INFO = "logininfo";
 
 	/**
 	 * 
