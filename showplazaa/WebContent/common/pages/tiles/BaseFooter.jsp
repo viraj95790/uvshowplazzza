@@ -3,16 +3,15 @@
       <div class="footer-bar">
         <ul class="list-inline pull-left no-margin">
           <li><a href="">About Us</a></li>
-          <li><a href="">Movies</a></li>
-          <li><a href="">Events</a></li>
-          <li><a href="">Theaters</a></li>
-          <li><a href="">Trailers and videos</a></li>
-          <li><a href="">Offers</a></li>
-          <li><a href="">Customer service</a></li>
+          <li><a href="Movie">Movies</a></li>
+          <li><a href="inputEvent">Events</a></li>
+          <li><a href="Theatre">Theaters</a></li>
+          <li><a href="Trailor">Trailers and videos</a></li>
+          <li><a href="Offers">Offers</a></li>
+          <!-- <li><a href="">Customer service</a></li> -->
         </ul>
         <ul class="list-inline pull-right no-margin hidden-xs seccond-blog-right">
           <li><a href=""><i class="bms-icnandroid-logo"></i></a></li>
-          <li><a href=""><i class="bms-icnwindows-logo-silhouette"></i></a></li>
           <li><a href=""><i class="bms-icnapple"></i></a></li>
         </ul>
       </div>
@@ -20,7 +19,7 @@
 
     <div class="footer container-fluid">
       <div class="container-fluid footer-links hidden-xs">
-        <div class="col-md-5th-1 col-sm-6 col-xs-6 foot-pad">
+        <!-- <div class="col-md-5th-1 col-sm-6 col-xs-6 foot-pad">
           <p class="text-uppercase">Movie Categories</p>
           <ul>
             <li><a href="">Hindi Comedy Movies</a></li>
@@ -30,8 +29,8 @@
             <li><a href="">nglish Comedy Movies</a></li>
             <li><a href="">Marathi Drama Movies</a></li>
           </ul>
-        </div>
-        <div class="col-md-5th-1 col-sm-6 col-xs-6 foot-pad">
+        </div> -->
+       <!--  <div class="col-md-5th-1 col-sm-6 col-xs-6 foot-pad">
           <p class="text-uppercase">Upcoming Events</p>
           <ul>
             <li><a href="">Upcoming Events in Mumbai</a></li>
@@ -41,8 +40,8 @@
             <li><a href="">Upcoming Events in Noida</a></li>
             <li><a href="">Upcoming Events in Nagpur</a></li>
           </ul>
-        </div>
-        <div class="col-md-5th-1 col-sm-6 col-xs-6 foot-pad">
+        </div> -->
+        <!-- <div class="col-md-5th-1 col-sm-6 col-xs-6 foot-pad">
           <p class="text-uppercase">Movie ticket booking</p>
           <ul>
             <li><a href="">Delhi-NCR Movie Ticket Booking</a></li>
@@ -52,8 +51,8 @@
             <li><a href="">Mumbai Movie Ticket Booking</a></li>
             <li><a href="">Pune Movie Ticket Booking</a></li>
           </ul>
-        </div>
-        <div class="col-md-5th-1 col-sm-6 col-xs-6 foot-pad">
+        </div> -->
+       <!--  <div class="col-md-5th-1 col-sm-6 col-xs-6 foot-pad">
           <p class="text-uppercase">Best events by language</p>
           <ul>
             <li><a href="">Event Coming Today</a></li>
@@ -61,7 +60,7 @@
             <li><a href="">Event Coming This Weekend</a></li>
             <li><a href="">Event In Next Weekend</a></li>
           </ul>
-        </div>
+        </div> -->
         <div class="col-md-5th-1 col-sm-6 col-xs-6 foot-pad">
           <p class="text-uppercase">About</p>
           <ul>

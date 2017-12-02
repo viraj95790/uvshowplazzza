@@ -64,16 +64,28 @@ public class Master {
 
 	private String movieImageFileName;
 
-	private File movieImage2;
+	private File smovieImage;
+	
 	
     private String start_date;
 	
 	private String end_date;
 	
-	
+	private String currency;
+
 	
 
 	
+	
+	
+	
+	public String getCurrency() {
+		return currency;
+	}
+
+	public void setCurrency(String currency) {
+		this.currency = currency;
+	}
 
 	public String getStart_date() {
 		return start_date;
@@ -107,9 +119,9 @@ public class Master {
 		this.ticprice = ticprice;
 	}
 
-	private String movieImageContentType2;
+	private String smovieImageContentType;
 
-	private String movieImageFileName2;
+	private String smovieImageFileName;
 
 	private String ticsdate;
 	private String ticprice;
@@ -203,28 +215,30 @@ public class Master {
 		this.eventend_date = eventend_date;
 	}
 
-	public File getMovieImage2() {
-		return movieImage2;
+	
+
+	public File getSmovieImage() {
+		return smovieImage;
 	}
 
-	public void setMovieImage2(File movieImage2) {
-		this.movieImage2 = movieImage2;
+	public void setSmovieImage(File smovieImage) {
+		this.smovieImage = smovieImage;
 	}
 
-	public String getMovieImageContentType2() {
-		return movieImageContentType2;
+	public String getSmovieImageContentType() {
+		return smovieImageContentType;
 	}
 
-	public void setMovieImageContentType2(String movieImageContentType2) {
-		this.movieImageContentType2 = movieImageContentType2;
+	public void setSmovieImageContentType(String smovieImageContentType) {
+		this.smovieImageContentType = smovieImageContentType;
 	}
 
-	public String getMovieImageFileName2() {
-		return movieImageFileName2;
+	public String getSmovieImageFileName() {
+		return smovieImageFileName;
 	}
 
-	public void setMovieImageFileName2(String movieImageFileName2) {
-		this.movieImageFileName2 = movieImageFileName2;
+	public void setSmovieImageFileName(String smovieImageFileName) {
+		this.smovieImageFileName = smovieImageFileName;
 	}
 
 	public String getEvent_description() {

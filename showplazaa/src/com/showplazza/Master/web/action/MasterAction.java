@@ -88,11 +88,13 @@ public class MasterAction extends BaseAction implements ModelDriven<MasterForm>,
 			int eventid = masterDAO.insertevent(master);
 			
 			master.setMovieImageFileName(masterForm.getMovieImageFileName());
+			master.setSmovieImageFileName(masterForm.getSmovieImageFileName());
 			
 			String moviemagename = eventid + "_" +master.getMovieImageFileName();
+			String smovieimagename = eventid+ "_" + master.getSmovieImageFileName();
 			
 			   String filePath = request.getRealPath("/livedata/moviedoc/");
-			  /* String filePath2 = request.getRealPath("/livedata/moviedoc/");*/
+			   String filePath2 = request.getRealPath("/livedata/promotional/");
 		       
 		       
 		System.out.println("Server path:" + filePath);
@@ -100,8 +102,12 @@ public class MasterAction extends BaseAction implements ModelDriven<MasterForm>,
 		FileUtils.copyFile(masterForm.getMovieImage(), fileToCreate);
 		
 		
+		System.out.println("Server path:" + filePath2);
+		File fileToCreate2 = new File(filePath, smovieimagename);
+		FileUtils.copyFile(masterForm.getSmovieImage(), fileToCreate2);
 		
-		int update  = masterDAO.updateimagename(eventid, moviemagename);
+		
+		int update  = masterDAO.updateimagename(eventid, moviemagename, smovieimagename);
 		
 		/*System.out.println("Server path:" + filePath2);
 		File fileToCreate2 = new File(filePath2, masterForm.getMovieImageFileName2());
@@ -179,13 +185,111 @@ public class MasterAction extends BaseAction implements ModelDriven<MasterForm>,
 			
 		}
 	
+	public String displayticket() throws Exception{
+		Connection connection = null;
+		try {
+			connection = Connection_provider.getconnection();
+			MasterDAO masterDAO = new JDBCMasterDAO(connection);
+			
+			ArrayList<Master> list = masterDAO.getticketlist();
+			masterForm.setTicketList(list);
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}finally{
+			connection.close();
+		}
+		return "displayticket";
+		
+	}
+	
+	public String editticket() throws Exception{
+		Connection connection = null;
+		String selectedid = request.getParameter("selectedid");
+		try {
+			connection = Connection_provider.getconnection();
+			MasterDAO masterDAO = new JDBCMasterDAO(connection);
+			Master master = masterDAO.ticketedit(selectedid);
+			
+			masterForm.setTicketname(master.getTicketname());
+			masterForm.setQuantity(master.getQuantity());
+			masterForm.setClas_type(master.getClas_type());
+			masterForm.setClas_price(master.getClas_price());
+			masterForm.setStart_date(master.getStart_date());
+			masterForm.setEnd_date(master.getEnd_date());
+			masterForm.setTicket_des(master.getTicket_des());
+			masterForm.setMessage(master.getMessage());
+			masterForm.setId(master.getId());
+			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}finally{
+			connection.close();
+		}
+		return "editticket";	
+	}
+	
+	public String updateticket() throws Exception{
+		Connection connection = null;
+		try {
+			connection = Connection_provider.getconnection();
+			MasterDAO masterDAO = new JDBCMasterDAO(connection);
+			Master master = new Master();
+			
+			master.setId(masterForm.getId());
+			master.setTicketname(masterForm.getTicketname());
+			master.setQuantity(masterForm.getQuantity());
+			master.setClas_type(masterForm.getClas_type());
+			master.setClas_price(masterForm.getClas_price());
+			master.setStart_date(masterForm.getStart_date());
+			master.setEnd_date(masterForm.getEnd_date());
+			master.setMessage(masterForm.getMessage());
+			master.setTicket_des(masterForm.getTicket_des());
+			
+			int update = masterDAO.updatetic(master);
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}finally{
+			connection.close();
+		}
+		return "updateticket";
+		
+	}
+	
+	public String deleteticket() throws Exception{
+		Connection connection = null;
+		String selectedid = request.getParameter("selectedid");
+		try {
+			connection = Connection_provider.getconnection();
+			MasterDAO masterDAO = new JDBCMasterDAO(connection);
+			
+			int delete = masterDAO.deletetic(selectedid);
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}finally{
+			connection.close();
+		}
+		return displayticket();
+		
+	}
 	
 	public MasterForm getModel() {
 		// TODO Auto-generated method stub
 		return masterForm;
 	}
 
-
+  
+	public String inputoffer(){
+		
+		return "inputoffer";
+		}
 
 	
 	public void prepare() throws Exception {
@@ -198,6 +302,15 @@ public class MasterAction extends BaseAction implements ModelDriven<MasterForm>,
 			ArrayList<Master> statelist = masterDAO.getstatelist();
 			masterForm.setStateList(statelist);
 			
+			ArrayList<Master> eventlist = masterDAO.geteventname();
+			masterForm.setEventList(eventlist);
+			
+			ArrayList<Master> currencylist = masterDAO.getcurencyList();
+			masterForm.setCurrencyList(currencylist);
+			
+			
+			ArrayList<Master> clastypeList = masterDAO.getclastypelist();
+			masterForm.setClastypeList(clastypeList);
 			
 		} catch (Exception e) {
 			// TODO: handle exception

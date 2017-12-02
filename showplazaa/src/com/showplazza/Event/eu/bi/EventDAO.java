@@ -12,4 +12,10 @@ public interface EventDAO {
 
 	String getimage(String id);
 
+	String getactiveimg();
+
+	String getinactiveimg();
+
+	Master getticinfo(int id);
+
 }

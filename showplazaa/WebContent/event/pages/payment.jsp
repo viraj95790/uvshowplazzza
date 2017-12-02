@@ -138,17 +138,17 @@
           <div class="top-sidebar clearfix">
             <p class="font-sz-16 font-md-colr">TICKET SUMMARY</p>
             <div class="movie-nem-detail">
-              <h3 class="font-dr-colr">Jab Harry Met Sejal</h3>
-              <p>Hindi | UA | 2D</p>
+              <h3 class="font-dr-colr"><s:property value="eventname"/></h3>
+              <p><s:property value="language"/></p>
               <p class="font-sz-16 font-fet-colr margin-btm-16">INOX Poonam Mall, Wardhaman Nagar</p>
               <p class="font-sz-16 font-fet-colr margin-btm-5">Friday, 4 Aug 2017 </p>
               <p class="font-sz-16 font-fet-colr">09:00 PM</p>
             </div>
             <hr>
               <div class="tickt-value clearfix">
-                <span class="pull-left"><p class="no-margin font-md-colr">Platinum-CC9, CC8 </p>
-                <p>( 2 Tickets )</p></span>
-                <p class="pull-right font-md-colr">Rs. 236.00</p>
+                <span class="pull-left"><p class="no-margin font-md-colr"><s:property value="ticketname"/> </p>
+                <p><s:property value="quantity"/>Tickets</p></span>
+                <p class="pull-right font-md-colr">Rs. <s:property value="ticketprice"/></p>
               </div>
               <div class="handling-fees clearfix">
                 <p class="pull-left font-sz-12 font-md-colr">Internet handling fees <span class="caret"></span></p>

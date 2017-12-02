@@ -71,11 +71,14 @@ public class EventAction extends BaseAction implements ModelDriven<EventForm>, P
     		connection = Connection_provider.getconnection();
     		EventDAO eventDAO = new JDBCEventDAO(connection);
     		
-    		//String activep = get from db for 1
-    		//String inactivep = get from db for 0
+    		String activep = eventDAO.getactiveimg();
+    		String inactivep = eventDAO.getinactiveimg();
     		
-    		eventForm.setActivep("p1.jpg");
-    		eventForm.setInactivep("p2.jpg");
+    		eventForm.setActivep(activep);
+    		eventForm.setInactivep(inactivep);
+    		
+    		/*eventForm.setInactivep("p1.jpg");
+    		eventForm.setInactivep("p2.jpg");*/
     		
     		
     		ArrayList<Master>eventImgList = eventDAO.getEventImgList();
@@ -88,7 +91,7 @@ public class EventAction extends BaseAction implements ModelDriven<EventForm>, P
     	return super.input();
     }
     
-    public String eventdetail(){
+    public String eventdetail() throws Exception{
     	
     	String id = request.getParameter("id");
     	
@@ -109,21 +112,44 @@ public class EventAction extends BaseAction implements ModelDriven<EventForm>, P
 	    	eventForm.setAddress(master.getAddress());
 	    	eventForm.setEventname(master.getEventname());
 	    	eventForm.setEvent_tags(master.getEvent_tags());
+	    	eventForm.setId(Integer.parseInt(id));
 			
 		}catch(Exception e){
-			
+			e.printStackTrace();
+		}finally{
+			connection.close();
 		}
-    
-    	
-    	
-    	
 		return "eventdetail";
     	
     }
     
     
-   public String payment(){
-    	
+   public String payment() throws Exception{
+	   Connection connection = null;
+	   String price = eventForm.getTicketprice();
+	   try {
+		   connection = Connection_provider.getconnection();
+		   EventDAO eventDAO = new JDBCEventDAO(connection);
+		   
+		   Master master = new Master();
+		   master.setId(eventForm.getId());
+		   master.setTicprice(eventForm.getTicketprice());
+		   master.setQuantity(eventForm.getQuantity());
+		   
+		   master = eventDAO.getticinfo(master.getId());
+		   eventForm.setTicketname(master.getTicketname());
+		   eventForm.setEventdate(master.getEventdate());
+		   eventForm.setEventname(master.getEventname());
+		   eventForm.setTicketprice(price);
+		   eventForm.setLanguage(master.getLanguage());
+		   
+		
+	} catch (Exception e) {
+		// TODO: handle exception
+		e.printStackTrace();
+	}finally{
+		connection.close();
+	}
 		return "payment";
     	
     }

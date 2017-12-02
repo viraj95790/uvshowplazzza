@@ -37,11 +37,41 @@
 			<result name="input" type="tiles">addEvent</result>
 			<result name="success" type="tiles">displayEvent</result>
 			<result name="addevent" type="redirect">Master</result>
-			<result name="addticket" type="tiles">generateTicket</result>
 			<result name="saveticket" type="redirect">Master</result>
+			<result name="displayticket" type="tiles">displayTicket</result>
+			<result name="editticket" type="tiles">editTicket</result>
+			<result name="updateticket" type="redirect">displayticketMaster</result>
+			<result name="inputoffer" type="tiles">addOffer</result>
+		
 			
 		</action>
 		
+		
+		<action name="*Offers" method="{1}" class="com.showplazza.Master.web.action.OffersAction">
+			<result name="success" type="tiles">displayOffer</result>
+			
+		</action>
+		
+		<action name="*Gifting" method="{1}" class="com.showplazza.Master.web.action.GiftingAction">
+			<result name="success" type="tiles">displayGifting</result>
+			
+		</action>
+		
+		<action name="*Movie" method="{1}" class="com.showplazza.Master.web.action.MovieAction">
+		    <result name="success" type="tiles">displayMovie</result>
+		</action>
+		
+		<action name="*Theatre" method="{1}" class="com.showplazza.Master.web.action.TheatreAction">
+		    <result name="success" type="tiles">displaytheatre</result>
+		</action>
+		
+		<action name="*Trailor" method="{1}" class="com.showplazza.Master.web.action.TrailorAction">
+		    <result name="success" type="tiles">displaytrailor</result>
+		</action>
+		
+		<action name="*Support" method="{1}" class="com.showplazza.Master.web.action.SupportAction">
+		    <result name="success" type="tiles">displaySupport</result>
+		</action>
 		
 		<action name="*Event" method="{1}" class="com.showplazza.Event.web.action.EventAction">
 			<result name="input" type="tiles">checkEvent</result>

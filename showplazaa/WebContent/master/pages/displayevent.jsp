@@ -8,6 +8,7 @@
                         <div class="panel-heading">
                             <span class="glyphicon glyphicon-user"></span>Events List
                             <div class="pull-right">
+                            	 <a href="displayticketMaster"><span class="glyphicon glyphicon-plus "></span>View Ticket</a>
                                 <a href="inputMaster"><span class="glyphicon glyphicon-plus "></span>Add New Event</a>
                                
                             </div>
@@ -99,29 +100,20 @@
 							class="form-control" type="text">
 					</div> --%>
 					<div class="form-group col-md-6 col-sm-12">
-						<label>class Type<span style="color: red;">*</span></label> 
-						<s:textfield name="clas_type" cssClass="form-control" type="text"></s:textfield>
+						<label>Class Type<span style="color: red;">*</span></label> 
+						<s:select cssClass="form-control" list="clastypeList" id="id" name="name" listKey="id" listValue="name" headerKey="0"  headerValue="Select Type">
+								   </s:select>
+						<%-- <s:textfield name="clas_type" cssClass="form-control" type="text"></s:textfield> --%>
 					</div>
 					<div class="form-group col-md-6 col-sm-12">
 						<div class="row">
 							<label>Class Price<span style="color: red;">*</span></label>
 						</div>
-						<div class="col-sm-3 no-padding">
-							<select class="form-control">
-								<option selected disabled hidden>--</option>
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-								<option>5</option>
-								<option>6</option>
-								<option>7</option>
-								<option>8</option>
-								<option>9</option>
-								<option>10</option>
-							</select>
+						<div class="col-sm-4 no-padding">
+							<s:select cssClass="form-control" list="currencyList" id="id" name="currency" listKey="currency" listValue="currency" headerKey="0"  headerValue="Select Currency">
+								   </s:select>
 						</div>
-						<div class="col-sm-9 no-padding">
+						<div class="col-sm-8 no-padding">
 							<s:textfield name="clas_price" cssClass="form-control" type="text"></s:textfield>
 						</div>
 					</div>
@@ -154,14 +146,16 @@
 								</label>
 							</div>
 							<div class="btn-group" id="status" data-toggle="buttons">
-								<label class="btn btn-default btn-on-1 btn-sm active"> <input
-									type="radio" value="1"
+								<label class="btn btn-default btn-on-1 btn-sm active"> 
+								<input onclick="showradiovalue('r1')" id="r1" type="radio" value="1"
 									name="multifeatured_module[module_id][status]"
 									checked="checked">Me
 								</label> <label class="btn btn-default btn-off-1 btn-sm "> <input
-									type="radio" value="0"
+									type="radio" onclick="showradiovalue('r0')" id="r0" value="0" 
 									name="multifeatured_module[module_id][status]">Buyer
 								</label>
+								
+								<s:hidden name="hdnradio" id="hdnradio" value="1"/>
 							</div>
 						</div>
 						<div class="col-sm-6">

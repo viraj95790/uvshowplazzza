@@ -65,12 +65,38 @@
 	<definition name="payment" extends="baseLayout">
 		<put-attribute name="body" value="/event/pages/payment.jsp" />
 	</definition>
-	
-	<definition name="generateTicket" extends="baseLayout">
-		<put-attribute name="body" value="/master/pages/generateticket.jsp" />
+
+ 	<definition name="displayTicket" extends="baseLayoutadmin">
+		<put-attribute name="body" value="/master/pages/displayticket.jsp" />
 	</definition>
 
-
-
+   <definition name="editTicket" extends="baseLayoutadmin">
+		<put-attribute name="body" value="/master/pages/edit_ticket.jsp" />
+	</definition>
+	
+	<definition name="displayOffer" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/offers.jsp" />
+	</definition>
+	
+	<definition name="displayGifting" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/gifting.jsp" />
+	</definition>
+	
+	<definition name="displayMovie" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/movie.jsp" />
+	</definition>
+	
+	<definition name="displaytheatre" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/theatre.jsp" />
+	</definition>
+	
+	<definition name="displaytrailor" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/trailor.jsp" />
+	</definition>
+	
+	<definition name="displaySupport" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/support.jsp" />
+	</definition>
+	
 
 </tiles-definitions>

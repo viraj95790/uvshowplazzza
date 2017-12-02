@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 import com.showplazza.Event.eu.bi.EventDAO;
 import com.showplazza.Master.eu.entity.Master;
+import com.showplazza.common.utils.DateTimeUtils;
 import com.showplazza.main.eu.blogic.jdbc.JDBCBaseDAO;
 
 
@@ -19,7 +20,7 @@ public class JDBCEventDAO extends JDBCBaseDAO implements EventDAO  {
 	public ArrayList<Master> getEventImgList() {
 		PreparedStatement preparedStatement = null;
 		ArrayList<Master>list = new ArrayList<Master>();
-		String sql = "SELECT id,movieimage1 FROM event ";
+		String sql = "SELECT id,movieimage1, eventname, eventdate, address, city FROM event ";
 		
 		try{
 			preparedStatement = connection.prepareStatement(sql);
@@ -28,6 +29,12 @@ public class JDBCEventDAO extends JDBCBaseDAO implements EventDAO  {
 				Master master = new Master();
 				master.setId(rs.getInt(1));
 				master.setName(rs.getString(2));
+				master.setEventname(rs.getString(3));
+				master.setEventdate(rs.getString(4));
+				master.setAddress(rs.getString(5)+", "+rs.getString(6));
+				
+				double price = getticketprice(master.getId());
+				master.setClas_price(DateTimeUtils.changeFormat(price));
 				
 				list.add(master);
 			}
@@ -37,6 +44,24 @@ public class JDBCEventDAO extends JDBCBaseDAO implements EventDAO  {
 			e.printStackTrace();
 		}
 		return list;
+	}
+
+	private double getticketprice(int id) {
+		// TODO Auto-generated method stub
+		PreparedStatement preparedStatement = null;
+		double price = 0;
+		String sql = "select clas_price from create_ticket where eventid="+id+" ";
+		try {
+			preparedStatement = connection.prepareStatement(sql);
+			ResultSet rs = preparedStatement.executeQuery();
+			while(rs.next()){
+				price = rs.getDouble(1);
+			}
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return price;
 	}
 
 	public ArrayList<Master> getEventTicketList(String id) {
@@ -110,6 +135,90 @@ public class JDBCEventDAO extends JDBCBaseDAO implements EventDAO  {
 			e.printStackTrace();
 		}
 		return selectedimg;
+	}
+
+	public String getactiveimg() {
+		// TODO Auto-generated method stub
+		PreparedStatement preparedStatement = null;
+		String selectedimg = "";
+		String sql = "select imgname from pramotional_img where active= 0 ";
+		try {
+			preparedStatement = connection.prepareStatement(sql);
+			ResultSet rs = preparedStatement.executeQuery();
+			while(rs.next()){
+				selectedimg = rs.getString(1);
+			}
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		return selectedimg;
+	}
+
+	public String getinactiveimg() {
+		// TODO Auto-generated method stub
+		PreparedStatement preparedStatement = null;
+		String selectedimg = "";
+		String sql = "select imgname from pramotional_img where active= 1 ";
+		try {
+			preparedStatement = connection.prepareStatement(sql);
+			ResultSet rs = preparedStatement.executeQuery();
+			while(rs.next()){
+				selectedimg = rs.getString(1);
+			}
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		return selectedimg;
+	}
+
+	public Master getticinfo(int id) {
+		// TODO Auto-generated method stub
+		PreparedStatement preparedStatement = null;
+		Master master = new Master();
+		String sql = "select eventname, language, eventdate, start_time, address, city from event where id="+id+"  ";
+		try {
+			preparedStatement = connection.prepareStatement(sql);
+			ResultSet rs = preparedStatement.executeQuery();
+			while(rs.next()){
+				master.setEventname(rs.getString(1));
+				master.setLanguage(rs.getString(2));
+				master.setEventdate(rs.getString(3));
+				master.setStart_time(rs.getString(4));
+				master.setAddress(rs.getString(5));
+				master.setCity(rs.getString(6));
+				
+				Master master2 = getticktname(id);
+				master.setTicketname(master2.getTicketname());
+	
+			}
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		return master;
+	}
+
+	private Master getticktname(int id) {
+		// TODO Auto-generated method stub
+		PreparedStatement preparedStatement = null;
+		Master master = new Master();
+		String sql = "select ticketname from create_ticket where eventid="+id+" ";
+		try {
+			preparedStatement = connection.prepareStatement(sql);
+			ResultSet rs = preparedStatement.executeQuery();
+			while(rs.next()){
+				master.setTicketname(rs.getString(1));
+			}
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return master;
 	}
 
 	

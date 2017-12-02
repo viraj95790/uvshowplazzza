@@ -121,8 +121,8 @@
 
 .bx-wrapper{max-width: 100% !important;}
 body{font-family: 'nunitobold';font-size: 14px;}
-.family-ex{font-family: 'nunitoextrabold';}
-.no-padding{padding: 0 !important;}
+.family-ex{font-family: 'nunitoextrabold'; }
+.no-padding{padding: 0 !important; top: 10px;}
 .no-margin{margin: 0 !important;}
 .pad-mv{padding: 35px 20px !important;}
 .font-sz-12{font-size: 12px !important;}
@@ -143,7 +143,7 @@ body{font-family: 'nunitobold';font-size: 14px;}
 .gradi-clor{background: rgba(233,44,88,1);
 background: -moz-linear-gradient(left, rgba(233,44,88,1) 15%, rgba(233,47,91,1) 15%, rgba(227,46,95,1) 19%, rgba(113,19,172,1) 96%, rgba(113,19,172,1) 100%);
 background: -webkit-gradient(left top, right top, color-stop(15%, rgba(233,44,88,1)), color-stop(15%, rgba(233,47,91,1)), color-stop(19%, rgba(227,46,95,1)), color-stop(96%, rgba(113,19,172,1)), color-stop(100%, rgba(113,19,172,1)));
-background: -webkit-linear-gradient(left, rgba(233,44,88,1) 15%, rgba(233,47,91,1) 15%, rgba(227,46,95,1) 19%, rgba(113,19,172,1) 96%, rgba(113,19,172,1) 100%);
+background: -webkit-linear-gradient(left, rgb(45, 0, 0) 15%, rgb(47, 3, 3) 15%, rgb(37, 0, 10) 19%, rgb(152, 0, 77) 96%, rgb(172, 19, 97) 100%);
 background: -o-linear-gradient(left, rgba(233,44,88,1) 15%, rgba(233,47,91,1) 15%, rgba(227,46,95,1) 19%, rgba(113,19,172,1) 96%, rgba(113,19,172,1) 100%);
 background: -ms-linear-gradient(left, rgba(233,44,88,1) 15%, rgba(233,47,91,1) 15%, rgba(227,46,95,1) 19%, rgba(113,19,172,1) 96%, rgba(113,19,172,1) 100%);}
 

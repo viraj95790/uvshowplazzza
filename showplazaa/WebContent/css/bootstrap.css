@@ -1097,12 +1097,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
+  color: #ffffff;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #23527c;
+  color: #fa4718;
   text-decoration: underline;
 }
 a:focus {
@@ -3455,6 +3455,7 @@ fieldset[disabled] .btn-link:focus {
 .btn-block {
   display: block;
   width: 100%;
+  top:5px;
 }
 .btn-block + .btn-block {
   margin-top: 5px;

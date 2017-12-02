@@ -141,14 +141,15 @@ public class JDBCMasterDAO extends JDBCBaseDAO implements MasterDAO  {
 	}
 
 
-	public int updateimagename(int eventid , String moviemagename) {
+	public int updateimagename(int eventid , String moviemagename, String smovieimagename) {
 		// TODO Auto-generated method stub
 		PreparedStatement preparedStatement = null;
 		int update = 0;
-		String sql = "update event set  movieimage1=? where id="+eventid+" ";
+		String sql = "update event set  movieimage1=?, movieimage2=? where id="+eventid+" ";
 		try {
 			preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setString(1, moviemagename);
+			preparedStatement.setString(2, smovieimagename);
 			
 			preparedStatement.executeUpdate();
 			
@@ -185,6 +186,176 @@ public class JDBCMasterDAO extends JDBCBaseDAO implements MasterDAO  {
 		}
 		
 		return reslut;
+	}
+
+
+	public ArrayList<Master> getticketlist() {
+		// TODO Auto-generated method stub
+		PreparedStatement preparedStatement = null;
+		ArrayList<Master> list = new ArrayList<Master>();
+		String sql = "select id, ticketname, quanatity, clas_type, clas_price, start_date, end_date from create_ticket";
+		try {
+			preparedStatement = connection.prepareStatement(sql);
+			ResultSet rs = preparedStatement.executeQuery();
+			while(rs.next()){
+				Master master = new Master();
+				master.setId(rs.getInt(1));
+				master.setTicketname(rs.getString(2));
+				master.setQuantity(rs.getString(3));
+				master.setClas_type(rs.getString(4));
+				master.setClas_price(rs.getString(5));
+				master.setStart_date(rs.getString(6));
+				master.setEnd_date(rs.getString(7));
+				
+				list.add(master);
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		return list;
+	}
+
+
+	public ArrayList<Master> geteventname() {
+		// TODO Auto-generated method stu
+		PreparedStatement preparedStatement = null;
+		ArrayList<Master> list = new ArrayList<Master>();
+		String sql = "select id, eventname from event";
+		try {
+			preparedStatement = connection.prepareStatement(sql);
+			ResultSet rs = preparedStatement.executeQuery();
+			while(rs.next()){
+				Master master = new Master();
+				master.setId(rs.getInt(1));
+				master.setEventname(rs.getString(2));
+				list.add(master);
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		return list;
+	}
+
+
+	public Master ticketedit(String selectedid) {
+		// TODO Auto-generated method stub
+		PreparedStatement preparedStatement = null;
+		Master master = new Master();
+		String sql = "select ticketname, quanatity, clas_type, clas_price, start_date, end_date, ticket_des, message from create_ticket where id="+selectedid+" ";
+		try {
+			preparedStatement = connection.prepareStatement(sql);
+			ResultSet rs = preparedStatement.executeQuery();
+			while(rs.next()){
+				master.setId(Integer.parseInt(selectedid));
+				
+				master.setTicketname(rs.getString(1));
+				master.setQuantity(rs.getString(2));
+				master.setClas_type(rs.getString(3));
+				master.setClas_price(rs.getString(4));
+				master.setStart_date(rs.getString(5));
+				master.setEnd_date(rs.getString(6));
+				master.setTicket_des(rs.getString(7));
+				master.setMessage(rs.getString(8));
+				
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		return master;
+	}
+
+
+	public int updatetic(Master master) {
+		// TODO Auto-generated method stub
+		PreparedStatement preparedStatement = null;
+		int update = 0;
+		String sql = "update create_ticket set ticketname=?, quanatity=?, clas_type=?, clas_price=?, start_date=?, "
+				+ "end_date=?, ticket_des=?, message=? where id=? ";
+		try {
+			preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setString(1, master.getTicketname());
+			preparedStatement.setString(2, master.getQuantity());
+			preparedStatement.setString(3, master.getClas_type());
+			preparedStatement.setString(4, master.getClas_price());
+			preparedStatement.setString(5, master.getStart_date());
+			preparedStatement.setString(6, master.getEnd_date());
+			preparedStatement.setString(7, master.getTicket_des());
+			preparedStatement.setString(8, master.getMessage());
+			preparedStatement.setInt(9, master.getId());
+			
+			preparedStatement.executeUpdate();
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		return update;
+	}
+
+
+	public int deletetic(String selectedid) {
+		// TODO Auto-generated method stub
+		PreparedStatement preparedStatement = null;
+		int delete = 0;
+		String sql = "delete from create_ticket where id="+selectedid+" ";
+		try {
+			preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.executeUpdate();
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return delete;
+	}
+
+
+	public ArrayList<Master> getcurencyList() {
+		// TODO Auto-generated method stub
+		PreparedStatement preparedStatement = null;
+		ArrayList<Master> list = new ArrayList<Master>();
+		String sql = "select id, currency from currency";
+		try {
+			preparedStatement = connection.prepareStatement(sql);
+			ResultSet rs = preparedStatement.executeQuery();
+			while(rs.next()){
+				Master master = new Master();
+				master.setId(rs.getInt(1));
+				master.setCurrency(rs.getString(2));
+				
+				list.add(master);
+			}
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		return list;
+	}
+
+
+	public ArrayList<Master> getclastypelist() {
+		// TODO Auto-generated method stub
+		PreparedStatement preparedStatement = null;
+		ArrayList<Master> list = new ArrayList<Master>();
+		String sql = "select id, name from clas_type";
+		try {
+			preparedStatement = connection.prepareStatement(sql);
+			ResultSet rs = preparedStatement.executeQuery();
+			while(rs.next()){
+				Master master = new Master();
+				master.setId(rs.getInt(1));
+				master.setName(rs.getString(2));
+				
+				list.add(master);
+			}
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		return list;
 	}
 
 }

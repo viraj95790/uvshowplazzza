@@ -47,11 +47,11 @@ public class MasterForm {
 
 	private String movieImageFileName;
 	
-	private File movieImage2;
+	private File smovieImage;
 
-	private String movieImageContentType2;
+	private String smovieImageContentType;
 
-	private String movieImageFileName2;
+	private String smovieImageFileName;
 
     private String event_description;
 	
@@ -69,7 +69,13 @@ public class MasterForm {
 	
 	private ArrayList<Master> stateList;
 	
+	private ArrayList<Master> ticketList;
+	
 	private ArrayList<Master> cityList;
+	
+	private ArrayList<Master> currencyList;
+	
+	private ArrayList<Master> clastypeList;
 	
 
 	
@@ -101,6 +107,32 @@ public class MasterForm {
 	
 	
 	
+	
+	
+
+	public ArrayList<Master> getCurrencyList() {
+		return currencyList;
+	}
+
+	public void setCurrencyList(ArrayList<Master> currencyList) {
+		this.currencyList = currencyList;
+	}
+
+	public ArrayList<Master> getClastypeList() {
+		return clastypeList;
+	}
+
+	public void setClastypeList(ArrayList<Master> clastypeList) {
+		this.clastypeList = clastypeList;
+	}
+
+	public ArrayList<Master> getTicketList() {
+		return ticketList;
+	}
+
+	public void setTicketList(ArrayList<Master> ticketList) {
+		this.ticketList = ticketList;
+	}
 
 	public String getStart_date() {
 		return start_date;
@@ -222,28 +254,30 @@ public class MasterForm {
 		this.city = city;
 	}
 
-	public File getMovieImage2() {
-		return movieImage2;
+
+
+	public File getSmovieImage() {
+		return smovieImage;
 	}
 
-	public void setMovieImage2(File movieImage2) {
-		this.movieImage2 = movieImage2;
+	public void setSmovieImage(File smovieImage) {
+		this.smovieImage = smovieImage;
 	}
 
-	public String getMovieImageContentType2() {
-		return movieImageContentType2;
+	public String getSmovieImageContentType() {
+		return smovieImageContentType;
 	}
 
-	public void setMovieImageContentType2(String movieImageContentType2) {
-		this.movieImageContentType2 = movieImageContentType2;
+	public void setSmovieImageContentType(String smovieImageContentType) {
+		this.smovieImageContentType = smovieImageContentType;
 	}
 
-	public String getMovieImageFileName2() {
-		return movieImageFileName2;
+	public String getSmovieImageFileName() {
+		return smovieImageFileName;
 	}
 
-	public void setMovieImageFileName2(String movieImageFileName2) {
-		this.movieImageFileName2 = movieImageFileName2;
+	public void setSmovieImageFileName(String smovieImageFileName) {
+		this.smovieImageFileName = smovieImageFileName;
 	}
 
 	public String getEvent_description() {

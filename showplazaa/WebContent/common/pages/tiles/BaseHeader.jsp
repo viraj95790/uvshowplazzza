@@ -13,17 +13,17 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav nunit-bold left-nav-menu">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="#">MOVIES</a></li>
+            <li><a href="inputEvent">HOME</a></li>
+            <li><a href="Movie">MOVIES</a></li>
             <li><a href="inputEvent">EVENTS</a></li>
-            <li><a href="#">THEATRES</a></li>
-            <li><a href="#">TRAILES & VIDEOS</a></li>
+            <li><a href="Theatre">THEATRES</a></li>
+            <li><a href="Trailor">TRAILES & VIDEOS</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right nunit-bold">
-            <li><a href="#">OFFERS</a></li>
-            <li><a href="#">GIFTING</a></li>
-            <li><a href="#">SUPPORT</a></li>
-            <li><a href="#">24x7 CUSTOMER CARE</a></li>
+            <li><a href="Offers">OFFERS</a></li>
+            <li><a href="Gifting">GIFTING</a></li>
+            <li><a href="Support">SUPPORT</a></li>
+            <!-- <li><a href="#">24x7 CUSTOMER CARE</a></li> -->
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="bms-icnpeople"></i></a>
               <ul class="dropdown-menu acunt">

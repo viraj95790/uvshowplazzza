@@ -34,11 +34,11 @@
 .btn-select ul li.selected {color: white;}
 .btn-select ul li.selected:hover{background-color: #be2026;}
 
-.search-hed .add-on .input-group-btn .btn.serch-btn{background: #be2026;color: #ffffff;border-color: #be2026;}    
+.search-hed .add-on .input-group-btn .btn.serch-btn{background: #fa4718;color: #ffffff;border-color: #fa4718;}    
 .search-hed .add-on .input-group-btn .btn.serch-btn .bms-icnsearch{display: block;padding: 4px 0;}
 .main-locatin-drp i.bms-icnsigns2{float: left;font-size: 21px;padding: 4px 0 0;}
-.main-locatin-drp span.locatin-drp{float: left;padding: 4px 7px 4px 20px;}
-.main-locatin-drp .dropdown-menu>li>a:focus{color: #ffffff;text-decoration: none;background-color: #be2026;}
+.main-locatin-drp span.locatin-drp{float: left;padding: 4px 7px 4px 30px;}
+.main-locatin-drp .dropdown-menu>li>a:focus{color: #ffffff;text-decoration: none;background-color: #fa4718;}
 .main-locatin-drp .dropdown-menu{padding: 12px;right: 0px;left: -144px;}
 .main-header .navbar-nav.navbar-right li.dropdown .dropdown-menu.acunt{padding: 0;border-top-left-radius: 4px;border-top-right-radius: 4px;width: 250px;}
 .main-header .navbar-nav.navbar-right li.dropdown .dropdown-menu.acunt i{font-size: 20px;}
@@ -51,7 +51,7 @@
 .main-header .navbar-nav.navbar-right li.dropdown .dropdown-menu.acunt li a span{padding: 0 12px 0;}
 .main-header .navbar-nav.navbar-right li.dropdown .dropdown-menu.acunt li a img{ padding: 0 0 6px;}
 #triangle-up {width: 0;height: 0;border-left: 14px solid transparent;border-right: 14px solid transparent;border-bottom: 15px solid #fff;position: absolute;top: -15px;right: 10px;}
-.main-locatin-drp button.btn{background: #be2026;color: #ffffff;border-color: #be2026;border-radius: 2px;}
+.main-locatin-drp button.btn{background: #fa4718;color: #ffffff;border-color: #fa4718;border-radius: 2px;}
 .main-locatin-drp ul{padding: 0;list-style: none;}
 .main-locatin-drp .location-search{padding: 0;}
 .main-locatin-drp p{font-size: 16px;margin: 0 0 6px;}
@@ -776,7 +776,7 @@ body{font-size: 13px;}
 .main-header .navbar-nav .caret{display: none;}
 .main-header .search-hed {padding: 0 15px 0;position: absolute;z-index: 999;top: -2px;right: 0;}
 .main-header .search-hed .logo {display: block;padding: 17px 0;}
-.btn-block {display: block;width: 70%;float: right;}
+.btn-block {display: block;width: 70%;float: right; top: 5px;}
 .main-locatin-drp .navbar-nav .btn-group-vertical>.btn, .btn-group>.btn {position: relative;float: right;}
 .slider .carousel-control.left, .slider .carousel-control.right {top: 37%;width: 43px;height: 56px;}
 .movies-filter-sec .upcom-hed {padding: 8px 7px;}

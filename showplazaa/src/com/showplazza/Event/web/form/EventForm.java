@@ -45,6 +45,11 @@ public class EventForm {
 	
 	private String qty;
 	
+	private String quantity;
+
+	private String ticketprice;
+	
+	private String ticketname;
 	
 	
 	
@@ -52,6 +57,32 @@ public class EventForm {
 	
 	
 	
+
+	
+	
+	public String getTicketname() {
+		return ticketname;
+	}
+
+	public void setTicketname(String ticketname) {
+		this.ticketname = ticketname;
+	}
+
+	public String getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(String quantity) {
+		this.quantity = quantity;
+	}
+
+	public String getTicketprice() {
+		return ticketprice;
+	}
+
+	public void setTicketprice(String ticketprice) {
+		this.ticketprice = ticketprice;
+	}
 
 	public String getQty() {
 		return qty;

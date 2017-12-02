@@ -84,19 +84,20 @@
             <s:iterator value="eventImgList">
             <div class="gallery_product col-md-3 col-sm-3 col-xs-6 filter hdpe tract">
                 <div class="movie-img-text">
-                  <a href="eventdetailEvent?id=<s:property value="id"/>">
+                 
                     <div class="movie-posr-img" style="background-image: url(livedata/moviedoc/<s:property value="name"/>);"></div>
                     <!-- <img src="img/event-img1.jpg" class="img-responsive"> -->
                       <div class="movie-title-belo">
-                        <p class="lg" class="lg">Music Festival Forever</p>
-                        <p class="sm">Pimpri-Chinchwad, Pune</p>
-                        <span class="pull-left red12">NOV 16 SAT ONWARDS</span><span class="pull-right grey12">RS. 499 Onwards</span>
+                        <p class="lg" class="lg"><s:property value="eventname"/></p>
+                        <p class="sm"><s:property value="address"/></p>
+                        <span class="pull-left red12"><s:property value="eventdate"/></span><span class="pull-right grey12">RS. <s:property value="clas_price"/> Onwards</span>
                         <div class="clearfix"></div>
                       </div>
                       <div class="book-shw">
-                        <span><a href="?id=<s:property value="id"/>"> By Tickets</span>
+                        <span> <%-- <a href="?id=<s:property value="id"/>">  </a> --%>
+                         <a href="eventdetailEvent?id=<s:property value="id"/>"> Buy Tickets </a></span>
                       </div>
-                  </a>
+                  
                 </div>
             </div>
             </s:iterator>

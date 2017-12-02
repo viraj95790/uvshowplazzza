@@ -12,6 +12,9 @@
 			<div class="panel panel-default  user-panel">
 				<div class="panel-heading">
 					<span class="glyphicon glyphicon-film  "></span>Add New Events
+					<div class="pull-right">
+                          <a href="addpromMaster"><span class="glyphicon glyphicon-plus "></span>View Promotional Event</a>
+                      </div>
 				</div>
 				<div class="panel-body">
 					<div class="row">
@@ -34,6 +37,7 @@
 									<label>Language<span style="color: red;">*</span></label> <select
 										class="form-control" id="language" name="language">
 										<option selected disabled hidden>--Select Language--</option>
+										<option value="English">Marathi</option>
 										<option value="Hindi">Hindi</option>
 										<option value="Tamil">Tamil</option>
 										<option value="Telugu">Telugu</option>
@@ -47,19 +51,19 @@
 										theme="simple" title="Event Type" />
 								</div>
 
-								<div class="form-group col-md-6 col-sm-12">
+								<div class="form-group col-md-12 col-sm-12">
 									<label>Enter Tags related to your Event (Maximum 3)<span
 										style="color: red;">*</span></label> 
 										<s:textfield name="event_tags" cssClass="form-control"
 										theme="simple" title="Organized By" />
 									</select>
 								</div>
-								<div class="form-group col-md-6 col-sm-12">
+								<%-- <div class="form-group col-md-6 col-sm-12">
 									<label>Cast and Crew<span style="color: red;">*</span></label>
 									<!--  <input class="form-control" type="text" required> -->
 									<s:textfield name="castcrew" cssClass="form-control"
 										theme="simple" title="Cast and Crew" />
-								</div>
+								</div> --%>
 								<div class="form-group col-md-6 col-sm-12">
 									<label>Event Description</label>
 									<!-- <textarea class="form-control" rows="5"></textarea> -->
@@ -75,7 +79,7 @@
 									<!-- /.box -->
 								</div>
 								<div class="form-group col-md-6 col-sm-12">
-									<label>Crew Description</label>
+									<label>Short Description</label>
 									<!-- <textarea class="form-control" rows="5"></textarea> -->
 									<div class='box box-info'>
 										<div class='box-body pad'>
@@ -123,16 +127,8 @@
 												theme="simple" title="Event Time" />
 										</div>
 										<div class="col-sm-6">
-											<label>Event Time<span style="color: red;">*</span></label>
-											<s:textfield name="end_time" cssClass="form-control"
-												theme="simple" title="Event Time" />
-										</div>
-									</div>
-									<div class="form-group col-md-6 col-sm-12">
-
-										<label>Booking Open Date<span style="color: red;">*</span></label>
-										<!-- <input class="form-control" type="text" required> -->
-										<div class="input-group date datepicker"
+											<label>Booking Open Date<span style="color: red;">*</span></label>
+											<div class="input-group date datepicker"
 											data-provide="datepicker">
 											<s:textfield name="booking_date" cssClass="form-control"
 												theme="simple" title="Booking Date" />
@@ -140,7 +136,9 @@
 												<span class="glyphicon glyphicon-th"></span>
 											</div>
 										</div>
+										</div>
 									</div>
+									
 								</div>
 								<div class="form-group col-md-6 col-sm-12 no-padding">
 									<div class=" col-sm-6">
@@ -154,8 +152,8 @@
 									</div>
 									<div class=" col-sm-6">
 										<label>Movie Image Banner<span style="color: red;">*</span></label>
-										<s:file class="input-file" name="movieImage2" id="movieImage2" />
-										<label tabindex="0" for="my-file" class="input-file-trigger"><i
+										<s:file class="input-file" name="smovieImage" id="smovieImage" />
+										<label tabindex="1" for="my-file" class="input-file-trigger"><i
 											class="fa fa-upload"></i>Select a file...</label> <span>Image
 											size (420 x 200)</span>
 									</div>
@@ -193,7 +191,7 @@
 										</select>
 									</div>
 									<!-- Button to oprn modal for ticket -->
-									<div class="col-sm-12">
+									<%-- <div class="col-sm-12">
 										<div class=" row no-margin" data-toggle="modal"
 											data-target="#myModal">
 											<label>Tickets<span style="color: red;">*</span></label> <input
@@ -213,7 +211,7 @@
 											<div class="row"></div>
 										</div>
 
-									</div>
+									</div> --%>
 
 									<div class="form-group col-sm-6">
 										<label>Address <span style="color: red;">*</span></label>

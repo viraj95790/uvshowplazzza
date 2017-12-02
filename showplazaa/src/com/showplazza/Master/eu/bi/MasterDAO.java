@@ -12,8 +12,22 @@ public interface MasterDAO {
 
 	ArrayList<Master> getstatelist();
 
-	int updateimagename(int eventid, String moviemagename);
+	int updateimagename(int eventid, String moviemagename, String smovieimagename);
 
 	int saveticketinfo(String selectedid, Master master);
+
+	ArrayList<Master> getticketlist();
+
+	ArrayList<Master> geteventname();
+
+	Master ticketedit(String selectedid);
+
+	int updatetic(Master master);
+
+	int deletetic(String selectedid);
+
+	ArrayList<Master> getcurencyList();
+
+	ArrayList<Master> getclastypelist();
 
 }
