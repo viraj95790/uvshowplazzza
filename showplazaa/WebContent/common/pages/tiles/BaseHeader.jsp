@@ -43,16 +43,16 @@
 					aria-expanded="false"><i class="bms-icnpeople"></i></a>
 					<ul class="dropdown-menu acunt">
 						<div id="triangle-up"></div>
-						<li><a href="mywallet.html"><img src="img/acunt1.png"><span>
+						<li><a href="mywallet"><img src="img/acunt1.png"><span>
 									My Wallet</span></a></li>
-						<li><a href="showplazza-profile.html"><i
+						<li><a href="booking"><i
 								class="icon-agenda"></i><span> Booking History</span></a></li>
-						<li><a href="showplazza-profile.html"><i
+						<li><a href="QuickPay"><i
 								class="icon-credit-card"></i><span> QuickPay</span></a></li>
-						<li><a href="showplazza-profile.html"><i
+						<li><a href="Experiences"><i
 								class="icon-play-button"></i><span> Experiences</span></a></li>
-						<li><a href="showplazza-profile.html"><i
-								class="icon-settings"></i><span> Setttings</span></a></li>
+						<li><a href="Settings"><i
+								class="icon-settings"></i><span> Settings</span></a></li>
 						<li><a href="Logout"><i class="icon-logout"></i><span>
 									Sign Out</span></a></li>
 					</ul></li>

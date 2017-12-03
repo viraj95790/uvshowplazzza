@@ -64,11 +64,11 @@
         <div class="col-md-5th-1 col-sm-6 col-xs-6 foot-pad">
           <p class="text-uppercase">About</p>
           <ul>
-            <li><a href="">Privacy Policy</a></li>
-            <li><a href="">Terms and Conditions</a></li>
-            <li><a href="">Payment Terms</a></li>
-            <li><a href="">Cancellation Policy</a></li>
-            <li><a href="">Terms of Use</a></li>
+            <li><a href="Privacy-Policy.jsp">Privacy Policy</a></li>
+            <li><a href="Terms-and-Conditions.jsp">Terms and Conditions</a></li>
+            <li><a href="Careers">Careers</a></li>
+            <li><a href="Sitemap">Sitemap</a></li>
+            <li><a href="FAQs">FAQs</a></li>
           </ul>
         </div>
       </div>
@@ -78,11 +78,11 @@
           Copyright 2017 © WE JASPERS ENTERTAINMENT LLP. All Rights Reserved.
         </p>
         <ul class="list-inline pull-right">
-          <li><a href=""><i class="bms-icnfacebook-logo"></i></a></li>
-          <li><a href=""><i class="bms-icntwitter-logo-button"></i></a></li>
-          <li><a href=""><i class="bms-icngoogle-plus-logo-button"></i></a></li>
-          <li><a href=""><i class="bms-icnlinkedin-button"></i></a></li>
-          <li><a href=""><i class="bms-icnyoutube-logotype"></i></a></li>
+          <li><a href="https://www.facebook.com/Showplazza-1926700237346892"><i class="bms-icnfacebook-logo"></i></a></li>
+          <li><a href="https://twitter.com/ShowPlazza"><i class="bms-icntwitter-logo-button"></i></a></li>
+          <li><a href="https://plus.google.com/u/1/111126915673331546409"><i class="bms-icngoogle-plus-logo-button"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/show-plazza-41a517154/"><i class="bms-icnlinkedin-button"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UCiNDEu5Vx9EwJig-XdzZnKA"><i class="bms-icnyoutube-logotype"></i></a></li>
         </ul>
       </div>
       <!-- <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a> -->
