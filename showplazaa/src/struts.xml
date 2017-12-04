@@ -19,7 +19,7 @@
 		</global-results>
 		
 		<action name="*Login" method="{1}" class="com.showplazza.main.web.action.LoginAction">
-			<result name="success" type="tiles">loginsuccess</result>
+			<result name="success" type="redirect">inputEvent</result>
 			<result name="adminhomepage" type="redirect">adminDefault</result>
 		</action>
 		
@@ -28,7 +28,7 @@
 		</action>
 		
 		<action name="*Logout" method="{1}" class="com.showplazza.main.web.action.LogoutAction">
-			<result name="success" type="redirect">Default</result>
+			<result name="success" type="redirect">inputEvent</result>
 		</action>
 
 		<action name="*Default" method="{1}" class="com.showplazza.main.web.action.DefaultUserAction">
@@ -48,6 +48,10 @@
 			<result name="inputoffer" type="tiles">addOffer</result>
 		
 			
+		</action>
+		
+		<action name="*Registration" method="{1}" class="com.showplazza.Register.web.action.RegistrationAction">
+				<result name="registerdata" type="redirect">Default</result>
 		</action>
 		
 		
@@ -75,6 +79,23 @@
 		
 		<action name="*Support" method="{1}" class="com.showplazza.Master.web.action.SupportAction">
 		    <result name="success" type="tiles">displaySupport</result>
+		</action>
+		
+		<action name="*Aboutus" method="{1}" class="com.showplazza.Master.web.action.AboutusAction">
+		    <result name="success" type="tiles">displayAbout</result>
+		</action>
+		
+		<action name="*Faqs" method="{1}" class="com.showplazza.Master.web.action.FaqsAction">
+		    <result name="success" type="tiles">displayFAQ</result>
+		</action>
+		
+		<action name="*PrivacyPolicy" method="{1}" class="com.showplazza.Master.web.action.PrivacyAction">
+		    <result name="success" type="tiles">displayFAQ</result>
+		</action>
+		
+		<action name="*MyWallet" method="{1}" class="com.showplazza.Master.web.action.MyWalletAction">
+		    <result name="success" type="tiles">displayMywallet</result>
+		    <result name="inputwallet" type="tiles">bookingHistory</result>
 		</action>
 		
 		<action name="*Event" method="{1}" class="com.showplazza.Event.web.action.EventAction">
