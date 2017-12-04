@@ -102,5 +102,24 @@
 		<put-attribute name="body" value="/common/pages/homepagesuccess.jsp" />
 	</definition>
 	
+	<definition name="displayAbout" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/aboutus.jsp" />
+	</definition>
+	
+	<definition name="displayFAQ" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/faqs.jsp" />
+	</definition>
+	
+	<definition name="displayPrivacy" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/privacy.jsp" />
+	</definition>
+	
+	<definition name="displayMywallet" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/mywallet.jsp" />
+	</definition>
+	
+	<definition name="bookingHistory" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/showplazza-profile.jsp" />
+	</definition>
 
 </tiles-definitions>
