@@ -8,6 +8,8 @@ import com.showplazza.Master.eu.entity.Master;
 public class MasterForm {
 
 	private int id;
+	
+	private String name;
 
 	private String eventname;
 
@@ -77,9 +79,10 @@ public class MasterForm {
 	
 	private ArrayList<Master> clastypeList;
 	
+	private ArrayList<Master> countryList;
+	
 
-	
-	
+
     private String ticketname;
 	
 	private String quantity;
@@ -96,6 +99,8 @@ public class MasterForm {
 	
 	private String end_date;
 	
+	private String payer;
+	
 	
   
 	
@@ -109,6 +114,30 @@ public class MasterForm {
 	
 	
 	
+
+	public ArrayList<Master> getCountryList() {
+		return countryList;
+	}
+
+	public void setCountryList(ArrayList<Master> countryList) {
+		this.countryList = countryList;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getPayer() {
+		return payer;
+	}
+
+	public void setPayer(String payer) {
+		this.payer = payer;
+	}
 
 	public ArrayList<Master> getCurrencyList() {
 		return currencyList;

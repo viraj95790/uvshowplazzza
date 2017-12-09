@@ -136,12 +136,24 @@ public class Master {
 
 	private String message;
 	
+	private String payer;
 	
 	
 	
 	
 	
 	
+	
+	
+	
+
+	public String getPayer() {
+		return payer;
+	}
+
+	public void setPayer(String payer) {
+		this.payer = payer;
+	}
 
 	public String getTicketname() {
 		return ticketname;

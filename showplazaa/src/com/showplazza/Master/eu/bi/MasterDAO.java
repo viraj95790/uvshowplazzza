@@ -30,4 +30,16 @@ public interface MasterDAO {
 
 	ArrayList<Master> getclastypelist();
 
+	ArrayList<Master> getcitylist(String stateid);
+
+	Master eventedit(String selectedid);
+
+	int eventupdate(Master master);
+
+	int deletevnt(String selectedid);
+
+	ArrayList<Master> getcountryList();
+
+	ArrayList<Master> citylist();
+
 }

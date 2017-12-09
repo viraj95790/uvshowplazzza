@@ -133,11 +133,134 @@ public class MasterAction extends BaseAction implements ModelDriven<MasterForm>,
 			connection = Connection_provider.getconnection();
 			MasterDAO masterDAO = new JDBCMasterDAO(connection);
 			
+			ArrayList<Master> citylist = masterDAO.getcitylist(stateid);
+			StringBuffer str = new StringBuffer();
+			str.append("<select name='city' id='City' class='form-control'>");
+			str.append("<option value='0'>Select City</option>");
+			
+			for(Master master : citylist){
+				str.append("<option value='"+master.getId()+"'>"+master.getCity()+"</option>");
+			}
+			
+			str.append("</select>");
+			
+			response.setContentType("text/html");
+			response.setHeader("Cache-Control", "no-cache");
+			response.getWriter().write(str.toString());
+			
 			
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
 		return null;
+		
+	}
+	
+	public String editevent(){
+		Connection connection = null;
+		String selectedid = request.getParameter("selectedid");
+		try {
+			connection = Connection_provider.getconnection();
+			MasterDAO masterDAO = new JDBCMasterDAO(connection);
+            Master master = masterDAO.eventedit(selectedid);
+			
+			masterForm.setEventname(master.getEventname());
+			masterForm.setOrganizer(master.getOrganizer());
+			masterForm.setLanguage(master.getLanguage());
+			masterForm.setEventtype(master.getEventtype());
+			masterForm.setEvent_tags(master.getEvent_tags());
+			masterForm.setEventdate(master.getEventdate());
+			masterForm.setEventend_date(master.getEventend_date());
+			masterForm.setBooking_date(master.getBooking_date());
+			masterForm.setStart_time(master.getStart_time());
+			masterForm.setEnd_time(master.getEnd_time());
+			masterForm.setMovieImageFileName(master.getMovieImageFileName());
+			masterForm.setSmovieImageFileName(master.getSmovieImageFileName());
+			masterForm.setEvent_description(master.getEvent_description());
+			masterForm.setCrew_description(master.getCrew_description());
+			masterForm.setTnc(master.getTnc());
+			masterForm.setCommission_fee(master.getCommission_fee());
+			masterForm.setCountry(master.getCountry());
+			masterForm.setState(master.getState());
+			masterForm.setCity(master.getCity());
+			masterForm.setAddress(master.getAddress());
+			masterForm.setZipcode(master.getZipcode());
+			masterForm.setId(master.getId());
+			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return "editevent";
+		
+	}
+	
+	public String updatevent() throws Exception{
+		Connection connection = null;
+		try {
+			connection = Connection_provider.getconnection();
+			MasterDAO masterDAO = new JDBCMasterDAO(connection);
+            Master master = new Master();
+			
+			master.setId(masterForm.getId());
+			master.setEventname(masterForm.getEventname());
+			master.setLanguage(masterForm.getLanguage());
+			master.setEventtype(masterForm.getEventtype());
+			master.setStart_time(masterForm.getStart_time());
+			master.setEnd_time(masterForm.getEnd_time());
+			master.setEventdate(masterForm.getEventdate());
+			master.setBooking_date(masterForm.getBooking_date());
+			master.setCommission_fee(masterForm.getCommission_fee());
+			master.setCountry(masterForm.getCountry());
+			master.setState(masterForm.getState());
+			master.setAddress(masterForm.getAddress());
+			master.setZipcode(masterForm.getZipcode());
+			master.setTnc(masterForm.getTnc());
+			master.setEvent_description(masterForm.getEvent_description());
+			master.setCrew_description(masterForm.getCrew_description());
+			master.setOrganizer(masterForm.getOrganizer());
+			master.setEvent_tags(masterForm.getEvent_tags());
+			master.setEventend_date(masterForm.getEventend_date());
+			master.setCity(masterForm.getCity());
+			
+			if(masterForm.getMovieImageFileName()!=null){
+				master.setMovieImageFileName(masterForm.getMovieImageFileName());
+				
+				String moviemagename = master.getId() + "_" +master.getMovieImageFileName();
+				String filePath = request.getRealPath("/livedata/moviedoc/");
+				
+				System.out.println("Server path:" + filePath);
+				File fileToCreate = new File(filePath, moviemagename);
+				FileUtils.copyFile(masterForm.getMovieImage(), fileToCreate);
+				
+				master.setMovieImageFileName(moviemagename);
+			}
+			
+			int update = masterDAO.eventupdate(master);
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}finally{
+			connection.close();
+		}
+		return "updatevent";
+		
+	}
+	
+	public String deletevent() throws Exception{
+		Connection connection = null;
+		String selectedid = request.getParameter("selectedid");
+		try {
+			connection = Connection_provider.getconnection();
+			MasterDAO masterDAO = new JDBCMasterDAO(connection);
+			
+			int delete = masterDAO.deletevnt(selectedid);
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return execute();
 		
 	}
 	
@@ -166,12 +289,13 @@ public class MasterAction extends BaseAction implements ModelDriven<MasterForm>,
 			Master master = new Master();
 			master.setTicketname(masterForm.getTicketname());
 			master.setQuantity(masterForm.getQuantity());
-			master.setClas_type(masterForm.getClas_type());
+			master.setClas_type(masterForm.getName());
 			master.setClas_price(masterForm.getClas_price());
 			master.setStart_date(masterForm.getStart_date());
 			master.setEnd_date(masterForm.getEnd_date());
 			master.setMessage(masterForm.getMessage());
 			master.setTicket_des(masterForm.getTicket_des());
+			master.setPayer(masterForm.getPayer());
 			
 			int result = masterDAO.saveticketinfo(selectedid, master);
 			
@@ -214,7 +338,7 @@ public class MasterAction extends BaseAction implements ModelDriven<MasterForm>,
 			
 			masterForm.setTicketname(master.getTicketname());
 			masterForm.setQuantity(master.getQuantity());
-			masterForm.setClas_type(master.getClas_type());
+			masterForm.setName(master.getClas_type());
 			masterForm.setClas_price(master.getClas_price());
 			masterForm.setStart_date(master.getStart_date());
 			masterForm.setEnd_date(master.getEnd_date());
@@ -242,12 +366,13 @@ public class MasterAction extends BaseAction implements ModelDriven<MasterForm>,
 			master.setId(masterForm.getId());
 			master.setTicketname(masterForm.getTicketname());
 			master.setQuantity(masterForm.getQuantity());
-			master.setClas_type(masterForm.getClas_type());
+			master.setClas_type(masterForm.getName());
 			master.setClas_price(masterForm.getClas_price());
 			master.setStart_date(masterForm.getStart_date());
 			master.setEnd_date(masterForm.getEnd_date());
 			master.setMessage(masterForm.getMessage());
 			master.setTicket_des(masterForm.getTicket_des());
+			
 			
 			int update = masterDAO.updatetic(master);
 			
@@ -301,6 +426,12 @@ public class MasterAction extends BaseAction implements ModelDriven<MasterForm>,
 			
 			ArrayList<Master> statelist = masterDAO.getstatelist();
 			masterForm.setStateList(statelist);
+			
+			ArrayList<Master> countrylist = masterDAO.getcountryList();
+			masterForm.setCountryList(countrylist);
+			
+			ArrayList<Master> citylist =masterDAO.citylist();
+			masterForm.setCityList(citylist);
 			
 			ArrayList<Master> eventlist = masterDAO.geteventname();
 			masterForm.setEventList(eventlist);

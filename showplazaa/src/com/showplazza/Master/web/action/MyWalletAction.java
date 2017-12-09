@@ -1,6 +1,7 @@
 package com.showplazza.Master.web.action;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -46,8 +47,21 @@ public class MyWalletAction extends BaseAction implements ModelDriven<MasterForm
 		return "success";
 	}
 	
-	public String inputwallet(){
-		
+	public String inputwallet() throws Exception{
+		Connection connection = null;
+		try {
+			connection = Connection_provider.getconnection();
+			MasterDAO masterDAO = new JDBCMasterDAO(connection);
+			
+			String name = loginInfo.getName();
+			masterForm.setName(name);
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}finally{
+			connection.close();
+		}
 		return "inputwallet";
 		
 	}
