@@ -25,9 +25,9 @@
 			<ul class="nav navbar-nav nunit-bold left-nav-menu">
 				<li><a href="inputEvent">HOME</a></li>
 				<li><a href="Movie">MOVIES</a></li>
-				<li><a href="inputEvent">EVENTS</a></li>
+				<!-- <li><a href="inputEvent">EVENTS</a></li> -->
 				<li><a href="Theatre">THEATRES</a></li>
-				<li><a href="Trailor">TRAILES & VIDEOS</a></li>
+				<li><a href="Trailor">TRAILERS & VIDEOS</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right nunit-bold">
 				<li><a href="Offers">OFFERS</a></li>
@@ -43,9 +43,9 @@
 					aria-expanded="false"><i class="bms-icnpeople"></i></a>
 					<ul class="dropdown-menu acunt">
 						<div id="triangle-up"></div>
-						<li><a href="mywallet"><img src="img/acunt1.png"><span>
+						<li><a href="MyWallet"><img src="img/acunt1.png"><span>
 									My Wallet</span></a></li>
-						<li><a href="booking"><i
+						<li><a href="inputwalletMyWallet"><i
 								class="icon-agenda"></i><span> Booking History</span></a></li>
 						<li><a href="QuickPay"><i
 								class="icon-credit-card"></i><span> QuickPay</span></a></li>
@@ -53,7 +53,7 @@
 								class="icon-play-button"></i><span> Experiences</span></a></li>
 						<li><a href="Settings"><i
 								class="icon-settings"></i><span> Settings</span></a></li>
-						<li><a href="Logout"><i class="icon-logout"></i><span>
+						<li><a href="Logout" onclick="myFunction()"><i class="icon-logout"></i><span>
 									Sign Out</span></a></li>
 					</ul></li>
 				<%
@@ -65,29 +65,23 @@
 				<%
 					}
 				%>
-				<li><a href="#" class="brdr-non"><i
-						class="bms-icnnotification-bell"></i></a></li>
+				<!-- <li><a href="#" class="brdr-non"><i
+						class="bms-icnnotification-bell"></i></a></li> -->
 			</ul>
 		</div>
 
 
 		<s:form action="Logout" id="logoutfem"></s:form>
-		<script>
-			function myFunction() {
-				gapi.auth2.getAuthInstance().disconnect();
-				document.getElementById("logoutfem").submit();
-				// location.reload();
-			}
-
-			function onLoad() {
-				gapi.load('auth2', function() {
-					gapi.auth2.init();
-				});
-			}
-		</script>
+		
+   <script>
+      function myFunction() {
+      gapi.auth2.getAuthInstance().disconnect();
+      //location.reload();
+   }
+   </script>
 		<div class="search-hed container-fluid">
 			<div class="col-md-2 col-sm-2 col-xs-6  no-pad-tab">
-				<a href="index.html"><img src="img/logo.png"
+				<a href="inputEvent"><img src="img/logo.png"
 					class="img-responsive logo"></a>
 			</div>
 			<div class="col-md-8 col-sm-8 col-xs-11 no-padding hidden-xs">
@@ -135,22 +129,22 @@
 						<div class="col-xs-4 location-name no-padding">
 							<ul>
 								<li><a href="#">Nagpur</a>
-								<li><a href="#">Nagpur</a>
-								<li><a href="#">Nagpur</a>
+								<li><a href="#">Akola</a>
+								<li><a href="#">Amravati</a>
 							</ul>
 						</div>
 						<div class="col-xs-4 location-name no-padding">
 							<ul>
-								<li><a href="#">Nagpur</a>
-								<li><a href="#">Nagpur</a>
-								<li><a href="#">Nagpur</a>
+								<li><a href="#">Bhandara</a>
+								<li><a href="#">Gondia</a>
+								<li><a href="#">Wardha</a>
 							</ul>
 						</div>
 						<div class="col-xs-4 location-name no-padding">
 							<ul>
-								<li><a href="#">Nagpur</a>
-								<li><a href="#">Nagpur</a>
-								<li><a href="#">Nagpur</a>
+								<li><a href="#">Yavatmal</a>
+								<li><a href="#">Chandrapur</a>
+								<li><a href="#">Pune</a>
 							</ul>
 						</div>
 						<p>
@@ -185,10 +179,8 @@
 								<img src="img/signin-img.png" class="img-responsive">
 							</div>
 							<div class="sign-left-sec-text text-center">
-								<h3>OFFERS ON EVERY BOOKING</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-									sed do eiusmod tempor incididunt ut labore et dolore magna
-									aliqua.</p>
+								<h3>OFFERS ON EVERY SHOWPLAZZA</h3>
+								
 							</div>
 						</div>
 					</div>
@@ -197,19 +189,19 @@
 							<h3 class="text-center">Welcome Back, Sign In</h3>
 							<p class="text-center">Instant Sign in with</p>
 							<div class="col-sm-offset-1 col-sm-10 sign-two-btn">
-								<div class="btn-group fisrt-btn">
+								  <div class="btn-group fisrt-btn">
 									<a class="btn sign-fb-icn" id="fblogo"> <span
 										class="bms-icnfacebook-letter-logo"></span>
 									</a> <span id="fbtnid">
 										<button type="button" class="btn sign-fb-text">FACEBOOK</button>
 									</span>
-								</div>
+								</div>  
 								<div class="btn-group">
-									<a class="btn sign-gl-icn" id="gglogo"> <span
+								  <a class="btn sign-gl-icn" id="gglogo"> <span
 										class="bms-icngoogle-plus-logo"></span>
-									</a> <span id="gbtnid">
-										<button type="button" class="btn sign-gl-text">GOOGLE</button>
-									</span>
+									</a>  <span id="gbtnid">
+										<!-- <button type="button" class="btn sign-gl-text">GOOGLE</button> -->
+									</span> 
 
 									<div class="g-signin2" data-onsuccess="onSignIn" id="myP"></div>
 									<img id="myImg"><br>
@@ -231,7 +223,10 @@
 											document.getElementById("fbtnid").style.visibility = "hidden";
 											document.getElementById("fblogo").style.visibility = "hidden";
 											document.getElementById("gbtnid").style.visibility = "hidden";
-											document.getElementById("gglogo").style.visibility = "hidden"
+											document.getElementById("gglogo").style.visibility = "hidden";
+											document.getElementById("signoutbtnid").style.display = "";
+											
+												
 
 											document.getElementById("status").innerHTML = 'Welcome <a href=Gmaillogin?email='
 													+ email
@@ -239,7 +234,7 @@
 													+ name
 													+ '/>Continue with Google login</a></p>'
 									<%if (session.getAttribute("logininfo") == null) {%>
-										//   window.location.href='Gmaillogin?email='+email+'&name='+name+'';
+										   window.location.href='Gmaillogin?email='+email+'&name='+name+'';
 									<%} else {%>
 										//  window.location.reload();
 									<%}%>
@@ -254,12 +249,17 @@
 									</script>
 								</div>
 							</div>
+							
+							
 
 							<div class="col-xs-12">
 								<div class="on-line-crcl">
 									<div class="circle">OR</div>
 								</div>
 							</div>
+							
+							<span id="signoutbtnid" style="display:none" ><button onclick="myFunction()">Sign Out Google</button></span>
+							
 
 							<s:form action="Login" theme="simple">
 								<div class="col-sm-offset-1 col-sm-10 main-sign-sub"
@@ -318,17 +318,17 @@
 							</div>
 							<div class="sign-left-sec-text-2nd text-center">
 								<h3>OFFERS ON EVERY BOOKING</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+								<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
 									sed do eiusmod tempor incididunt ut labore et dolore magna
-									aliqua.</p>
+									aliqua.</p> -->
 							</div>
 						</div>
 					</div>
 					<div class="col-md-6 col-sm-6">
 						<div class="sign-right-sec">
-							<h3 class="text-center">SiGN UP IN MOVIESNOW</h3>
+							<h3 class="text-center">SiGN UP IN SHOWPLAZZA</h3>
 							<p class="text-center">Instant Sign up with</p>
-							<div class="col-sm-offset-1 col-sm-10 sign-two-btn">
+							<%-- <div class="col-sm-offset-1 col-sm-10 sign-two-btn">
 								<div class="btn-group fisrt-btn">
 									<a class="btn sign-fb-icn"> <span
 										class="bms-icnfacebook-letter-logo"></span>
@@ -347,17 +347,18 @@
 								<div class="on-line-crcl">
 									<div class="circle">OR</div>
 								</div>
-							</div>
+							</div> --%>
 
+                        <s:form action="sendotpRegistration" theme="simple">
 							<div class="col-sm-offset-1 col-sm-10 main-sign-sub">
-								<input type="text" class="form-control sign-input"
-									placeholder="Email address"> <input type="text"
-									class="form-control sign-input" placeholder="Password">
-								<input type="text" class="form-control sign-input"
-									placeholder="Confirm Password">
-								<button type="button" class="form-control sign-sub sign-input">SIGN
-									IN</button>
+								<s:textfield name="email" cssClass="form-control sign-input" placeholder="Email address"/> 
+								<s:textfield name="mobile" cssClass="form-control sign-input" placeholder="Mobile No."/> 
+								<s:password name="password" cssClass="form-control sign-input" placeholder="Password"/> 
+								<s:password name="cpassword" cssClass="form-control sign-input" placeholder="confirm Password"/> 
+								
+								<input type="submit" value="Register" class="form-control sign-sub sign-input">
 							</div>
+						</s:form>	
 
 							<div class="col-xs-12 text-center sign-up-text">
 								<p>

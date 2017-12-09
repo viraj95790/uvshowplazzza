@@ -2,18 +2,19 @@
   <div class="container-fluid main-footer-bar gradi-clor">
       <div class="footer-bar">
         <ul class="list-inline pull-left no-margin">
-          <li><a href="">About Us</a></li>
-          <li><a href="Movie">Movies</a></li>
-          <li><a href="inputEvent">Events</a></li>
-          <li><a href="Theatre">Theaters</a></li>
-          <li><a href="Trailor">Trailers and videos</a></li>
+          <li><a href="Aboutus">About Us</a></li>
           <li><a href="Offers">Offers</a></li>
+          <li><a href="PrivacyPolicy">Privacy Policy</a></li>
+          <li><a href="Terms-and-Conditions.jsp">Terms and Conditions</a></li>
+          <li><a href="Careers">Careers</a></li>
+          <li><a href="Sitemap">Sitemap</a></li>
+          <li><a href="Faqs">FAQs</a></li>
           <!-- <li><a href="">Customer service</a></li> -->
         </ul>
-        <ul class="list-inline pull-right no-margin hidden-xs seccond-blog-right">
+       <!--  <ul class="list-inline pull-right no-margin hidden-xs seccond-blog-right">
           <li><a href=""><i class="bms-icnandroid-logo"></i></a></li>
           <li><a href=""><i class="bms-icnapple"></i></a></li>
-        </ul>
+        </ul> -->
       </div>
     </div>
 
@@ -61,18 +62,18 @@
             <li><a href="">Event In Next Weekend</a></li>
           </ul>
         </div> -->
-        <div class="col-md-5th-1 col-sm-6 col-xs-6 foot-pad">
+       <!--  <div class="col-md-5th-1 col-sm-6 col-xs-6 foot-pad">
           <p class="text-uppercase">About</p>
           <ul>
-            <li><a href="Privacy-Policy.jsp">Privacy Policy</a></li>
+            <li><a href="PrivacyPolicy">Privacy Policy</a></li>
             <li><a href="Terms-and-Conditions.jsp">Terms and Conditions</a></li>
             <li><a href="Careers">Careers</a></li>
             <li><a href="Sitemap">Sitemap</a></li>
-            <li><a href="FAQs">FAQs</a></li>
+            <li><a href="Faqs">FAQs</a></li>
           </ul>
-        </div>
+        </div> -->
       </div>
-      <hr class="hidden-xs">
+    
       <div class="container-fluid footer-botm">
         <p class="pull-left">
           Copyright 2017 © WE JASPERS ENTERTAINMENT LLP. All Rights Reserved.
