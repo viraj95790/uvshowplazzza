@@ -23,8 +23,9 @@
                                         <th>Event Name</th>
                                         <th>City</th>
                                         <th>Date</th>
-                                        <th>Gallery</th>
                                         <th>Create Ticket</th>
+                                        <th>Edit</th>
+                                        <th>Delete</th>
                                     </tr>
                                 </thead>
                                 
@@ -38,19 +39,25 @@
                                             <img style="width: 150px;height: 50px;" src="livedata/moviedoc/<s:property value="movieImageFileName" />">
                                         </td>
                                         <td><s:property value="eventname"/></td>
-                                        <td>Chennai</td>
+                                        <td><s:property value="city"/></td>
                                         <td><s:property value="eventdate"/></td>
-                                        <td>
-                                            <button class="btn btn-success">
-                                                <span class="fa fa-th-large"></span>Gallery
-                                            </button>
-                                        </td>
+                                        
                                          <s:url action="addticketMaster" id="addticket">
 											<s:param name="selectedid" value="%{id}"></s:param>
 										</s:url>
 										<td><a href="#" onclick="showcrticktcktpopup(<s:property value="id"/>)" cssClass="btn btn-primary">Create Ticket</a></td>
                                         
                                         <%-- <td><a href="addticketMaster?eventid=<s:property value="id"/> "></a><button class="btn btn-primary">Create Ticket</button></td> --%>
+                                        
+                                         <s:url action="editeventMaster" id="edit">
+											<s:param name="selectedid" value="%{id}"></s:param>
+										</s:url>
+										<td><s:a href="%{edit}" cssClass="btn btn-success">Edit</s:a></td>
+										
+										 <s:url action="deleteventMaster" id="edit">
+											<s:param name="selectedid" value="%{id}"></s:param>
+										</s:url>
+										<td><s:a href="%{edit}" cssClass="btn btn-danger">Delete</s:a></td>
 
                                     </tr>
                                     
@@ -101,7 +108,7 @@
 					</div> --%>
 					<div class="form-group col-md-6 col-sm-12">
 						<label>Class Type<span style="color: red;">*</span></label> 
-						<s:select cssClass="form-control" list="clastypeList" id="id" name="name" listKey="id" listValue="name" headerKey="0"  headerValue="Select Type">
+						<s:select cssClass="form-control" list="clastypeList" id="id" name="name" listKey="name" listValue="name" headerKey="0"  headerValue="Select Type">
 								   </s:select>
 						<%-- <s:textfield name="clas_type" cssClass="form-control" type="text"></s:textfield> --%>
 					</div>
@@ -147,19 +154,19 @@
 							</div>
 							<div class="btn-group" id="status" data-toggle="buttons">
 								<label class="btn btn-default btn-on-1 btn-sm active"> 
-								<input onclick="showradiovalue('r1')" id="r1" type="radio" value="1"
+								<input onclick="showradiovalue('r1')" id="r1" type="radio" value="0"
 									name="multifeatured_module[module_id][status]"
 									checked="checked">Me
 								</label> <label class="btn btn-default btn-off-1 btn-sm "> <input
-									type="radio" onclick="showradiovalue('r0')" id="r0" value="0" 
+									type="radio" onclick="showradiovalue('r0')" id="r0" value="1" 
 									name="multifeatured_module[module_id][status]">Buyer
 								</label>
 								
-								<s:hidden name="hdnradio" id="hdnradio" value="1"/>
+								<s:hidden name="payer" id="payer" value="1"/>
 							</div>
 						</div>
 						<div class="col-sm-6">
-							<div class="row no-margin">
+							<!-- <div class="row no-margin">
 								<label>Who will pay<br>(1.99% + INR 10)
 								</label>
 							</div>
@@ -172,7 +179,7 @@
 									type="radio" value="0"
 									name="multifeatured_module[module_id][status]">Buyer
 								</label>
-							</div>
+							</div> -->
 						</div>
 					</div>
 					<div class="form-group col-md-12 col-sm-12">

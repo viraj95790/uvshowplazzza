@@ -4,7 +4,7 @@
       <div class="col-md-3 col-sm-3 no-padding">
         <div class="user-profile">
           <img src="img/user.png" alt="..." class="img-circle">
-          <h4 class="text-uppercase">Prateek Raut</h4>
+          <h4 class="text-uppercase"><s:property value="name"/></h4>
         </div>
         <ul class="pro-tab">
           <li class="tablinks" onclick="openCity(event, 'book')" id="defaultOpen"><a><i class="icon-agenda"></i><span> Booking History</span></a></li>

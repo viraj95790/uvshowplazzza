@@ -38,7 +38,8 @@
 					</div> --%>
 					<div class="form-group col-md-6 col-sm-12">
 						<label>class Type<span style="color: red;">*</span></label> 
-						<s:textfield name="clas_type" cssClass="form-control" type="text"></s:textfield>
+						<s:select cssClass="form-control" list="clastypeList" id="id" name="name" listKey="name" listValue="name" headerKey="0"  headerValue="Select Type">
+								   </s:select>
 					</div>
 					<div class="form-group col-md-6 col-sm-12">
 						<div class="row">
