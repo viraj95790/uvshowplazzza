@@ -140,9 +140,9 @@
             <div class="movie-nem-detail">
               <h3 class="font-dr-colr"><s:property value="eventname"/></h3>
               <p><s:property value="language"/></p>
-              <p class="font-sz-16 font-fet-colr margin-btm-16">INOX Poonam Mall, Wardhaman Nagar</p>
-              <p class="font-sz-16 font-fet-colr margin-btm-5">Friday, 4 Aug 2017 </p>
-              <p class="font-sz-16 font-fet-colr">09:00 PM</p>
+              <p class="font-sz-16 font-fet-colr margin-btm-16"><s:property value="address"/></p>
+              <p class="font-sz-16 font-fet-colr margin-btm-5"><s:property value="eventdate"/> </p>
+              <p class="font-sz-16 font-fet-colr"><s:property value="event_time"/></p>
             </div>
             <hr>
               <div class="tickt-value clearfix">
@@ -152,11 +152,11 @@
               </div>
               <div class="handling-fees clearfix">
                 <p class="pull-left font-sz-12 font-md-colr">Internet handling fees <span class="caret"></span></p>
-                <p class="pull-right font-md-colr">Rs. 27.84</p>
+                <p class="pull-right font-md-colr"><s:property value="internatecharges"/></p>
               </div>
             <hr class="handling-fees-border">  
               <p class="pull-left font-md-colr">Total</p>
-              <p class="pull-right font-md-colr">Rs. 263.84</p>
+              <p class="pull-right font-md-colr"><s:property value="totalticprice"/></p>
           </div>
           <div class="trans-dontion">
             <div class="checkbox checkbox-success">
@@ -169,7 +169,7 @@
         </div>
         <div class="sidebar-btom-totl clearfix">
           <p class="pull-left font-sz-16 no-margin">Total Amount</p>
-          <p class="pull-right font-sz-16 no-margin">265.84 </p>
+          <p class="pull-right font-sz-16 no-margin"><s:property value="totalticprice"/> </p>
         </div>
 
         <div class="easy-card">

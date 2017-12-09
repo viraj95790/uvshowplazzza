@@ -17,8 +17,9 @@
 				<ul class="no-padding event-detail">
 					<li>
 						<div class="ev-date">
-							<p class="font-sz-16">NOV 6 - 20</p>
-							<p class="font-sz-16">2017</p>
+							<p class="font-sz-12"><s:property value="eventdate"/></p>
+							<p class="font-sz-12">to</p>
+							<p class="font-sz-12"><s:property value="eventend_date"/></p>
 						</div>
 					</li>
 					<li>
@@ -53,7 +54,7 @@
 					<div class="tab-content clearfix">
 						<div class="tab-pane fade active in" role="tabpanel" id="tickets">
 							<div class="gallery_product col-xs-12 ">
-								<h4>Railway Station: Jaipur</h4>
+								<h4>Event Address</h4>
 								<p class="sm">
 									<s:property value="address" />
 								</p>
@@ -61,7 +62,7 @@
 									<s:iterator value="eventTicketList">
 										<div class="col-xs-4 no-padding">
 											<p>
-												<s:property value="ticsdate" />
+												<s:property value="eventdate" />
 												<span class="green"><s:property value="start_time" /></span>
 												<span class="black"><s:property value="ticketname" /></span>
 											</p>
@@ -108,19 +109,15 @@
 								</div>
 							</div>
 							<div class="about-event">
-				<p class="lg">
-					<b>About</b>
-				</p>
-				<p>Comio EVC Mumbai 2017 is Indias largest two-day multi-genre
-					concert introduced by the promoters of Enchanted Valley Carnival -
-					a unique festival property introduced to the Indian audiences in
-					2013. EVC is bringing together some of the most popular,
-					electrifying and massive performers from across the world to come
-					perform on one platform.</p>
+				
+				
+				<% String eventdes = (String)session.getAttribute("eventdes");
+				 String crewdes = (String)session.getAttribute("crewdes");
+				 String tnc = (String)session.getAttribute("tnc"); %>
+				
+				<p><%=eventdes.toString() %></p>
+				
 
-				<p>EVCs Tribe is a buzzing community of like-minded people,
-					constantly looking to do something new and get together to enjoy
-					the music and the vibe over the two days of the concert.</p>
 				<ul class="list-inline">
 					<li><a href="" target="_blank"><i
 							class="bms-icnfacebook-logo"></i></a></li>
@@ -142,12 +139,13 @@
 						<div class="tab-pane fade in" role="tabpanel" id="terms">
 							<div class="gallery_product col-xs-12 ">
 								<ul class="no-padding termsConditions">
-									<li>Age limit: 16+</li>
+								 <p><%=tnc.toString() %></p>
+									<!-- <li>Age limit: 16+</li>
 									<li>Internet handling fee per ticket may be levied. Please
 										check your total amount before payment.</li>
 									<li>Tickets once booked cannot be exchanged or refunded.</li>
 									<li>We recommend that you arrive at least 20 minutes prior
-										at the venue to pick up your physical tickets.</li>
+										at the venue to pick up your physical tickets.</li> -->
 								</ul>
 							</div>
 						</div>
@@ -158,10 +156,9 @@
 		</div>
 		<div class="col-sm-4 no-padding">
 			<div class="about-event">
-				<p class="lg">
-					<b>About</b>
-				</p>
-				<p>Comio EVC Mumbai 2017 is Indias largest two-day multi-genre
+				
+				 <p><%=crewdes.toString() %></p>
+				<!-- <p>Comio EVC Mumbai 2017 is Indias largest two-day multi-genre
 					concert introduced by the promoters of Enchanted Valley Carnival -
 					a unique festival property introduced to the Indian audiences in
 					2013. EVC is bringing together some of the most popular,
@@ -170,7 +167,7 @@
 
 				<p>EVCs Tribe is a buzzing community of like-minded people,
 					constantly looking to do something new and get together to enjoy
-					the music and the vibe over the two days of the concert.</p>
+					the music and the vibe over the two days of the concert.</p> -->
 				<ul class="list-inline">
 					<li><a href="" target="_blank"><i
 							class="bms-icnfacebook-logo"></i></a></li>

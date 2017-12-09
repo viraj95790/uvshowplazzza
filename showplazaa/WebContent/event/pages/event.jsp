@@ -29,7 +29,7 @@
       <div class="row bg-grayShade eventTopFilter">
         <div class="col-xs-7 no-padding">
             <div class="row custom-padding">
-                <div class="col-xs-6">
+               <%--  <div class="col-xs-6">
                   <div class="calendar-filter-container">
                     <div id="calendar-filter">
                       <i class="fa fa-calendar" aria-hidden="true"></i>
@@ -37,9 +37,9 @@
                       <i class="fa fa-angle-down" aria-hidden="true"></i>
                     </div>
                   </div>
-                </div>
-                <div class="col-xs-6">
-                <div class="filterPrice">
+                </div> --%>
+               <%--  <div class="col-xs-6">
+                 <div class="filterPrice">
                   <label for="priceRange">
                       <select id="priceRange">
                         <option selected disabled hidden>Filter by Price</option>
@@ -50,18 +50,18 @@
                       </select>
                   </label>
                       
-                </div>
-                </div>
+                </div> 
+                </div> --%>
             </div>
         </div>
-        <div class="col-xs-5 text-right">
+        <!-- <div class="col-xs-5 text-right">
             <div class="searchbox">
                 <div class="inner-addon right-addon">
                     <input type="search" placeholder="Search For event" />
                     <i class="glyphicon glyphicon-search"></i>
                 </div>
             </div>
-        </div>
+        </div> -->
           
       </div>
 
@@ -72,14 +72,14 @@
             <div class="upcom-hed text-uppercase pull-left">
               <h4>PICK YOUR EVENTS</h4>
             </div>
-            <ul class="list-inline pull-right">
+            <!-- <ul class="list-inline pull-right">
               <li class="filter-button active-colr" data-filter="all">All</li>
               <li class="filter-button" data-filter="hdpe">COMEDY</li>
               <li class="filter-button" data-filter="sprinkle">CONFERENCES &amp; WORKSHOPS</li>
               <li class="filter-button" data-filter="exhb">EXHIBITION</li>
               <li class="filter-button" data-filter="mus">MUSIC</li>
               <li class="filter-button" data-filter="tract">TRAVEL &amp; ACTIVITIES</li>
-            </ul>
+            </ul> -->
             <div class="clearfix"></div>
             <s:iterator value="eventImgList">
             <div class="gallery_product col-md-3 col-sm-3 col-xs-6 filter hdpe tract">
@@ -128,7 +128,7 @@
           <i class="bms-icntechnology"></i>
         </div>
         <div class="col-xs-8 no-padding">
-          <p>24x7 Customer Care Support</p>
+          <p>Online Customer Support</p>
         </div>
       </div>
       <div class="col-md-3 col-sm-3 col-xs-12 book-ofer-blog">
