@@ -50,6 +50,10 @@
 		<put-attribute name="body" value="/master/pages/addevent.jsp" />
 	</definition>
 	
+	<definition name="editEvent" extends="baseLayoutadmin">
+		<put-attribute name="body" value="/master/pages/editevent.jsp" />
+	</definition>
+	
 	<definition name="displayEvent" extends="baseLayoutadmin">
 		<put-attribute name="body" value="/master/pages/displayevent.jsp" />
 	</definition>
@@ -120,6 +124,10 @@
 	
 	<definition name="bookingHistory" extends="baseLayout">
 		<put-attribute name="body" value="/master/pages/showplazza-profile.jsp" />
+	</definition>
+	
+	<definition name="sendOtp" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/sendotp.jsp" />
 	</definition>
 
 </tiles-definitions>
