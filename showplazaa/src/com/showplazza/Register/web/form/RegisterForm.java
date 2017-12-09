@@ -34,7 +34,7 @@ private int id;
 	
 	private String modified_date;
 	
-	private String custstatus;;
+	private String custstatus;
 	
 	
 	private ArrayList<Register> registrationDataList;
@@ -44,12 +44,33 @@ private int id;
 	
 	private String postname;
 	
+	private String textotp;
+	
+	private String message;
 
 	
 
 	
 	
 	
+
+	
+	
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+	public String getTextotp() {
+		return textotp;
+	}
+
+	public void setTextotp(String textotp) {
+		this.textotp = textotp;
+	}
 
 	public String getCuststatus() {
 		return custstatus;

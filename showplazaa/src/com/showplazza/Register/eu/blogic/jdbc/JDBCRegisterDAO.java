@@ -25,7 +25,7 @@ public class JDBCRegisterDAO extends JDBCBaseDAO implements RegisterDAO {
 		// TODO Auto-generated method stub
 		PreparedStatement preparedStatement = null;
 		int result = 0;
-		String sql = "insert into registration(name, surname, mobile, email, password, address, landmark, city, pincode, customer_type, usertype, modified_date,postname,vendorid) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+		String sql = "insert into registration(name, surname, mobile, email, password, address, landmark, city, zipcode, usertype, date) values(?,?,?,?,?,?,?,?,?,?,?)";
 		try {
 			 String encPassword = Encryption.encryptSHA(register.getPassword());
 			 register.setPassword(encPassword);
@@ -43,11 +43,8 @@ public class JDBCRegisterDAO extends JDBCBaseDAO implements RegisterDAO {
 			preparedStatement.setString(7, register.getLandmark());
 			preparedStatement.setString(8, register.getCity());
 			preparedStatement.setString(9, register.getPincode());
-			preparedStatement.setString(10, register.getCustomer_type());
-			preparedStatement.setString(11, register.getUsertype());
-			preparedStatement.setString(12, DateTimeUtils.getLastModifiedDate(new Date()));
-			preparedStatement.setString(13, register.getPostname());
-			preparedStatement.setInt(14, register.getVendorid());
+			preparedStatement.setString(10, "2");
+			preparedStatement.setString(11, DateTimeUtils.getLastModifiedDate(new Date()));
 			
 			preparedStatement.executeUpdate();
 			
@@ -204,7 +201,7 @@ public class JDBCRegisterDAO extends JDBCBaseDAO implements RegisterDAO {
 		// TODO Auto-generated method stub
 		PreparedStatement preparedStatement = null;
 		Register register = new Register();
-		String sql = "select id, email, password, usertype from registration where email = ? ";
+		String sql = "select id, email, password, usertype, name, surname from registration where email = ? ";
 		try {
 			preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setString(1, email);
@@ -215,6 +212,9 @@ public class JDBCRegisterDAO extends JDBCBaseDAO implements RegisterDAO {
 				register.setEmail(rs.getString(2));
 				register.setPassword(rs.getString(3));
 				register.setUsertype(rs.getString(4));
+				register.setName(rs.getString(5));
+				register.setSurname(rs.getString(6));
+			
 			}
 			
 		} catch (Exception e) {
