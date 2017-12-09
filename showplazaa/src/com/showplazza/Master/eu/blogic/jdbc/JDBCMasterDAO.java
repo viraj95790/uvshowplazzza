@@ -406,7 +406,7 @@ public class JDBCMasterDAO extends JDBCBaseDAO implements MasterDAO  {
 	}
 
 
-	@Override
+	
 	public Master eventedit(String selectedid) {
 		// TODO Auto-generated method stub
 		PreparedStatement preparedStatement = null;
@@ -451,13 +451,13 @@ public class JDBCMasterDAO extends JDBCBaseDAO implements MasterDAO  {
 	}
 
 
-	@Override
+
 	public int eventupdate(Master master) {
 		// TODO Auto-generated method stub
 		PreparedStatement preparedStatement = null;
 		int update = 0;
 		String sql = "update event set eventname=?, language=?, event_type=?, castcrew=?, eventdate=?, bookingdate=?, commissionfee=?, tnc=?, country=?, state=?, address=?, zipcode=?, "
-				 + "crewdescription=?, event_description=?, movieimage1=?, movieimage2=?, organizer=?, event_tags=?, "
+				 + "crewdescription=?, event_description=?, organizer=?, event_tags=?, "
 				 + "eventend_date=?, city=?, start_time=?, end_time=? where id=? ";
 		try {
 			preparedStatement = connection.prepareStatement(sql);
@@ -476,15 +476,13 @@ public class JDBCMasterDAO extends JDBCBaseDAO implements MasterDAO  {
 			preparedStatement.setString(12, master.getZipcode());
 			preparedStatement.setString(13, master.getCrew_description());
 			preparedStatement.setString(14, master.getEvent_description());
-			preparedStatement.setString(15, master.getMovieImageFileName());
-			preparedStatement.setString(16, master.getSmovieImageFileName());
-			preparedStatement.setString(17, master.getOrganizer());
-			preparedStatement.setString(18, master.getEvent_tags());
-			preparedStatement.setString(19, master.getEventend_date());
-			preparedStatement.setString(20, master.getCity());
-			preparedStatement.setString(21, master.getStart_time());
-			preparedStatement.setString(22, master.getEnd_time());
-			preparedStatement.setInt(23, master.getId());
+			preparedStatement.setString(15, master.getOrganizer());
+			preparedStatement.setString(16, master.getEvent_tags());
+			preparedStatement.setString(17, master.getEventend_date());
+			preparedStatement.setString(18, master.getCity());
+			preparedStatement.setString(19, master.getStart_time());
+			preparedStatement.setString(20, master.getEnd_time());
+			preparedStatement.setInt(21, master.getId());
 			
 			preparedStatement.executeUpdate();
 		} catch (Exception e) {
@@ -495,7 +493,7 @@ public class JDBCMasterDAO extends JDBCBaseDAO implements MasterDAO  {
 	}
 
 
-	@Override
+
 	public int deletevnt(String selectedid) {
 		// TODO Auto-generated method stub
 		PreparedStatement preparedStatement = null;
@@ -512,7 +510,7 @@ public class JDBCMasterDAO extends JDBCBaseDAO implements MasterDAO  {
 	}
 
 
-	@Override
+	
 	public ArrayList<Master> getcountryList() {
 		// TODO Auto-generated method stub
 		PreparedStatement preparedStatement = null;
@@ -536,7 +534,7 @@ public class JDBCMasterDAO extends JDBCBaseDAO implements MasterDAO  {
 	}
 
 
-	@Override
+	
 	public ArrayList<Master> citylist() {
 		// TODO Auto-generated method stub
 		PreparedStatement preparedStatement = null;
@@ -558,5 +556,42 @@ public class JDBCMasterDAO extends JDBCBaseDAO implements MasterDAO  {
 		}
 		return list;
 	}
+
+
+	public int movieimage1(int id , String moviemagename) {
+		// TODO Auto-generated method stub
+		PreparedStatement preparedStatement = null;
+		int update = 0;
+		String sql = "update event set  movieimage1=?, movieimage2=? where id="+id+" ";
+		try {
+			preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setString(1, moviemagename);
+			
+			preparedStatement.executeUpdate();
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return update;
+	}
+
+
+	public int movieimage2(int id, String smoviemagename) {
+		// TODO Auto-generated method stub
+		PreparedStatement preparedStatement = null;
+		int update = 0;
+		String sql = "update event set  movieimage2=?, movieimage2=? where id="+id+" ";
+		try {
+			preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setString(1, smoviemagename);
+			
+			preparedStatement.executeUpdate();
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return update;
+	}
+	
 
 }

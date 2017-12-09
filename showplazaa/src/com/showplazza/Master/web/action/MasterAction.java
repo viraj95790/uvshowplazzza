@@ -223,6 +223,8 @@ public class MasterAction extends BaseAction implements ModelDriven<MasterForm>,
 			master.setEventend_date(masterForm.getEventend_date());
 			master.setCity(masterForm.getCity());
 			
+			int update = masterDAO.eventupdate(master);
+			
 			if(masterForm.getMovieImageFileName()!=null){
 				master.setMovieImageFileName(masterForm.getMovieImageFileName());
 				
@@ -233,10 +235,22 @@ public class MasterAction extends BaseAction implements ModelDriven<MasterForm>,
 				File fileToCreate = new File(filePath, moviemagename);
 				FileUtils.copyFile(masterForm.getMovieImage(), fileToCreate);
 				
-				master.setMovieImageFileName(moviemagename);
+				int updateimg1 = masterDAO.movieimage1(master.getId(), moviemagename);
 			}
 			
-			int update = masterDAO.eventupdate(master);
+			if(masterForm.getSmovieImageFileName()!=null){
+				master.setSmovieImageFileName(masterForm.getSmovieImageFileName());
+				
+				String smoviemagename = master.getId() + "_" +master.getMovieImageFileName();
+				String filePath2 = request.getRealPath("/livedata/promotional/");
+				
+				System.out.println("Server path:" + filePath2);
+				File fileToCreate = new File(filePath2, smoviemagename);
+				FileUtils.copyFile(masterForm.getSmovieImage(), fileToCreate);
+				
+				int updateimg2 = masterDAO.movieimage2(master.getId(), smoviemagename);
+			}
+			
 			
 		} catch (Exception e) {
 			// TODO: handle exception

@@ -46,6 +46,7 @@ public class GmailloginAction extends BaseAction implements ModelDriven<Register
 			loginInfo.setUserId(email);
 			loginInfo.setUserType(Integer.parseInt(register.getUsertype()));
 			loginInfo.setSessionid(session.getId());
+			loginInfo.setName(register.getName());
 			
 			
 			

@@ -42,4 +42,8 @@ public interface MasterDAO {
 
 	ArrayList<Master> citylist();
 
+	int movieimage1(int id, String moviemagename);
+
+	int movieimage2(int id, String smoviemagename);
+
 }

@@ -49,7 +49,7 @@
 										 <s:url action="deleteticketMaster" id="delete">
 											<s:param name="selectedid" value="%{id}"></s:param>
 										</s:url>
-										<td><s:a href="%{delete}" cssClass="btn btn-info btn-xs">Delete</s:a></td>
+										<td><s:a href="%{delete}" cssClass="btn btn-danger">Delete</s:a></td>
                                         
                                         <%-- <td><a href="addticketMaster?eventid=<s:property value="id"/> "></a><button class="btn btn-primary">Create Ticket</button></td> --%>
 
