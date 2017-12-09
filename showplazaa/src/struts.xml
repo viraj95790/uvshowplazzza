@@ -24,7 +24,7 @@
 		</action>
 		
 		<action name="*Gmaillogin" method="{1}" class="com.showplazza.main.web.action.GmailloginAction">
-			<result name="success" type="tiles">loginsuccess</result>
+			<result name="success" type="redirect">inputEvent</result>
 		</action>
 		
 		<action name="*Logout" method="{1}" class="com.showplazza.main.web.action.LogoutAction">
@@ -41,6 +41,8 @@
 			<result name="input" type="tiles">addEvent</result>
 			<result name="success" type="tiles">displayEvent</result>
 			<result name="addevent" type="redirect">Master</result>
+			<result name="editevent" type="tiles">editEvent</result>
+			<result name="updatevent" type="redirect">Master</result>
 			<result name="saveticket" type="redirect">Master</result>
 			<result name="displayticket" type="tiles">displayTicket</result>
 			<result name="editticket" type="tiles">editTicket</result>
@@ -51,7 +53,9 @@
 		</action>
 		
 		<action name="*Registration" method="{1}" class="com.showplazza.Register.web.action.RegistrationAction">
-				<result name="registerdata" type="redirect">Default</result>
+				<result name="registerdata" type="redirect">inputEvent</result>
+				<result name="sendotp" type="tiles">sendOtp</result> 
+				<result name="errorotp" type="tiles">sendOtp</result>
 		</action>
 		
 		
